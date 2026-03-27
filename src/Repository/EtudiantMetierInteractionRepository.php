@@ -16,28 +16,4 @@ class EtudiantMetierInteractionRepository extends ServiceEntityRepository
         parent::__construct($registry, EtudiantMetierInteraction::class);
     }
 
-    //    /**
-    //     * @return EtudiantMetierInteraction[] Returns an array of EtudiantMetierInteraction objects
-    //     */
-    //    public function findByExampleField($value): array
-    //    {
-    //        return $this->createQueryBuilder('e')
-    //            ->andWhere('e.exampleField = :val')
-    //            ->setParameter('val', $value)
-    //            ->orderBy('e.id', 'ASC')
-    //            ->setMaxResults(10)
-    //            ->getQuery()
-    //            ->getResult()
-    //        ;
-    //    }
-
-    //    public function findOneBySomeField($value): ?EtudiantMetierInteraction
-    //    {
-    //        return $this->createQueryBuilder('e')
-    //            ->andWhere('e.exampleField = :val')
-    //            ->setParameter('val', $value)
-    //            ->getQuery()
-    //            ->getOneOrNullResult()
-    //        ;
-    //    }
 }
