@@ -1,0 +1,34 @@
+name: "✨ Feature"
+description: Nouvelle fonctionnalité à développer
+title: "[FEATURE] "
+labels: ["feature"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Ce que je veux faire...
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: Tâches
+      placeholder: |
+        - [ ] Étape 1
+        - [ ] Étape 2
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorité
+      options:
+        - 🔴 Haute
+        - 🟡 Moyenne
+        - 🟢 Basse
+    validations:
+      required: true

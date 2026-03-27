@@ -20,3 +20,10 @@ symfony serve
 
 # Run the messenger
 php bin/console messenger:consume async -vv
+
+# Linter
+```
+composer cs-check   # vérifie le style sans modifier
+composer cs-fix     # corrige automatiquement
+composer phpstan    # analyse statique
+```

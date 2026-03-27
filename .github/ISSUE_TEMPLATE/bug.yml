@@ -1,0 +1,41 @@
+name: "🐛 Bug"
+description: Quelque chose ne fonctionne pas
+title: "[BUG] "
+labels: ["bug"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Problème
+      placeholder: Ce qui ne marche pas...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Comment reproduire
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Sévérité
+      options:
+        - 🔴 Bloquant
+        - 🟡 Gênant
+        - 🟢 Mineur
+    validations:
+      required: true
