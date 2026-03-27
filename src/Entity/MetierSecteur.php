@@ -14,7 +14,7 @@ class MetierSecteur
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierSecteurs')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierSecteurs')]

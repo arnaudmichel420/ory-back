@@ -24,8 +24,11 @@ class Metier
     /**
      * @var Collection<int, Etudiant>
      */
-    #[ORM\ManyToMany(targetEntity: Etudiant::class, inversedBy: 'favori')]
-    private Collection $etudiant;
+    #[ORM\ManyToMany(targetEntity: Etudiant::class, inversedBy: 'favoris')]
+    #[ORM\JoinTable(name: 'metier_etudiant')]
+    #[ORM\JoinColumn(name: 'metier_code', referencedColumnName: 'code_ogr')]
+    #[ORM\InverseJoinColumn(name: 'etudiant_id', referencedColumnName: 'id')]
+    private Collection $etudiants;
 
     #[ORM\Column(length: 255)]
     private ?string $codeRome = null;
@@ -52,6 +55,7 @@ class Metier
     private ?bool $emploiCadre = null;
 
     #[ORM\ManyToOne(inversedBy: 'metiers')]
+    #[ORM\JoinColumn(nullable: false)]
     private ?SousDomaine $sousDomaine = null;
 
     /**
@@ -105,7 +109,7 @@ class Metier
     public function __construct()
     {
         $this->appellations = new ArrayCollection();
-        $this->etudiant = new ArrayCollection();
+        $this->etudiants = new ArrayCollection();
         $this->metierCompetences = new ArrayCollection();
         $this->metierCentreInterets = new ArrayCollection();
         $this->metierSecteurs = new ArrayCollection();
@@ -161,15 +165,15 @@ class Metier
     /**
      * @return Collection<int, Etudiant>
      */
-    public function getEtudiant(): Collection
+    public function getEtudiants(): Collection
     {
-        return $this->etudiant;
+        return $this->etudiants;
     }
 
     public function addEtudiant(Etudiant $etudiant): static
     {
-        if (!$this->etudiant->contains($etudiant)) {
-            $this->etudiant->add($etudiant);
+        if (!$this->etudiants->contains($etudiant)) {
+            $this->etudiants->add($etudiant);
         }
 
         return $this;
@@ -177,7 +181,7 @@ class Metier
 
     public function removeEtudiant(Etudiant $etudiant): static
     {
-        $this->etudiant->removeElement($etudiant);
+        $this->etudiants->removeElement($etudiant);
 
         return $this;
     }

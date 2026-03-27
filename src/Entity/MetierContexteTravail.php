@@ -14,11 +14,11 @@ class MetierContexteTravail
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierContexteTravails')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierContexteTravails')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?ContexteTravail $codeOgrContexte = null;
 
     #[ORM\Column(length: 255, nullable: true)]

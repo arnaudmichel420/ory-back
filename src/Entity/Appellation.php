@@ -22,7 +22,7 @@ class Appellation
     private ?bool $peuUtiliser = null;
 
     #[ORM\ManyToOne(inversedBy: 'appellations')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: "code_ogr", nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
     public function getLibelle(): ?string

@@ -18,7 +18,7 @@ class MetierCentreInteret
     private ?CentreInteret $centreInteret = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierCentreInterets')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
     #[ORM\Column(nullable: true)]

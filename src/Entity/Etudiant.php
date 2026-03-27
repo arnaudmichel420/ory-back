@@ -59,7 +59,7 @@ class Etudiant
     /**
      * @var Collection<int, Metier>
      */
-    #[ORM\ManyToMany(targetEntity: Metier::class, mappedBy: 'etudiant')]
+    #[ORM\ManyToMany(targetEntity: Metier::class, mappedBy: 'etudiants')]
     private Collection $favori;
 
     /**
