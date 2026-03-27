@@ -2,16 +2,20 @@
 
 namespace App\Entity;
 
+use App\Entity\Trait\SoftDeleteableTrait;
 use App\Entity\Trait\TimestampableTrait;
 use App\Repository\QuestionnaireRecoRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 #[ORM\Entity(repositoryClass: QuestionnaireRecoRepository::class)]
+#[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class QuestionnaireReco
 {
     use TimestampableTrait;
+    use SoftDeleteableTrait;
 
     #[ORM\Id]
     #[ORM\GeneratedValue]

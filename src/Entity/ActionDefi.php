@@ -2,13 +2,17 @@
 
 namespace App\Entity;
 
+use App\Entity\Trait\SoftDeleteableTrait;
 use App\Repository\ActionDefiRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 #[ORM\Entity(repositoryClass: ActionDefiRepository::class)]
+#[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class ActionDefi
 {
+    use SoftDeleteableTrait;
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]

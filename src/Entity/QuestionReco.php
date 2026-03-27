@@ -2,15 +2,19 @@
 
 namespace App\Entity;
 
+use App\Entity\Trait\SoftDeleteableTrait;
 use App\Enum\QuestionRecoTypeEnum;
 use App\Repository\QuestionRecoRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 #[ORM\Entity(repositoryClass: QuestionRecoRepository::class)]
+#[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class QuestionReco
 {
+    use SoftDeleteableTrait;
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
@@ -32,7 +36,7 @@ class QuestionReco
     /**
      * @var Collection<int, ChoixReco>
      */
-    #[ORM\OneToMany(targetEntity: ChoixReco::class, mappedBy: 'question')]
+    #[ORM\OneToMany(targetEntity: ChoixReco::class, mappedBy: 'question', orphanRemoval: true)]
     private Collection $choixRecos;
 
     public function __construct()

@@ -2,12 +2,16 @@
 
 namespace App\Entity;
 
+use App\Entity\Trait\SoftDeleteableTrait;
 use App\Repository\ChoixQuizDefiRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 #[ORM\Entity(repositoryClass: ChoixQuizDefiRepository::class)]
+#[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class ChoixQuizDefi
 {
+    use SoftDeleteableTrait;
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]

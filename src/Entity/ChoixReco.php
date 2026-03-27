@@ -2,14 +2,18 @@
 
 namespace App\Entity;
 
+use App\Entity\Trait\SoftDeleteableTrait;
 use App\Repository\ChoixRecoRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 #[ORM\Entity(repositoryClass: ChoixRecoRepository::class)]
+#[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class ChoixReco
 {
+    use SoftDeleteableTrait;
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]

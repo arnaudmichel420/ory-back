@@ -2,18 +2,22 @@
 
 namespace App\Entity;
 
-use App\Enum\DefiTypeEnum;
+use App\Entity\Trait\SoftDeleteableTrait;
 use App\Entity\Trait\TimestampableTrait;
+use App\Enum\DefiTypeEnum;
 use App\Repository\DefiRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 #[ORM\Entity(repositoryClass: DefiRepository::class)]
+#[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class Defi
 {
     use TimestampableTrait;
+    use SoftDeleteableTrait;
 
     #[ORM\Id]
     #[ORM\GeneratedValue]

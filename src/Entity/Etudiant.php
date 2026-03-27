@@ -2,24 +2,28 @@
 
 namespace App\Entity;
 
+use App\Entity\Trait\SoftDeleteableTrait;
 use App\Entity\Trait\TimestampableTrait;
 use App\Repository\EtudiantRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 #[ORM\Entity(repositoryClass: EtudiantRepository::class)]
+#[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class Etudiant
 {
     use TimestampableTrait;
+    use SoftDeleteableTrait;
 
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\OneToOne(inversedBy: 'etudiant', cascade: ['persist', 'remove'])]
+    #[ORM\OneToOne(inversedBy: 'etudiant', cascade: ['persist'])]
     private ?Utilisateur $utilisateur = null;
 
     #[ORM\Column(length: 255)]
@@ -73,7 +77,7 @@ class Etudiant
     /**
      * @var Collection<int, EtudiantReponseReco>
      */
-    #[ORM\OneToMany(targetEntity: EtudiantReponseReco::class, mappedBy: 'etudiant', orphanRemoval: true)]
+    #[ORM\OneToMany(targetEntity: EtudiantReponseReco::class, mappedBy: 'etudiant')]
     private Collection $etudiantReponseRecos;
 
     public function __construct()
