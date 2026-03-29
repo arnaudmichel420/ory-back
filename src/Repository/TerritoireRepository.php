@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Repository;
 
 use App\Entity\Territoire;
@@ -15,5 +17,4 @@ class TerritoireRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Territoire::class);
     }
-
 }

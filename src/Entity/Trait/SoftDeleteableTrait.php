@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity\Trait;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -23,6 +25,6 @@ trait SoftDeleteableTrait
 
     public function isDeleted(): bool
     {
-        return $this->supprimeLe !== null;
+        return null !== $this->supprimeLe;
     }
 }

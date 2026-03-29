@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Repository;
 
 use App\Entity\SousDomaine;
@@ -15,5 +17,4 @@ class SousDomaineRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, SousDomaine::class);
     }
-
 }

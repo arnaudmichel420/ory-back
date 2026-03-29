@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Enum;
 
 enum DefiTypeEnum: string
@@ -7,6 +9,9 @@ enum DefiTypeEnum: string
     case ACTION = 'action';
     case QUIZ = 'quiz';
 
+    /**
+     * @return string[]
+     */
     public static function values(): array
     {
         return array_column(self::cases(), 'value');

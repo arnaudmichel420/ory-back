@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Repository;
 
 use App\Entity\EtudiantDefi;
@@ -15,5 +17,4 @@ class EtudiantDefiRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, EtudiantDefi::class);
     }
-
 }

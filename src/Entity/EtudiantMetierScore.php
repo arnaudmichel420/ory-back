@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
 use App\Entity\Trait\TimestampableTrait;
@@ -17,7 +19,7 @@ class EtudiantMetierScore
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'etudiantMetierScores')]
-    #[ORM\JoinColumn(referencedColumnName: "code_ogr", nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
     #[ORM\ManyToOne(inversedBy: 'etudiantMetierScores')]

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
 use App\Entity\Trait\SoftDeleteableTrait;
@@ -14,8 +16,8 @@ use Gedmo\Mapping\Annotation as Gedmo;
 #[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class QuestionnaireReco
 {
-    use TimestampableTrait;
     use SoftDeleteableTrait;
+    use TimestampableTrait;
 
     #[ORM\Id]
     #[ORM\GeneratedValue]

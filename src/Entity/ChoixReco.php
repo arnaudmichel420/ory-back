@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
 use App\Entity\Trait\SoftDeleteableTrait;
@@ -33,7 +35,7 @@ class ChoixReco
     private ?Secteur $secteur = null;
 
     #[ORM\ManyToOne(inversedBy: 'choixRecos')]
-    #[ORM\JoinColumn(referencedColumnName: "code_ogr")]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr')]
     private ?ContexteTravail $contexteTravail = null;
 
     /**

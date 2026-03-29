@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Repository;
 
 use App\Entity\MetierAttractivite;
@@ -15,5 +17,4 @@ class MetierAttractiviteRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, MetierAttractivite::class);
     }
-
 }

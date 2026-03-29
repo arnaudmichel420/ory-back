@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
 use App\Repository\AppellationRepository;
@@ -22,7 +24,7 @@ class Appellation
     private ?bool $peuUtiliser = null;
 
     #[ORM\ManyToOne(inversedBy: 'appellations')]
-    #[ORM\JoinColumn(referencedColumnName: "code_ogr", nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
     public function getLibelle(): ?string

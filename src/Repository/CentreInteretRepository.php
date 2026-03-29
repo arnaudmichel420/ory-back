@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Repository;
 
 use App\Entity\CentreInteret;
@@ -15,5 +17,4 @@ class CentreInteretRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, CentreInteret::class);
     }
-
 }

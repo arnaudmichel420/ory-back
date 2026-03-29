@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
 use App\Entity\Trait\SoftDeleteableTrait;
@@ -15,8 +17,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
 #[Gedmo\SoftDeleteable(fieldName: 'supprimeLe', timeAware: false, hardDelete: false)]
 class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
 {
-    use TimestampableTrait;
     use SoftDeleteableTrait;
+    use TimestampableTrait;
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]

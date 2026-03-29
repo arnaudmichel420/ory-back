@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
 use App\Enum\MetierCompetenceTypeEnum;
@@ -15,11 +17,11 @@ class MetierCompetence
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierCompetences')]
-    #[ORM\JoinColumn(referencedColumnName:'code_ogr',nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierCompetences')]
-    #[ORM\JoinColumn(referencedColumnName:'code_ogr',nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Competence $codeOgrComp = null;
 
     #[ORM\Column(enumType: MetierCompetenceTypeEnum::class)]

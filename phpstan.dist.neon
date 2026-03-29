@@ -6,3 +6,8 @@ parameters:
         - public/
         - src/
         - tests/
+    doctrine:
+        objectManagerLoader: phpstan-bootstrap.php
+    ignoreErrors:
+        - identifier: doctrine.columnType
+        - identifier: doctrine.associationType

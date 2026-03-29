@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
-use App\Enum\EtudiantMetierInteractionTypeEnum;
 use App\Entity\Trait\TimestampableTrait;
+use App\Enum\EtudiantMetierInteractionTypeEnum;
 use App\Repository\EtudiantMetierInteractionRepository;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -18,7 +20,7 @@ class EtudiantMetierInteraction
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'etudiantMetierInteractions')]
-    #[ORM\JoinColumn(referencedColumnName: "code_ogr", nullable: false)]
+    #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
     #[ORM\ManyToOne(inversedBy: 'etudiantMetierInteractions')]

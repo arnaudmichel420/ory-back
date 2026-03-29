@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Enum;
 
 enum EtudiantMetierInteractionTypeEnum: string
@@ -8,6 +10,9 @@ enum EtudiantMetierInteractionTypeEnum: string
     case SAUVEGARDE = 'sauvegarde';
     case CHALLENGE = 'challenge';
 
+    /**
+     * @return string[]
+     */
     public static function values(): array
     {
         return array_column(self::cases(), 'value');
