@@ -76,7 +76,8 @@
         ],
         "cs-check": "php-cs-fixer fix --dry-run --diff",
         "cs-fix": "php-cs-fixer fix",
-        "phpstan": "php -d memory_limit=512M vendor/bin/phpstan analyse"
+        "phpstan": "php -d memory_limit=512M vendor/bin/phpstan analyse",
+        "test": "php bin/phpunit"
     },
     "conflict": {
         "symfony/symfony": "*"
