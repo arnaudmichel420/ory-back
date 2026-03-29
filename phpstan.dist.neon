@@ -1,5 +1,8 @@
 parameters:
     level: 6
+    phpVersion: 80200
+    parallel:
+        maximumNumberOfProcesses: 1
     paths:
         - bin/
         - config/
