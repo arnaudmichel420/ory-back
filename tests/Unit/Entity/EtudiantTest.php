@@ -98,5 +98,4 @@ class EtudiantTest extends TestCase
 
         $this->assertNull($defi->getEtudiant());
     }
-
 }
