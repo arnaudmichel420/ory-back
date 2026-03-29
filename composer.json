@@ -7,7 +7,11 @@
         "php": ">=8.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/doctrine-bundle": "^3.2",
+        "doctrine/doctrine-migrations-bundle": "^4.0",
+        "doctrine/orm": "^3.6",
         "lexik/jwt-authentication-bundle": "^3.2",
+        "stof/doctrine-extensions-bundle": "*",
         "symfony/console": "8.0.*",
         "symfony/dotenv": "8.0.*",
         "symfony/flex": "^2.10",
@@ -38,9 +42,14 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.94.2",
-        "phpstan/phpstan": "^2.1.44",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan-symfony": "^2.0.15"
+        "phpstan/phpstan": "^2.1.44",
+        "phpstan/phpstan-doctrine": "^2.0",
+        "phpstan/phpstan-symfony": "^2.0.15",
+        "phpunit/phpunit": "^13.0",
+        "symfony/browser-kit": "8.0.*",
+        "symfony/css-selector": "8.0.*",
+        "symfony/maker-bundle": "^1.67"
     },
     "replace": {
         "symfony/polyfill-ctype": "*",
@@ -67,7 +76,8 @@
         ],
         "cs-check": "php-cs-fixer fix --dry-run --diff",
         "cs-fix": "php-cs-fixer fix",
-        "phpstan": "phpstan analyse"
+        "phpstan": "php -d memory_limit=512M vendor/bin/phpstan analyse",
+        "test": "php bin/phpunit"
     },
     "conflict": {
         "symfony/symfony": "*"

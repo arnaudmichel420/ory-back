@@ -11,7 +11,13 @@ $finder = (new PhpCsFixer\Finder())
 
 return (new PhpCsFixer\Config())
     ->setRules([
-        '@Symfony' => true,
+        '@Symfony'             => true,
+        '@Symfony:risky'       => true,
+        'array_syntax'         => ['syntax' => 'short'],
+        'ordered_imports'      => true,
+        'no_unused_imports'    => true,
+        'declare_strict_types' => true,
     ])
+    ->setRiskyAllowed(true)
     ->setFinder($finder)
 ;

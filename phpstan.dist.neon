@@ -1,8 +1,16 @@
 parameters:
     level: 6
+    phpVersion: 80400
+    parallel:
+        maximumNumberOfProcesses: 1
     paths:
         - bin/
         - config/
         - public/
         - src/
         - tests/
+    doctrine:
+        objectManagerLoader: phpstan-bootstrap.php
+    ignoreErrors:
+        - identifier: doctrine.columnType
+        - identifier: doctrine.associationType
