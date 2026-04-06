@@ -1,12 +1,12 @@
-name: CI
+name: Tests
 
 on:
     pull_request:
         branches: [main, dev]
 
 jobs:
-    ci:
-        name: Package And Quality Checks
+    tests:
+        name: PHPUnit
         runs-on: ubuntu-latest
 
         steps:
@@ -21,17 +21,8 @@ jobs:
             - name: Install dependencies
               run: composer install --prefer-dist --no-interaction --no-progress --no-scripts
 
-            - name: Validate Composer package
-              run: composer validate --strict --no-check-publish
-
-            - name: Warm up cache (needed by PHPStan Symfony extension)
-              run: php bin/console cache:warmup --env=dev
+            - name: Run tests
+              run: composer test
               env:
-                  APP_ENV: dev
+                  APP_ENV: test
                   APP_SECRET: ci_secret
-
-            - name: Run PHP CS Fixer
-              run: composer cs-check
-
-            - name: Run PHPStan
-              run: composer phpstan
