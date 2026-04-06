@@ -11,6 +11,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: TerritoireRepository::class)]
+#[ORM\UniqueConstraint(name: 'uniq_territoire_type_code', columns: ['code_type_territoire', 'code_territoire'])]
 class Territoire
 {
     #[ORM\Id]
@@ -31,6 +32,7 @@ class Territoire
     private ?TerritoireCodeTypeTerritoireEnum $codeTypeTerritoireParent = null;
 
     #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'territoires')]
+    #[ORM\JoinColumn(nullable: true)]
     private ?self $codeTerritoireParent = null;
 
     /**
