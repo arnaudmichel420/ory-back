@@ -23,22 +23,22 @@ final class ScrapCodeTerritoireCommand extends Command
     {
         $result = $this->territoireServices->scrapTerritoire();
 
-        $output->writeln(sprintf('<info>%s</info>', $result['message']));
+        $output->writeln(\sprintf('<info>%s</info>', $result['message']));
         $output->writeln('');
         $output->writeln('<comment>Territoires recuperes par type :</comment>');
 
         foreach ($result['fetched'] as $type => $count) {
-            $output->writeln(sprintf(' - %s : %d', $type, $count));
+            $output->writeln(\sprintf(' - %s : %d', $type, $count));
         }
 
         $output->writeln('');
         $output->writeln('<comment>Resultat import :</comment>');
-        $output->writeln(sprintf(' - recus : %d', $result['import']['total_received']));
-        $output->writeln(sprintf(' - crees : %d', $result['import']['created']));
-        $output->writeln(sprintf(' - mis a jour : %d', $result['import']['updated']));
-        $output->writeln(sprintf(' - invalides ignores : %d', $result['import']['skipped_invalid']));
-        $output->writeln(sprintf(' - parents relies : %d', $result['import']['parent_bound']));
-        $output->writeln(sprintf(' - parents introuvables : %d', $result['import']['parent_missing']));
+        $output->writeln(\sprintf(' - recus : %d', $result['import']['total_received']));
+        $output->writeln(\sprintf(' - crees : %d', $result['import']['created']));
+        $output->writeln(\sprintf(' - mis a jour : %d', $result['import']['updated']));
+        $output->writeln(\sprintf(' - invalides ignores : %d', $result['import']['skipped_invalid']));
+        $output->writeln(\sprintf(' - parents relies : %d', $result['import']['parent_bound']));
+        $output->writeln(\sprintf(' - parents introuvables : %d', $result['import']['parent_missing']));
 
         return Command::SUCCESS;
     }

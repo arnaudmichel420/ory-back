@@ -8,8 +8,6 @@ use App\Entity\Territoire;
 use App\Enum\TerritoireCodeTypeTerritoireEnum;
 use App\Repository\TerritoireRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use RuntimeException;
-use Throwable;
 
 class TerritoireServices
 {
@@ -19,7 +17,8 @@ class TerritoireServices
         private OAuthApiClient $oAuthApiClient,
         private EntityManagerInterface $entityManager,
         private TerritoireRepository $territoireRepository,
-    ) {}
+    ) {
+    }
 
     /**
      * @return array<string, mixed>
@@ -31,29 +30,29 @@ class TerritoireServices
 
         foreach (self::CODES_TERRITOIRE as $code) {
             $response = $this->oAuthApiClient->get(
-                sprintf('https://api.francetravail.io/partenaire/stats-offres-demandes-emploi/v1/referentiel/territoires/%s', $code),
+                \sprintf('https://api.francetravail.io/partenaire/stats-offres-demandes-emploi/v1/referentiel/territoires/%s', $code),
                 [],
                 'offresetdemandesemploi api_stats-offres-demandes-emploiv1'
             );
 
             $payload = $response->toArray();
-            if (!isset($payload['territoires']) || !is_array($payload['territoires'])) {
-                throw new RuntimeException(sprintf('La reponse API pour le type "%s" ne contient pas de liste de territoires valide.', $code));
+            if (!isset($payload['territoires']) || !\is_array($payload['territoires'])) {
+                throw new \RuntimeException(\sprintf('La reponse API pour le type "%s" ne contient pas de liste de territoires valide.', $code));
             }
 
             $responses[$code] = $payload['territoires'];
-            $fetched[$code] = count($payload['territoires']);
+            $fetched[$code] = \count($payload['territoires']);
         }
 
         try {
             /** @var array{created:int,updated:int,skipped_invalid:int,parent_bound:int,parent_missing:int,total_received:int} $importStats */
             $importStats = $this->entityManager->wrapInTransaction(
-                fn(): array => $this->createCodeTerritoire($responses)
+                fn (): array => $this->createCodeTerritoire($responses)
             );
-        } catch (Throwable $exception) {
+        } catch (\Throwable $exception) {
             $this->entityManager->clear();
 
-            throw new RuntimeException('L\'import des territoires a echoue et a ete annule.', previous: $exception);
+            throw new \RuntimeException('L\'import des territoires a echoue et a ete annule.', previous: $exception);
         }
 
         return [
@@ -66,6 +65,7 @@ class TerritoireServices
 
     /**
      * @param array<string, array<int, array<string, mixed>>> $territoiresParType
+     *
      * @return array{created:int,updated:int,skipped_invalid:int,parent_bound:int,parent_missing:int,total_received:int}
      */
     public function createCodeTerritoire(array $territoiresParType): array
@@ -104,7 +104,7 @@ class TerritoireServices
                 $territoire->setCodeTypeTerritoire($codeTypeTerritoire);
                 $territoire->setLibelleTerritoire($territoireApi['libelleTerritoire']);
                 $territoire->setCodeTypeTerritoireParent(
-                    isset($territoireApi['codeTypeTerritoireParent']) && is_string($territoireApi['codeTypeTerritoireParent'])
+                    isset($territoireApi['codeTypeTerritoireParent']) && \is_string($territoireApi['codeTypeTerritoireParent'])
                         ? TerritoireCodeTypeTerritoireEnum::from($territoireApi['codeTypeTerritoireParent'])
                         : null
                 );
@@ -128,16 +128,16 @@ class TerritoireServices
                 }
 
                 $codeParent = $territoireApi['codeTerritoireParent'] ?? null;
-                if (!is_string($codeParent) || $codeParent === '') {
+                if (!\is_string($codeParent) || '' === $codeParent) {
                     $territoire->setCodeTerritoireParent(null);
                     continue;
                 }
 
-                $codeTypeParent = isset($territoireApi['codeTypeTerritoireParent']) && is_string($territoireApi['codeTypeTerritoireParent'])
+                $codeTypeParent = isset($territoireApi['codeTypeTerritoireParent']) && \is_string($territoireApi['codeTypeTerritoireParent'])
                     ? TerritoireCodeTypeTerritoireEnum::from($territoireApi['codeTypeTerritoireParent'])
                     : null;
 
-                if ($codeTypeParent === null) {
+                if (null === $codeTypeParent) {
                     ++$parentMissingCount;
                     continue;
                 }
@@ -167,12 +167,9 @@ class TerritoireServices
         ];
     }
 
-    /**
-     * @param mixed $territoireApi
-     */
     private function isTerritoirePayloadValid(mixed $territoireApi): bool
     {
-        if (!is_array($territoireApi)) {
+        if (!\is_array($territoireApi)) {
             return false;
         }
 
@@ -180,33 +177,33 @@ class TerritoireServices
             return false;
         }
 
-        if (!is_string($territoireApi['codeTerritoire']) || $territoireApi['codeTerritoire'] === '') {
+        if (!\is_string($territoireApi['codeTerritoire']) || '' === $territoireApi['codeTerritoire']) {
             return false;
         }
 
-        if (!is_string($territoireApi['codeTypeTerritoire']) || $territoireApi['codeTypeTerritoire'] === '') {
+        if (!\is_string($territoireApi['codeTypeTerritoire']) || '' === $territoireApi['codeTypeTerritoire']) {
             return false;
         }
 
-        if (!in_array($territoireApi['codeTypeTerritoire'], TerritoireCodeTypeTerritoireEnum::values(), true)) {
+        if (!\in_array($territoireApi['codeTypeTerritoire'], TerritoireCodeTypeTerritoireEnum::values(), true)) {
             return false;
         }
 
-        if (!is_string($territoireApi['libelleTerritoire']) || $territoireApi['libelleTerritoire'] === '') {
+        if (!\is_string($territoireApi['libelleTerritoire']) || '' === $territoireApi['libelleTerritoire']) {
             return false;
         }
 
         if (
             isset($territoireApi['codeTypeTerritoireParent'])
-            && (!is_string($territoireApi['codeTypeTerritoireParent'])
-                || !in_array($territoireApi['codeTypeTerritoireParent'], TerritoireCodeTypeTerritoireEnum::values(), true))
+            && (!\is_string($territoireApi['codeTypeTerritoireParent'])
+                || !\in_array($territoireApi['codeTypeTerritoireParent'], TerritoireCodeTypeTerritoireEnum::values(), true))
         ) {
             return false;
         }
 
         if (
             isset($territoireApi['codeTerritoireParent'])
-            && !is_string($territoireApi['codeTerritoireParent'])
+            && !\is_string($territoireApi['codeTerritoireParent'])
         ) {
             return false;
         }
@@ -216,19 +213,18 @@ class TerritoireServices
 
     /**
      * @param array<string, array<int, array<string, mixed>>> $territoiresParType
+     *
      * @return array<int, array<string, mixed>>
      */
     private function getTerritoiresDuType(array $territoiresParType, string $typeTerritoire): array
     {
-        $territoiresDuType = $territoiresParType[$typeTerritoire] ?? [];
-
-        return is_array($territoiresDuType) ? $territoiresDuType : [];
+        return $territoiresParType[$typeTerritoire] ?? [];
     }
 
     private function getTerritoireKey(
         TerritoireCodeTypeTerritoireEnum $codeTypeTerritoire,
         string $codeTerritoire,
     ): string {
-        return sprintf('%s:%s', $codeTypeTerritoire->value, $codeTerritoire);
+        return \sprintf('%s:%s', $codeTypeTerritoire->value, $codeTerritoire);
     }
 }

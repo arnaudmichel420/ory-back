@@ -3,6 +3,9 @@ parameters:
     phpVersion: 80400
     parallel:
         maximumNumberOfProcesses: 1
+    excludePaths:
+        analyse:
+            - config/reference.php
     paths:
         - bin/
         - config/

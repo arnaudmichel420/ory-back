@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace App\Service;
 
-use DateTimeImmutable;
-use RuntimeException;
-
 final readonly class OAuthAccessToken
 {
     private const DEFAULT_TOKEN_TYPE = 'Bearer';
@@ -14,7 +11,7 @@ final readonly class OAuthAccessToken
     public function __construct(
         private string $value,
         private string $tokenType,
-        private DateTimeImmutable $expiresAt,
+        private \DateTimeImmutable $expiresAt,
     ) {
     }
 
@@ -25,10 +22,10 @@ final readonly class OAuthAccessToken
 
     public function getTokenType(): string
     {
-        return $this->tokenType !== '' ? $this->tokenType : self::DEFAULT_TOKEN_TYPE;
+        return '' !== $this->tokenType ? $this->tokenType : self::DEFAULT_TOKEN_TYPE;
     }
 
-    public function getExpiresAt(): DateTimeImmutable
+    public function getExpiresAt(): \DateTimeImmutable
     {
         return $this->expiresAt;
     }
@@ -47,14 +44,14 @@ final readonly class OAuthAccessToken
         $tokenType = $payload['token_type'] ?? self::DEFAULT_TOKEN_TYPE;
         $expiresAt = $payload['expires_at'] ?? null;
 
-        if (!is_string($value) || $value === '' || !is_string($tokenType) || !is_int($expiresAt)) {
-            throw new RuntimeException('Cached OAuth token payload is invalid.');
+        if (!\is_string($value) || '' === $value || !\is_string($tokenType) || !\is_int($expiresAt)) {
+            throw new \RuntimeException('Cached OAuth token payload is invalid.');
         }
 
         return new self(
             $value,
             $tokenType,
-            (new DateTimeImmutable())->setTimestamp($expiresAt),
+            (new \DateTimeImmutable())->setTimestamp($expiresAt),
         );
     }
 

@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace App\Service;
 
 use App\Config\OAuthServerConfig;
-use DateInterval;
-use DateTimeImmutable;
 use Psr\Cache\CacheItemPoolInterface;
-use RuntimeException;
 use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
@@ -27,7 +24,7 @@ final class OAuthTokenProvider
     {
         $normalizedScope = $this->normalizeScope($scope);
         $cachedToken = $this->getCachedToken($normalizedScope);
-        if ($cachedToken !== null && !$cachedToken->isExpired()) {
+        if (null !== $cachedToken && !$cachedToken->isExpired()) {
             return $cachedToken;
         }
 
@@ -41,7 +38,7 @@ final class OAuthTokenProvider
     {
         $token = $this->getAccessToken($scope);
 
-        return sprintf('%s %s', $token->getTokenType(), $token->getValue());
+        return \sprintf('%s %s', $token->getTokenType(), $token->getValue());
     }
 
     private function getCachedToken(string $scope): ?OAuthAccessToken
@@ -52,13 +49,13 @@ final class OAuthTokenProvider
         }
 
         $payload = $cacheItem->get();
-        if (!is_array($payload)) {
+        if (!\is_array($payload)) {
             return null;
         }
 
         try {
             return OAuthAccessToken::fromArray($payload);
-        } catch (RuntimeException) {
+        } catch (\RuntimeException) {
             return null;
         }
     }
@@ -79,7 +76,7 @@ final class OAuthTokenProvider
             'client_secret' => $this->config->getClientSecret(),
         ];
 
-        if ($scope !== '') {
+        if ('' !== $scope) {
             $body['scope'] = $scope;
         }
 
@@ -95,34 +92,34 @@ final class OAuthTokenProvider
             /** @var array<string, mixed> $payload */
             $payload = $response->toArray(false);
         } catch (TransportExceptionInterface $exception) {
-            throw new RuntimeException('Unable to reach OAuth token endpoint.', previous: $exception);
+            throw new \RuntimeException('Unable to reach OAuth token endpoint.', previous: $exception);
         }
 
         $accessToken = $payload['access_token'] ?? null;
         $tokenType = $payload['token_type'] ?? 'Bearer';
         $expiresIn = $payload['expires_in'] ?? null;
 
-        if (!is_string($accessToken) || $accessToken === '') {
-            throw new RuntimeException('OAuth token response does not contain a valid access_token.');
+        if (!\is_string($accessToken) || '' === $accessToken) {
+            throw new \RuntimeException('OAuth token response does not contain a valid access_token.');
         }
 
-        if (!is_string($tokenType) || $tokenType === '') {
+        if (!\is_string($tokenType) || '' === $tokenType) {
             $tokenType = 'Bearer';
         }
 
-        if (!is_int($expiresIn) && !is_float($expiresIn) && !is_string($expiresIn)) {
-            throw new RuntimeException('OAuth token response does not contain a valid expires_in value.');
+        if (!\is_int($expiresIn) && !\is_float($expiresIn) && !\is_string($expiresIn)) {
+            throw new \RuntimeException('OAuth token response does not contain a valid expires_in value.');
         }
 
         $expiresInSeconds = (int) $expiresIn;
         if ($expiresInSeconds <= 0) {
-            throw new RuntimeException('OAuth token response returned a non-positive expires_in value.');
+            throw new \RuntimeException('OAuth token response returned a non-positive expires_in value.');
         }
 
         return new OAuthAccessToken(
             $accessToken,
             $tokenType,
-            (new DateTimeImmutable())->add(new DateInterval(sprintf('PT%dS', $expiresInSeconds))),
+            (new \DateTimeImmutable())->add(new \DateInterval(\sprintf('PT%dS', $expiresInSeconds))),
         );
     }
 
@@ -133,7 +130,7 @@ final class OAuthTokenProvider
 
     private function getCacheKey(string $scope): string
     {
-        if ($scope === '') {
+        if ('' === $scope) {
             return self::CACHE_KEY_PREFIX.'.default';
         }
 

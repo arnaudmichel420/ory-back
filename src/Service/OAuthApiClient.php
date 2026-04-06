@@ -22,7 +22,7 @@ final readonly class OAuthApiClient
     public function request(string $method, string $uri, array $options = [], ?string $scope = null): ResponseInterface
     {
         $headers = $options['headers'] ?? [];
-        if (!is_array($headers)) {
+        if (!\is_array($headers)) {
             $headers = [];
         }
 
@@ -41,7 +41,7 @@ final readonly class OAuthApiClient
     public function get(string $uri, array $query = [], ?string $scope = null): ResponseInterface
     {
         $options = [];
-        if ($query !== []) {
+        if ([] !== $query) {
             $options['query'] = $query;
         }
 
@@ -54,7 +54,7 @@ final readonly class OAuthApiClient
     public function post(string $uri, array $json = [], ?string $scope = null): ResponseInterface
     {
         $options = [];
-        if ($json !== []) {
+        if ([] !== $json) {
             $options['json'] = $json;
         }
 

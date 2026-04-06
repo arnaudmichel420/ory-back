@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Service;
 
-use App\Entity\Territoire;
 use App\Config\OAuthServerConfig;
+use App\Entity\Territoire;
 use App\Enum\TerritoireCodeTypeTerritoireEnum;
 use App\Repository\TerritoireRepository;
 use App\Service\OAuthApiClient;
@@ -23,13 +23,13 @@ final class TerritoireServicesTest extends TestCase
 {
     private OAuthApiClient $oAuthApiClient;
     private EntityManagerInterface&MockObject $entityManager;
-    private TerritoireRepository $territoireRepository;
+    private TerritoireRepository&MockObject $territoireRepository;
     private TerritoireServices $service;
 
     protected function setUp(): void
     {
         $this->entityManager = $this->createMock(EntityManagerInterface::class);
-        $this->territoireRepository = $this->createStub(TerritoireRepository::class);
+        $this->territoireRepository = $this->createMock(TerritoireRepository::class);
         $this->oAuthApiClient = $this->createOAuthApiClient(
             $this->createStub(HttpClientInterface::class),
         );
@@ -53,7 +53,7 @@ final class TerritoireServicesTest extends TestCase
         $this->territoireRepository
             ->method('findOneByTypeAndCode')
             ->willReturnCallback(
-                static fn (TerritoireCodeTypeTerritoireEnum $type, string $code): ?Territoire => $type === TerritoireCodeTypeTerritoireEnum::NAT && $code === 'FR'
+                static fn (TerritoireCodeTypeTerritoireEnum $type, string $code): ?Territoire => TerritoireCodeTypeTerritoireEnum::NAT === $type && 'FR' === $code
                     ? $existingFrance
                     : null
             );
@@ -171,7 +171,7 @@ final class TerritoireServicesTest extends TestCase
         $httpClient
             ->expects($this->exactly(3))
             ->method('request')
-            ->willReturnCallback(function (string $method, string $uri) use ($responses): ResponseInterface {
+            ->willReturnCallback(static function (string $method, string $uri) use ($responses): ResponseInterface {
                 self::assertSame('GET', $method);
                 $type = basename($uri);
                 self::assertArrayHasKey($type, $responses);
@@ -246,6 +246,7 @@ final class TerritoireServicesTest extends TestCase
 
     /**
      * @param list<Territoire> $territoires
+     *
      * @return array<string, Territoire>
      */
     private function indexTerritoiresByKey(array $territoires): array
@@ -256,11 +257,11 @@ final class TerritoireServicesTest extends TestCase
             $type = $territoire->getCodeTypeTerritoire();
             $code = $territoire->getCodeTerritoire();
 
-            if ($type === null || $code === null) {
+            if (null === $type || null === $code) {
                 continue;
             }
 
-            $indexed[sprintf('%s:%s', $type->value, $code)] = $territoire;
+            $indexed[\sprintf('%s:%s', $type->value, $code)] = $territoire;
         }
 
         return $indexed;
