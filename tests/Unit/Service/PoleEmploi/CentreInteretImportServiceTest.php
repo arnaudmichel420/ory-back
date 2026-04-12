@@ -43,7 +43,7 @@ final class CentreInteretImportServiceTest extends PoleEmploiServiceTestCase
             ],
         ], $contexte, $resume);
 
-        self::assertSame(['created' => 1, 'updated' => 1, 'ignored' => 0], $resume);
+        $this->assertSame(['created' => 1, 'updated' => 1, 'ignored' => 0], $resume);
         self::assertArrayHasKey('analyser', $contexte->centresInteretParCle);
         self::assertArrayHasKey('construire', $contexte->centresInteretParCle);
         self::assertTrue($contexte->liaisonsCentreInteretParRome['M1805']['analyser']['principal']);

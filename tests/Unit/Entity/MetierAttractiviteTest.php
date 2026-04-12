@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Tests\Unit\Entity;
 
 use App\Entity\MetierAttractivite;
+use App\Enum\MetierAttractiviteCodeEnum;
 use PHPUnit\Framework\TestCase;
 
 class MetierAttractiviteTest extends TestCase
@@ -12,10 +13,10 @@ class MetierAttractiviteTest extends TestCase
     public function testMetierAttractiviteSetterStockeValeurEtRetourneFluentInterface(): void
     {
         $ma = new MetierAttractivite();
-        $result = $ma->setCodeAttractivite('ATT001');
+        $result = $ma->setCodeAttractivite(MetierAttractiviteCodeEnum::INT_EMB);
 
         $this->assertSame($ma, $result);
-        $this->assertSame('ATT001', $ma->getCodeAttractivite());
+        $this->assertSame(MetierAttractiviteCodeEnum::INT_EMB, $ma->getCodeAttractivite());
     }
 
     public function testMetierAttractiviteValeursInitialesNulles(): void

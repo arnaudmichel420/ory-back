@@ -32,11 +32,11 @@ final class ContexteTravailImportServiceTest extends PoleEmploiServiceTestCase
             ],
         ], $contexte, $resume);
 
-        self::assertSame(['created' => 1, 'updated' => 1, 'ignored' => 0], $resume);
+        $this->assertSame(['created' => 1, 'updated' => 1, 'ignored' => 0], $resume);
         $contextesTravailParCode = $contexte->contextesTravailParCode;
         $contexte10 = $this->getElementParCle($contextesTravailParCode, '10');
 
         self::assertInstanceOf(ContexteTravail::class, $contexte10);
-        self::assertSame('Horaires', $contexte10->getTypeContexte());
+        $this->assertSame('Horaires', $contexte10->getTypeContexte());
     }
 }

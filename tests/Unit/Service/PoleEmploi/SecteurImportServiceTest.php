@@ -44,13 +44,13 @@ final class SecteurImportServiceTest extends PoleEmploiServiceTestCase
             ],
         ], $contexte, $resume);
 
-        self::assertSame(['created' => 2, 'updated' => 1, 'ignored' => 0], $resume);
+        $this->assertSame(['created' => 2, 'updated' => 1, 'ignored' => 0], $resume);
         $secteursParCode = $contexte->secteursParCode;
         $secteur100 = $this->getElementParCle($secteursParCode, '100');
         $secteur101 = $this->getElementParCle($secteursParCode, '101');
 
         self::assertInstanceOf(Secteur::class, $secteur100);
         self::assertInstanceOf(Secteur::class, $secteur101);
-        self::assertSame($secteur100, $secteur101->getSousSecteurParent());
+        $this->assertSame($secteur100, $secteur101->getSousSecteurParent());
     }
 }

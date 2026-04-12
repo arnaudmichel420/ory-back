@@ -37,14 +37,14 @@ final class CompetenceImportServiceTest extends PoleEmploiServiceTestCase
             ],
         ], $contexte, $resume);
 
-        self::assertSame(['created' => 2, 'updated' => 1, 'ignored' => 1], $resume);
+        $this->assertSame(['created' => 2, 'updated' => 1, 'ignored' => 1], $resume);
         $competencesParCode = $contexte->competencesParCode;
         $competence10 = $this->getElementParCle($competencesParCode, '10');
         $competence30 = $this->getElementParCle($competencesParCode, '30');
 
         self::assertInstanceOf(Competence::class, $competence10);
         self::assertInstanceOf(Competence::class, $competence30);
-        self::assertSame(MetierCompetenceTypeEnum::SAVOIR, $competence30->getType());
+        $this->assertSame(MetierCompetenceTypeEnum::SAVOIR, $competence30->getType());
         self::assertTrue($competence10->isTransitionEco());
         self::assertFalse($competence30->isTransitionNum());
     }

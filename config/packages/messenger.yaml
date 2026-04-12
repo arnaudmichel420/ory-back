@@ -1,0 +1,17 @@
+framework:
+    messenger:
+        transports:
+            async:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: metier_attractivite
+            sync: 'sync://'
+
+        routing:
+            App\Message\ImportMetierAttractiviteMessage: async
+
+when@test:
+    framework:
+        messenger:
+            transports:
+                async: 'in-memory://'

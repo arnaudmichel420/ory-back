@@ -56,10 +56,10 @@ final class AppellationImportServiceTest extends PoleEmploiServiceTestCase
             ],
         ], $contexte, $resume);
 
-        self::assertSame(['created' => 1, 'updated' => 2, 'deleted' => 1, 'ignored' => 0], $resume);
-        self::assertSame($metierA, $existingKeep->getCodeOgrMetier());
-        self::assertSame($metierB, $existingForeign->getCodeOgrMetier());
-        self::assertSame('400', $persisted[0]->getCodeOgr());
-        self::assertSame($existingDelete, $removed[0]);
+        $this->assertSame(['created' => 1, 'updated' => 2, 'deleted' => 1, 'ignored' => 0], $resume);
+        $this->assertSame($metierA, $existingKeep->getCodeOgrMetier());
+        $this->assertSame($metierB, $existingForeign->getCodeOgrMetier());
+        $this->assertSame('400', $persisted[0]->getCodeOgr());
+        $this->assertSame($existingDelete, $removed[0]);
     }
 }

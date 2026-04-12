@@ -106,7 +106,7 @@ final class TerritoireServicesTest extends TestCase
             ],
         ]);
 
-        self::assertSame([
+        $this->assertSame([
             'created' => 3,
             'updated' => 1,
             'skipped_invalid' => 0,
@@ -115,7 +115,7 @@ final class TerritoireServicesTest extends TestCase
             'total_received' => 4,
         ], $stats);
 
-        self::assertSame('France', $existingFrance->getLibelleTerritoire());
+        $this->assertSame('France', $existingFrance->getLibelleTerritoire());
 
         $territoiresByKey = $this->indexTerritoiresByKey($persistedTerritoires);
 
@@ -124,9 +124,9 @@ final class TerritoireServicesTest extends TestCase
         self::assertArrayHasKey('REG:01', $territoiresByKey);
         self::assertArrayHasKey('DEP:01', $territoiresByKey);
 
-        self::assertSame($territoiresByKey['NAT:FR'], $territoiresByKey['NAT:DOM']->getCodeTerritoireParent());
-        self::assertSame($territoiresByKey['NAT:DOM'], $territoiresByKey['REG:01']->getCodeTerritoireParent());
-        self::assertSame($territoiresByKey['REG:01'], $territoiresByKey['DEP:01']->getCodeTerritoireParent());
+        $this->assertSame($territoiresByKey['NAT:FR'], $territoiresByKey['NAT:DOM']->getCodeTerritoireParent());
+        $this->assertSame($territoiresByKey['NAT:DOM'], $territoiresByKey['REG:01']->getCodeTerritoireParent());
+        $this->assertSame($territoiresByKey['REG:01'], $territoiresByKey['DEP:01']->getCodeTerritoireParent());
     }
 
     public function testRecupereLesTerritoiresDepuisLApiEtRetourneDesStatistiquesStructurees(): void
@@ -172,9 +172,9 @@ final class TerritoireServicesTest extends TestCase
             ->expects($this->exactly(3))
             ->method('request')
             ->willReturnCallback(static function (string $method, string $uri) use ($responses): ResponseInterface {
-                self::assertSame('GET', $method);
+                TestCase::assertSame('GET', $method);
                 $type = basename($uri);
-                self::assertArrayHasKey($type, $responses);
+                TestCase::assertArrayHasKey($type, $responses);
 
                 return $responses[$type];
             });
@@ -210,13 +210,13 @@ final class TerritoireServicesTest extends TestCase
         $result = $service->scrapTerritoire();
 
         self::assertTrue($result['success']);
-        self::assertSame('Import des territoires termine.', $result['message']);
-        self::assertSame([
+        $this->assertSame('Import des territoires termine.', $result['message']);
+        $this->assertSame([
             'NAT' => 1,
             'REG' => 1,
             'DEP' => 1,
         ], $result['fetched']);
-        self::assertSame([
+        $this->assertSame([
             'created' => 3,
             'updated' => 0,
             'skipped_invalid' => 0,
@@ -227,8 +227,8 @@ final class TerritoireServicesTest extends TestCase
 
         $territoiresByKey = $this->indexTerritoiresByKey($persistedTerritoires);
 
-        self::assertSame($territoiresByKey['NAT:FR'], $territoiresByKey['REG:11']->getCodeTerritoireParent());
-        self::assertSame($territoiresByKey['REG:11'], $territoiresByKey['DEP:75']->getCodeTerritoireParent());
+        $this->assertSame($territoiresByKey['NAT:FR'], $territoiresByKey['REG:11']->getCodeTerritoireParent());
+        $this->assertSame($territoiresByKey['REG:11'], $territoiresByKey['DEP:75']->getCodeTerritoireParent());
     }
 
     /**

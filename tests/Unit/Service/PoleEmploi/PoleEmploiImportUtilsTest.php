@@ -18,13 +18,13 @@ final class PoleEmploiImportUtilsTest extends PoleEmploiServiceTestCase
 
     public function testDeterminerTypeCompetenceReconnaItLesVariantesDeSavoirs(): void
     {
-        self::assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Produits, outils et matières'));
-        self::assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Produits, outils et matires'));
-        self::assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Produits, outils et mati-eres'));
-        self::assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Normes et procédés'));
-        self::assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Normes et procds'));
-        self::assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Normes et proc-ed-es'));
-        self::assertSame(MetierCompetenceTypeEnum::SAVOIR_ETRE_PROFESSIONEL, $this->utils->determinerTypeCompetence('Savoir-être professionnel'));
+        $this->assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Produits, outils et matières'));
+        $this->assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Produits, outils et matires'));
+        $this->assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Produits, outils et mati-eres'));
+        $this->assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Normes et procédés'));
+        $this->assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Normes et procds'));
+        $this->assertSame(MetierCompetenceTypeEnum::SAVOIR, $this->utils->determinerTypeCompetence('Normes et proc-ed-es'));
+        $this->assertSame(MetierCompetenceTypeEnum::SAVOIR_ETRE_PROFESSIONEL, $this->utils->determinerTypeCompetence('Savoir-être professionnel'));
     }
 
     public function testNormalisationsConvertissentLesValeursAttandues(): void
@@ -33,9 +33,9 @@ final class PoleEmploiImportUtilsTest extends PoleEmploiServiceTestCase
         self::assertFalse($this->utils->normaliserOuiNon('N'));
         self::assertTrue($this->utils->normaliserTransitionEco('Emploi stratégique pour la Transition écologique'));
         self::assertFalse($this->utils->normaliserTransitionEco('Emploi Brun'));
-        self::assertSame(2, $this->utils->normaliserCoeurMetier('Principale'));
-        self::assertSame(1, $this->utils->normaliserCoeurMetier('émergente'));
-        self::assertSame(0, $this->utils->normaliserCoeurMetier(null));
+        $this->assertSame(2, $this->utils->normaliserCoeurMetier('Principale'));
+        $this->assertSame(1, $this->utils->normaliserCoeurMetier('émergente'));
+        $this->assertSame(0, $this->utils->normaliserCoeurMetier(null));
     }
 
     public function testIndexeLesAppellationsDepuisLesFichesEtLesEnrichitAvecLeReferentiel(): void
@@ -82,10 +82,10 @@ final class PoleEmploiImportUtilsTest extends PoleEmploiServiceTestCase
         $appellation10 = $this->getElementParCle($romeA1001, '10');
         $appellation20 = $this->getElementParCle($romeA1002, '20');
 
-        self::assertSame('Appellation fiche', $appellation10['libelle']);
-        self::assertSame('Court référentiel', $appellation10['libelle_court']);
+        $this->assertSame('Appellation fiche', $appellation10['libelle']);
+        $this->assertSame('Court référentiel', $appellation10['libelle_court']);
         self::assertTrue($appellation10['peu_utiliser']);
-        self::assertSame('Court fiche', $appellation20['libelle_court']);
+        $this->assertSame('Court fiche', $appellation20['libelle_court']);
         self::assertFalse($appellation20['peu_utiliser']);
     }
 }
