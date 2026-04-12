@@ -17,6 +17,13 @@ class PoleEmploiSourceLoaderService
     private const FICHIER_REFERENTIEL_SAVOIR = 'unix_referentiel_savoir_v460.json';
     private const FICHIER_FICHE_METIER = 'unix_fiche_emploi_metier_v460.json';
 
+    private string $dossierData;
+
+    public function __construct(?string $dossierData = null)
+    {
+        $this->dossierData = $dossierData ?? \dirname(__DIR__, 3).self::DOSSIER_DATA;
+    }
+
     /**
      * @return array<string, mixed>
      */
@@ -50,7 +57,7 @@ class PoleEmploiSourceLoaderService
      */
     private function chargerJson(string $nomFichier): array
     {
-        $chemin = \dirname(__DIR__, 3).self::DOSSIER_DATA.$nomFichier;
+        $chemin = rtrim($this->dossierData, '/').'/'.$nomFichier;
         $contenu = file_get_contents($chemin);
 
         if (false === $contenu) {
