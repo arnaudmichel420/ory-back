@@ -47,7 +47,7 @@ final class MetierContexteTravailImportServiceTest extends PoleEmploiServiceTest
 
         $service->importer([], $contexte, $resume);
 
-        self::assertSame(['created' => 1, 'updated' => 1, 'deleted' => 1, 'ignored' => 0], $resume);
-        self::assertSame('Horaires', $existing->getLibelleGroupe());
+        $this->assertSame(['created' => 1, 'updated' => 1, 'deleted' => 1, 'ignored' => 0], $resume);
+        $this->assertSame('Horaires', $existing->getLibelleGroupe());
     }
 }

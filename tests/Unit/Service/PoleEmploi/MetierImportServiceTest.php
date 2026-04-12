@@ -49,9 +49,9 @@ final class MetierImportServiceTest extends PoleEmploiServiceTestCase
             ],
         ], $contexte, $resume);
 
-        self::assertSame(['created' => 1, 'updated' => 1, 'ignored' => 0], $resume);
-        self::assertSame('Définition 1', $contexte->metiersParCodeRome['A1001']->getDefinition());
-        self::assertSame('Intitulé fiche 2', $contexte->metiersParCodeRome['A1002']->getLibelle());
-        self::assertSame($sousDomaine, $contexte->metiersParCodeRome['A1002']->getSousDomaine());
+        $this->assertSame(['created' => 1, 'updated' => 1, 'ignored' => 0], $resume);
+        $this->assertSame('Définition 1', $contexte->metiersParCodeRome['A1001']->getDefinition());
+        $this->assertSame('Intitulé fiche 2', $contexte->metiersParCodeRome['A1002']->getLibelle());
+        $this->assertSame($sousDomaine, $contexte->metiersParCodeRome['A1002']->getSousDomaine());
     }
 }

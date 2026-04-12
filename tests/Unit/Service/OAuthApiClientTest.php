@@ -48,7 +48,7 @@ final class OAuthApiClientTest extends TestCase
 
         $actualResponse = $this->client->get('territoires/NAT', ['page' => 1], 'mon-scope');
 
-        self::assertSame($response, $actualResponse);
+        $this->assertSame($response, $actualResponse);
     }
 
     public function testConserveLeTimeoutEtLeAcceptFournisDansLesOptions(): void
@@ -78,7 +78,7 @@ final class OAuthApiClientTest extends TestCase
             'timeout' => 3.5,
         ]);
 
-        self::assertSame($response, $actualResponse);
+        $this->assertSame($response, $actualResponse);
     }
 
     private function createOAuthApiClient(HttpClientInterface $httpClient): OAuthApiClient

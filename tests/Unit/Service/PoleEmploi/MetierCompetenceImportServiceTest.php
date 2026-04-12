@@ -54,8 +54,8 @@ final class MetierCompetenceImportServiceTest extends PoleEmploiServiceTestCase
 
         $service->importer([], $contexte, $resume);
 
-        self::assertSame(['created' => 1, 'updated' => 1, 'deleted' => 1, 'ignored' => 0], $resume);
-        self::assertSame(2, $existing->getCoeurMetier());
-        self::assertSame('Prod', $existing->getLibelleEnjeu());
+        $this->assertSame(['created' => 1, 'updated' => 1, 'deleted' => 1, 'ignored' => 0], $resume);
+        $this->assertSame(2, $existing->getCoeurMetier());
+        $this->assertSame('Prod', $existing->getLibelleEnjeu());
     }
 }

@@ -45,8 +45,8 @@ final class MobiliteImportServiceTest extends PoleEmploiServiceTestCase
 
         $service->importer([], $contexte, $resume);
 
-        self::assertSame(['created' => 1, 'updated' => 1, 'deleted' => 1, 'ignored' => 0], $resume);
-        self::assertSame('2', $existing->getCodeOgrMetierCible());
-        self::assertSame('300', $persisted[0]->getCodeOgrMetierCible());
+        $this->assertSame(['created' => 1, 'updated' => 1, 'deleted' => 1, 'ignored' => 0], $resume);
+        $this->assertSame('2', $existing->getCodeOgrMetierCible());
+        $this->assertSame('300', $persisted[0]->getCodeOgrMetierCible());
     }
 }

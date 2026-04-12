@@ -69,10 +69,10 @@ final class DomaineSousDomaineImportServiceTest extends PoleEmploiServiceTestCas
             ],
         ], $contexte, $resumeDomaines, $resumeSousDomaines);
 
-        self::assertSame(['created' => 1, 'updated' => 1, 'ignored' => 0], $resumeDomaines);
-        self::assertSame(['created' => 2, 'updated' => 1, 'ignored' => 0], $resumeSousDomaines);
-        self::assertSame('A10', $contexte->codeSousDomaineParRome['A1001']);
-        self::assertSame('A11', $contexte->codeSousDomaineParRome['A1101']);
-        self::assertSame('B10', $contexte->codeSousDomaineParRome['B1001']);
+        $this->assertSame(['created' => 1, 'updated' => 1, 'ignored' => 0], $resumeDomaines);
+        $this->assertSame(['created' => 2, 'updated' => 1, 'ignored' => 0], $resumeSousDomaines);
+        $this->assertSame('A10', $contexte->codeSousDomaineParRome['A1001']);
+        $this->assertSame('A11', $contexte->codeSousDomaineParRome['A1101']);
+        $this->assertSame('B10', $contexte->codeSousDomaineParRome['B1001']);
     }
 }
