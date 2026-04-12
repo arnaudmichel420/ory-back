@@ -6,7 +6,7 @@ namespace App\Service\PoleEmploi;
 
 use App\Enum\MetierCompetenceTypeEnum;
 
-final class PoleEmploiImportUtils
+class PoleEmploiImportUtils
 {
     /**
      * @param list<array<string, mixed>> $fiches
@@ -28,7 +28,7 @@ final class PoleEmploiImportUtils
     }
 
     /**
-     * @param list<array<string, mixed>> $referentielAppellation
+     * @param list<array<string, mixed>>          $referentielAppellation
      * @param array<string, array<string, mixed>> $fichesParRome
      *
      * @return array<string, array<string, array<string, mixed>>>
@@ -108,11 +108,11 @@ final class PoleEmploiImportUtils
             return null;
         }
 
-        if (\str_contains($normalisee, 'transition-ecologique') || \str_contains($normalisee, 'emploi-vert')) {
+        if (str_contains($normalisee, 'transition-ecologique') || str_contains($normalisee, 'emploi-vert')) {
             return true;
         }
 
-        if (\str_contains($normalisee, 'emploi-blanc') || \str_contains($normalisee, 'emploi-brun')) {
+        if (str_contains($normalisee, 'emploi-blanc') || str_contains($normalisee, 'emploi-brun')) {
             return false;
         }
 
@@ -153,7 +153,7 @@ final class PoleEmploiImportUtils
             return $valeur;
         }
 
-        if (\is_string($valeur) && '' !== \trim($valeur) && \is_numeric($valeur)) {
+        if (\is_string($valeur) && '' !== trim($valeur) && is_numeric($valeur)) {
             return (int) $valeur;
         }
 
@@ -177,7 +177,7 @@ final class PoleEmploiImportUtils
             return null;
         }
 
-        $parties = \explode(' - ', $valeur, 2);
+        $parties = explode(' - ', $valeur, 2);
 
         return $this->normaliserCode($parties[0]);
     }
@@ -188,7 +188,7 @@ final class PoleEmploiImportUtils
             return null;
         }
 
-        $code = \trim((string) $valeur);
+        $code = trim((string) $valeur);
 
         return '' === $code ? null : $code;
     }
@@ -199,12 +199,12 @@ final class PoleEmploiImportUtils
             return null;
         }
 
-        $texte = \trim((string) $valeur);
+        $texte = trim((string) $valeur);
         if ('' === $texte) {
             return null;
         }
 
-        $texte = (string) \preg_replace('/\s+/u', ' ', $texte);
+        $texte = (string) preg_replace('/\s+/u', ' ', $texte);
 
         return '' === $texte ? null : $texte;
     }
@@ -216,14 +216,14 @@ final class PoleEmploiImportUtils
             return null;
         }
 
-        $ascii = \iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $texte);
+        $ascii = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $texte);
         if (false !== $ascii) {
             $texte = $ascii;
         }
 
-        $texte = \strtolower($texte);
-        $texte = (string) \preg_replace('/[^a-z0-9]+/', '-', $texte);
-        $texte = \trim($texte, '-');
+        $texte = strtolower($texte);
+        $texte = (string) preg_replace('/[^a-z0-9]+/', '-', $texte);
+        $texte = trim($texte, '-');
 
         return '' === $texte ? null : $texte;
     }

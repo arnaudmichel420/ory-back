@@ -9,7 +9,7 @@ use App\Enum\MetierCompetenceTypeEnum;
 use App\Repository\MetierCompetenceRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-final class MetierCompetenceImportService
+class MetierCompetenceImportService
 {
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
@@ -20,7 +20,7 @@ final class MetierCompetenceImportService
 
     /**
      * @param array<string, mixed> $sources
-     * @param array<string, int> $resume
+     * @param array<string, int>   $resume
      */
     public function importer(array $sources, ImportContext $contexte, array &$resume): void
     {
@@ -85,7 +85,7 @@ final class MetierCompetenceImportService
 
     /**
      * @param array<string, array<string, mixed>> $desirees
-     * @param iterable<mixed> $groupes
+     * @param iterable<mixed>                     $groupes
      */
     private function ajouterCompetencesSouhaitees(array &$desirees, iterable $groupes, MetierCompetenceTypeEnum $type): void
     {

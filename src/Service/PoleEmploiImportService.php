@@ -47,7 +47,7 @@ final class PoleEmploiImportService
      */
     public function importer(): array
     {
-        \ini_set('memory_limit', '4096M');
+        ini_set('memory_limit', '4096M');
 
         $sources = $this->sourceLoader->charger();
         $contexte = new ImportContext();

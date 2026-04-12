@@ -10,7 +10,7 @@ use App\Repository\DomaineRepository;
 use App\Repository\SousDomaineRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-final class DomaineSousDomaineImportService
+class DomaineSousDomaineImportService
 {
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
@@ -22,8 +22,8 @@ final class DomaineSousDomaineImportService
 
     /**
      * @param array<string, mixed> $sources
-     * @param array<string, int> $resumeDomaines
-     * @param array<string, int> $resumeSousDomaines
+     * @param array<string, int>   $resumeDomaines
+     * @param array<string, int>   $resumeSousDomaines
      */
     public function importer(array $sources, ImportContext $contexte, array &$resumeDomaines, array &$resumeSousDomaines): void
     {

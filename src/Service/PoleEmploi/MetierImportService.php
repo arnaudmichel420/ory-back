@@ -8,7 +8,7 @@ use App\Entity\Metier;
 use App\Repository\MetierRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-final class MetierImportService
+class MetierImportService
 {
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
@@ -19,7 +19,7 @@ final class MetierImportService
 
     /**
      * @param array<string, mixed> $sources
-     * @param array<string, int> $resume
+     * @param array<string, int>   $resume
      */
     public function importer(array $sources, ImportContext $contexte, array &$resume): void
     {

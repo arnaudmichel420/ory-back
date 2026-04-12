@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Service\PoleEmploi;
 
-final class PoleEmploiSourceLoaderService
+class PoleEmploiSourceLoaderService
 {
     private const DOSSIER_DATA = '/data/';
     private const FICHIER_ARBO_PRINCIPALE = 'unix_arborescence_principale_v460.json';
@@ -51,30 +51,30 @@ final class PoleEmploiSourceLoaderService
     private function chargerJson(string $nomFichier): array
     {
         $chemin = \dirname(__DIR__, 3).self::DOSSIER_DATA.$nomFichier;
-        $contenu = \file_get_contents($chemin);
+        $contenu = file_get_contents($chemin);
 
         if (false === $contenu) {
             throw new \RuntimeException(\sprintf('Impossible de lire le fichier %s.', $chemin));
         }
 
-        $donnees = \json_decode($contenu, true);
-        if (\JSON_ERROR_NONE === \json_last_error() && \is_array($donnees)) {
+        $donnees = json_decode($contenu, true);
+        if (\JSON_ERROR_NONE === json_last_error() && \is_array($donnees)) {
             return $donnees;
         }
 
         foreach (['Windows-1252', 'ISO-8859-1'] as $encodage) {
-            $converti = \iconv($encodage, 'UTF-8//IGNORE', $contenu);
+            $converti = iconv($encodage, 'UTF-8//IGNORE', $contenu);
             if (false === $converti) {
                 continue;
             }
 
-            $donnees = \json_decode($converti, true);
-            if (\JSON_ERROR_NONE === \json_last_error() && \is_array($donnees)) {
+            $donnees = json_decode($converti, true);
+            if (\JSON_ERROR_NONE === json_last_error() && \is_array($donnees)) {
                 return $donnees;
             }
         }
 
-        $donnees = \json_decode($contenu, true, 512, \JSON_INVALID_UTF8_IGNORE);
+        $donnees = json_decode($contenu, true, 512, \JSON_INVALID_UTF8_IGNORE);
         if (\is_array($donnees)) {
             return $donnees;
         }

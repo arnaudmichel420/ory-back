@@ -8,7 +8,7 @@ use App\Entity\Competence;
 use App\Repository\CompetenceRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-final class CompetenceImportService
+class CompetenceImportService
 {
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
@@ -19,7 +19,7 @@ final class CompetenceImportService
 
     /**
      * @param array<string, mixed> $sources
-     * @param array<string, int> $resume
+     * @param array<string, int>   $resume
      */
     public function importer(array $sources, ImportContext $contexte, array &$resume): void
     {
@@ -43,7 +43,7 @@ final class CompetenceImportService
 
     /**
      * @param array<string, mixed> $ligneCompetence
-     * @param array<string, int> $resume
+     * @param array<string, int>   $resume
      */
     private function synchroniserCompetence(array $ligneCompetence, ImportContext $contexte, array &$resume): void
     {
@@ -53,6 +53,7 @@ final class CompetenceImportService
 
         if (null === $codeOgr || null === $libelle || null === $type) {
             ++$resume['ignored'];
+
             return;
         }
 

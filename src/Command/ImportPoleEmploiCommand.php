@@ -59,7 +59,7 @@ final class ImportPoleEmploiCommand extends Command
         $io->writeln(\sprintf('<comment>%s</comment>', $label));
 
         foreach ($compteurs as $cle => $valeur) {
-            $io->writeln(\sprintf(' - %s : %d', \str_replace('_', ' ', $cle), $valeur));
+            $io->writeln(\sprintf(' - %s : %d', str_replace('_', ' ', $cle), $valeur));
         }
     }
 }

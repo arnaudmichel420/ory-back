@@ -8,7 +8,7 @@ use App\Entity\ContexteTravail;
 use App\Repository\ContexteTravailRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-final class ContexteTravailImportService
+class ContexteTravailImportService
 {
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
@@ -19,7 +19,7 @@ final class ContexteTravailImportService
 
     /**
      * @param array<string, mixed> $sources
-     * @param array<string, int> $resume
+     * @param array<string, int>   $resume
      */
     public function importer(array $sources, ImportContext $contexte, array &$resume): void
     {

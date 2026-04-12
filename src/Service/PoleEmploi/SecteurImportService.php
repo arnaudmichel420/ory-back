@@ -8,7 +8,7 @@ use App\Entity\Secteur;
 use App\Repository\SecteurRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-final class SecteurImportService
+class SecteurImportService
 {
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
@@ -19,7 +19,7 @@ final class SecteurImportService
 
     /**
      * @param array<string, mixed> $sources
-     * @param array<string, int> $resume
+     * @param array<string, int>   $resume
      */
     public function importer(array $sources, ImportContext $contexte, array &$resume): void
     {

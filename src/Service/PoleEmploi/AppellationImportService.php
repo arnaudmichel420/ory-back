@@ -8,17 +8,18 @@ use App\Entity\Appellation;
 use App\Repository\AppellationRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-final class AppellationImportService
+class AppellationImportService
 {
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
         private readonly AppellationRepository $appellationRepository,
         private readonly PoleEmploiImportUtils $utils,
-    ) {}
+    ) {
+    }
 
     /**
      * @param array<string, mixed> $sources
-     * @param array<string, int> $resume
+     * @param array<string, int>   $resume
      */
     public function importer(array $sources, ImportContext $contexte, array &$resume): void
     {
