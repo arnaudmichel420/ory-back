@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
+use App\Enum\MetierAttractiviteCodeEnum;
 use App\Repository\MetierAttractiviteRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: MetierAttractiviteRepository::class)]
+#[ORM\Table(name: 'metier_attractivite', uniqueConstraints: [new ORM\UniqueConstraint(name: 'uniq_metier_attractivite_lookup', columns: ['code_ogr_metier_id', 'territoire_id', 'code_attractivite'])])]
 class MetierAttractivite
 {
     #[ORM\Id]
@@ -19,8 +21,8 @@ class MetierAttractivite
     #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
     private ?Metier $codeOgrMetier = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $codeAttractivite = null;
+    #[ORM\Column(length: 32, enumType: MetierAttractiviteCodeEnum::class)]
+    private ?MetierAttractiviteCodeEnum $codeAttractivite = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierAttractivites')]
     #[ORM\JoinColumn(nullable: false)]
@@ -46,12 +48,12 @@ class MetierAttractivite
         return $this;
     }
 
-    public function getCodeAttractivite(): ?string
+    public function getCodeAttractivite(): ?MetierAttractiviteCodeEnum
     {
         return $this->codeAttractivite;
     }
 
-    public function setCodeAttractivite(string $codeAttractivite): static
+    public function setCodeAttractivite(MetierAttractiviteCodeEnum $codeAttractivite): static
     {
         $this->codeAttractivite = $codeAttractivite;
 

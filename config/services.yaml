@@ -34,3 +34,7 @@ services:
     App\Service\OAuthApiClient:
         arguments:
             $timeoutInSeconds: "%env(float:OAUTH_API_TIMEOUT)%"
+
+    App\Service\MetierAttractivite\MetierAttractiviteApiRateLimiter:
+        arguments:
+            $projectDir: "%kernel.project_dir%"
