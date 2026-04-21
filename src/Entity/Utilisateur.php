@@ -127,8 +127,14 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->etudiant;
     }
 
-    public function setEtudiant(Etudiant $etudiant): static
+    public function setEtudiant(?Etudiant $etudiant): static
     {
+        if (null === $etudiant) {
+            $this->etudiant = null;
+
+            return $this;
+        }
+
         // set the owning side of the relation if necessary
         if ($etudiant->getUtilisateur() !== $this) {
             $etudiant->setUtilisateur($this);

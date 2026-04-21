@@ -94,7 +94,7 @@ class MetierRepository extends ServiceEntityRepository
 
         return [
             'items' => $items,
-            'total' => count($paginator),
+            'total' => \count($paginator),
         ];
     }
 
