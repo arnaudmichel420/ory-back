@@ -69,7 +69,9 @@ class PoleEmploiSourceLoaderService
             return $donnees;
         }
 
-        foreach (['Windows-1252', 'ISO-8859-1'] as $encodage) {
+        // France Travail fournit certains exports en ISO-8859-15, notamment pour les ligatures
+        // comme "oe" qui deviennent "1/2" si on les decode en ISO-8859-1.
+        foreach (['ISO-8859-15', 'Windows-1252', 'ISO-8859-1'] as $encodage) {
             $converti = iconv($encodage, 'UTF-8//IGNORE', $contenu);
             if (false === $converti) {
                 continue;

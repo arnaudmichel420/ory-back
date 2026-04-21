@@ -6,6 +6,7 @@ namespace App\Entity;
 
 use App\Repository\MetierContexteTravailRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: MetierContexteTravailRepository::class)]
 class MetierContexteTravail
@@ -13,6 +14,7 @@ class MetierContexteTravail
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['metier:view'])]
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierContexteTravails')]
@@ -21,9 +23,11 @@ class MetierContexteTravail
 
     #[ORM\ManyToOne(inversedBy: 'metierContexteTravails')]
     #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
+    #[Groups(['metier:view'])]
     private ?ContexteTravail $codeOgrContexte = null;
 
     #[ORM\Column(length: 255, nullable: true)]
+    #[Groups(['metier:view'])]
     private ?string $libelleGroupe = null;
 
     public function getId(): ?int

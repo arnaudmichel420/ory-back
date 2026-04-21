@@ -9,12 +9,15 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Groups;
+use Symfony\Component\Serializer\Attribute\SerializedName;
 
 #[ORM\Entity(repositoryClass: MetierRepository::class)]
 class Metier
 {
     #[ORM\Id]
     #[ORM\Column(length: 255)]
+    #[Groups(['metier:list', 'metier:view'])]
     private ?string $codeOgr = null;
 
     /**
@@ -33,31 +36,40 @@ class Metier
     private Collection $etudiants;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['metier:list', 'metier:view'])]
     private ?string $codeRome = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['metier:list', 'metier:view'])]
     private ?string $libelle = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
+    #[Groups(['metier:view'])]
     private ?string $definition = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
+    #[Groups(['metier:view'])]
     private ?string $accesMetier = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['metier:list', 'metier:view'])]
     private ?bool $transitionEco = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['metier:list', 'metier:view'])]
     private ?bool $transitionNum = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['metier:view'])]
     private ?bool $emploiReglemente = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['metier:list', 'metier:view'])]
     private ?bool $emploiCadre = null;
 
     #[ORM\ManyToOne(inversedBy: 'metiers')]
     #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['metier:view'])]
     private ?SousDomaine $sousDomaine = null;
 
     /**
@@ -217,6 +229,13 @@ class Metier
         return $this->definition;
     }
 
+    #[Groups(['metier:list'])]
+    #[SerializedName('description')]
+    public function getDescriptionForList(): ?string
+    {
+        return $this->definition;
+    }
+
     public function setDefinition(?string $definition): static
     {
         $this->definition = $definition;
@@ -364,6 +383,16 @@ class Metier
         return $this->metierSecteurs;
     }
 
+    /**
+     * @return list<MetierSecteur>
+     */
+    #[Groups(['metier:list', 'metier:view'])]
+    #[SerializedName('secteurs')]
+    public function getSecteursForView(): array
+    {
+        return $this->metierSecteurs->toArray();
+    }
+
     public function addMetierSecteur(MetierSecteur $metierSecteur): static
     {
         if (!$this->metierSecteurs->contains($metierSecteur)) {
@@ -392,6 +421,16 @@ class Metier
     public function getMetierContexteTravails(): Collection
     {
         return $this->metierContexteTravails;
+    }
+
+    /**
+     * @return list<MetierContexteTravail>
+     */
+    #[Groups(['metier:view'])]
+    #[SerializedName('contextesTravail')]
+    public function getContextesTravailForView(): array
+    {
+        return $this->metierContexteTravails->toArray();
     }
 
     public function addMetierContexteTravail(MetierContexteTravail $metierContexteTravail): static
@@ -512,6 +551,16 @@ class Metier
     public function getMetierAttractivites(): Collection
     {
         return $this->metierAttractivites;
+    }
+
+    /**
+     * @return list<MetierCompetence>
+     */
+    #[Groups(['metier:view'])]
+    #[SerializedName('competences')]
+    public function getCompetencesForView(): array
+    {
+        return $this->metierCompetences->toArray();
     }
 
     public function addMetierAttractivite(MetierAttractivite $metierAttractivite): static
