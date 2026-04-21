@@ -9,6 +9,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: SecteurRepository::class)]
 class Secteur
@@ -16,12 +17,15 @@ class Secteur
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['metier:list', 'metier:view', 'secteur:list'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255, unique: true)]
+    #[Groups(['metier:list', 'metier:view', 'secteur:list'])]
     private ?string $code = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['metier:list', 'metier:view', 'secteur:list'])]
     private ?string $libelle = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]

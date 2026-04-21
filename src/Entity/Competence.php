@@ -9,24 +9,30 @@ use App\Repository\CompetenceRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: CompetenceRepository::class)]
 class Competence
 {
     #[ORM\Id]
     #[ORM\Column(length: 255)]
+    #[Groups(['metier:view'])]
     private ?string $codeOgr = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['metier:view'])]
     private ?string $libelle = null;
 
     #[ORM\Column(enumType: MetierCompetenceTypeEnum::class)]
+    #[Groups(['metier:view'])]
     private ?MetierCompetenceTypeEnum $type = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['metier:view'])]
     private ?bool $transitionEco = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['metier:view'])]
     private ?bool $transitionNum = null;
 
     /**

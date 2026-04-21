@@ -7,6 +7,7 @@ namespace App\Entity;
 use App\Enum\MetierCompetenceTypeEnum;
 use App\Repository\MetierCompetenceRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: MetierCompetenceRepository::class)]
 class MetierCompetence
@@ -14,6 +15,7 @@ class MetierCompetence
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['metier:view'])]
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'metierCompetences')]
@@ -22,15 +24,19 @@ class MetierCompetence
 
     #[ORM\ManyToOne(inversedBy: 'metierCompetences')]
     #[ORM\JoinColumn(referencedColumnName: 'code_ogr', nullable: false)]
+    #[Groups(['metier:view'])]
     private ?Competence $codeOgrComp = null;
 
     #[ORM\Column(enumType: MetierCompetenceTypeEnum::class)]
+    #[Groups(['metier:view'])]
     private ?MetierCompetenceTypeEnum $type = null;
 
     #[ORM\Column(length: 255, nullable: true)]
+    #[Groups(['metier:view'])]
     private ?string $libelleEnjeu = null;
 
     #[ORM\Column(options: ['default' => 0])]
+    #[Groups(['metier:view'])]
     private ?int $coeurMetier = 0;
 
     public function getId(): ?int
