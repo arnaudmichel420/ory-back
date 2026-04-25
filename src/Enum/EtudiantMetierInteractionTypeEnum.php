@@ -10,6 +10,15 @@ enum EtudiantMetierInteractionTypeEnum: string
     case SAUVEGARDE = 'sauvegarde';
     case CHALLENGE = 'challenge';
 
+    public function getPoids(): int
+    {
+        return match ($this) {
+            self::VUE => 1,
+            self::SAUVEGARDE => 3,
+            self::CHALLENGE => 6,
+        };
+    }
+
     /**
      * @return string[]
      */

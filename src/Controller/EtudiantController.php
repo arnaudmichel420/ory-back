@@ -7,13 +7,16 @@ namespace App\Controller;
 use App\Dto\EtudiantDto;
 use App\Dto\EtudiantPasswordDto;
 use App\Dto\EtudiantPatchDto;
+use App\Dto\Metier\MetierSavedListQueryDto;
 use App\Entity\Etudiant;
 use App\Entity\Utilisateur;
+use App\Repository\EtudiantMetierInteractionRepository;
 use App\Security\Voter\EtudiantVoter;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Attribute\MapQueryString;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\PropertyAccess\PropertyAccessorInterface;
@@ -24,6 +27,38 @@ use Symfony\Component\Security\Http\Attribute\IsGranted;
 #[Route('/api/me', name: 'api_me_')]
 final class EtudiantController extends AbstractController
 {
+    #[Route('/metiers/saved', name: 'metier_saved_index', methods: ['GET'])]
+    #[IsGranted(EtudiantVoter::VIEW, subject: 'utilisateur')]
+    public function savedMetiers(
+        #[CurrentUser] Utilisateur $utilisateur,
+        #[MapQueryString(validationFailedStatusCode: Response::HTTP_BAD_REQUEST)] ?MetierSavedListQueryDto $query,
+        EtudiantMetierInteractionRepository $interactionRepository,
+    ): JsonResponse {
+        $etudiant = $utilisateur->getEtudiant();
+        if (!$etudiant instanceof Etudiant) {
+            return $this->json([
+                'message' => 'Profil etudiant introuvable.',
+            ], Response::HTTP_NOT_FOUND);
+        }
+
+        $query ??= new MetierSavedListQueryDto();
+
+        $result = $interactionRepository->paginateSavedMetiers($etudiant, $query);
+        $totalPages = 0 === $result['total'] ? 0 : (int) ceil($result['total'] / $query->limit);
+
+        return $this->json([
+            'items' => $result['items'],
+            'meta' => [
+                'page' => $query->page,
+                'limit' => $query->limit,
+                'total' => $result['total'],
+                'totalPages' => $totalPages,
+            ],
+        ], context: [
+            'groups' => ['metier:list'],
+        ]);
+    }
+
     #[Route('/etudiant', name: 'etudiant_show', methods: ['GET'])]
     #[IsGranted(EtudiantVoter::VIEW, subject: 'utilisateur')]
     public function show(#[CurrentUser] Utilisateur $utilisateur): JsonResponse
