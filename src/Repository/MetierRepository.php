@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Repository;
 
 use App\Dto\Metier\MetierListQueryDto;
+use App\Entity\Etudiant;
 use App\Entity\Metier;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\QueryBuilder;
@@ -65,12 +66,19 @@ class MetierRepository extends ServiceEntityRepository
     /**
      * @return array{items: list<Metier>, total: int}
      */
-    public function paginateMetier(MetierListQueryDto $query): array
+    public function paginateMetier(MetierListQueryDto $query, ?Etudiant $etudiant = null): array
     {
         $itemsQueryBuilder = $this->createQueryBuilder('m')
             ->select('DISTINCT m, ms_list, s_list')
             ->leftJoin('m.metierSecteurs', 'ms_list')
             ->leftJoin('ms_list.secteur', 's_list');
+
+        if ($etudiant instanceof Etudiant) {
+            $itemsQueryBuilder
+                ->addSelect('saved_etudiant')
+                ->leftJoin('m.etudiants', 'saved_etudiant', 'WITH', 'saved_etudiant = :etudiant')
+                ->setParameter('etudiant', $etudiant);
+        }
 
         $this->applyListFilters($itemsQueryBuilder, $query);
 
@@ -91,6 +99,12 @@ class MetierRepository extends ServiceEntityRepository
 
         /** @var list<Metier> $items */
         $items = iterator_to_array($paginator->getIterator(), false);
+
+        foreach ($items as $metier) {
+            $metier->setSaved(
+                $etudiant instanceof Etudiant && !$metier->getEtudiants()->isEmpty(),
+            );
+        }
 
         return [
             'items' => $items,

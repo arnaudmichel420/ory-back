@@ -15,6 +15,10 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
 #[ORM\Entity(repositoryClass: MetierRepository::class)]
 class Metier
 {
+    #[Groups(['metier:list'])]
+    #[SerializedName('saved')]
+    private bool $saved = false;
+
     #[ORM\Id]
     #[ORM\Column(length: 255)]
     #[Groups(['metier:list', 'metier:view'])]
@@ -167,6 +171,18 @@ class Metier
     public function getCodeOgr(): ?string
     {
         return $this->codeOgr;
+    }
+
+    public function isSaved(): bool
+    {
+        return $this->saved;
+    }
+
+    public function setSaved(bool $saved): static
+    {
+        $this->saved = $saved;
+
+        return $this;
     }
 
     public function setCodeOgr(string $codeOgr): static
