@@ -63,6 +63,41 @@ class MetierRepository extends ServiceEntityRepository
         return (int) $count;
     }
 
+    public function findDetailedMetier(string $codeOgr, ?Etudiant $etudiant = null): ?Metier
+    {
+        $queryBuilder = $this->createQueryBuilder('m')
+            ->select(
+                'DISTINCT m, sousDomaine, metierSecteurs, secteurs, metierCompetences, competences, metierContextes, contextes',
+            )
+            ->leftJoin('m.sousDomaine', 'sousDomaine')
+            ->leftJoin('m.metierSecteurs', 'metierSecteurs')
+            ->leftJoin('metierSecteurs.secteur', 'secteurs')
+            ->leftJoin('m.metierCompetences', 'metierCompetences')
+            ->leftJoin('metierCompetences.codeOgrComp', 'competences')
+            ->leftJoin('m.metierContexteTravails', 'metierContextes')
+            ->leftJoin('metierContextes.codeOgrContexte', 'contextes')
+            ->andWhere('m.codeOgr = :codeOgr')
+            ->setParameter('codeOgr', $codeOgr);
+
+        if ($etudiant instanceof Etudiant) {
+            $queryBuilder
+                ->addSelect('saved_etudiant')
+                ->leftJoin('m.etudiants', 'saved_etudiant', 'WITH', 'saved_etudiant = :etudiant')
+                ->setParameter('etudiant', $etudiant);
+        }
+
+        /** @var ?Metier $metier */
+        $metier = $queryBuilder->getQuery()->getOneOrNullResult();
+
+        if ($metier instanceof Metier) {
+            $metier->setSaved(
+                $etudiant instanceof Etudiant && !$metier->getEtudiants()->isEmpty(),
+            );
+        }
+
+        return $metier;
+    }
+
     /**
      * @return array{items: list<Metier>, total: int}
      */

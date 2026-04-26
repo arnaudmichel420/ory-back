@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Tests\Unit\Entity;
 
 use App\Entity\Appellation;
+use App\Entity\ContexteTravail;
 use App\Entity\Etudiant;
 use App\Entity\EtudiantMetierInteraction;
 use App\Entity\EtudiantMetierScore;
@@ -373,6 +374,47 @@ class MetierTest extends TestCase
         $metier->removeMetierContexteTravail($mct);
 
         $this->assertNull($mct->getCodeOgrMetier());
+    }
+
+    public function testMetierContextesTravailForViewGroupeParTypeEtLimiteA5Elements(): void
+    {
+        $metier = new Metier();
+        $typeHoraires = 'Horaires et durée du travail';
+        $typeLieux = 'Lieux et déplacements';
+
+        for ($i = 1; $i <= 6; ++$i) {
+            $contexte = (new ContexteTravail())
+                ->setCodeOgr((string) $i)
+                ->setLibelle('Contexte '.$i)
+                ->setTypeContexte($typeHoraires);
+
+            $metier->addMetierContexteTravail(
+                (new MetierContexteTravail())
+                    ->setCodeOgrContexte($contexte)
+                    ->setLibelleGroupe('Groupe horaires'),
+            );
+        }
+
+        $contexteLieux = (new ContexteTravail())
+            ->setCodeOgr('7')
+            ->setLibelle('Contexte 7')
+            ->setTypeContexte($typeLieux);
+
+        $metier->addMetierContexteTravail(
+            (new MetierContexteTravail())
+                ->setCodeOgrContexte($contexteLieux)
+                ->setLibelleGroupe('Groupe lieux'),
+        );
+
+        $contextesTravail = $metier->getContextesTravailForView();
+
+        $this->assertArrayHasKey($typeHoraires, $contextesTravail);
+        $this->assertArrayHasKey($typeLieux, $contextesTravail);
+        $this->assertCount(5, $contextesTravail[$typeHoraires]);
+        $this->assertCount(1, $contextesTravail[$typeLieux]);
+        $this->assertSame('1', $contextesTravail[$typeHoraires][0]['contexteTravail']['codeOgr']);
+        $this->assertSame('5', $contextesTravail[$typeHoraires][4]['contexteTravail']['codeOgr']);
+        $this->assertSame('Groupe lieux', $contextesTravail[$typeLieux][0]['libelleGroupe']);
     }
 
     // --- Mobilites ---

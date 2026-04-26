@@ -15,7 +15,16 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
 #[ORM\Entity(repositoryClass: MetierRepository::class)]
 class Metier
 {
-    #[Groups(['metier:list'])]
+    private const CONTEXTES_TRAVAIL_TYPES = [
+        'Conditions de travail et risques professionnels',
+        'Horaires et durée du travail',
+        'Lieux et déplacements',
+        'Publics spécifiques',
+        'Statut d\'emploi',
+        'Types de structures',
+    ];
+
+    #[Groups(['metier:list', 'metier:view'])]
     #[SerializedName('saved')]
     private bool $saved = false;
 
@@ -440,13 +449,70 @@ class Metier
     }
 
     /**
-     * @return list<MetierContexteTravail>
+     * @return array<string, list<array{
+     *     id:int|null,
+     *     libelleGroupe:?string,
+     *     contexteTravail:array{
+     *         codeOgr:?string,
+     *         libelle:?string,
+     *         typeContexte:?string
+     *     }
+     * }>>
      */
     #[Groups(['metier:view'])]
     #[SerializedName('contextesTravail')]
     public function getContextesTravailForView(): array
     {
-        return $this->metierContexteTravails->toArray();
+        /** @var list<MetierContexteTravail> $contextesTravail */
+        $contextesTravail = $this->metierContexteTravails->toArray();
+        $typeOrder = array_flip(self::CONTEXTES_TRAVAIL_TYPES);
+
+        usort(
+            $contextesTravail,
+            static function (MetierContexteTravail $left, MetierContexteTravail $right) use ($typeOrder): int {
+                $leftType = $left->getCodeOgrContexte()?->getTypeContexte() ?? 'unknown';
+                $rightType = $right->getCodeOgrContexte()?->getTypeContexte() ?? 'unknown';
+                $typeComparison = ($typeOrder[$leftType] ?? \PHP_INT_MAX) <=> ($typeOrder[$rightType] ?? \PHP_INT_MAX);
+
+                if (0 !== $typeComparison) {
+                    return $typeComparison;
+                }
+
+                $idComparison = ($left->getId() ?? 0) <=> ($right->getId() ?? 0);
+
+                if (0 !== $idComparison) {
+                    return $idComparison;
+                }
+
+                return ($left->getCodeOgrContexte()?->getCodeOgr() ?? '') <=> ($right->getCodeOgrContexte()?->getCodeOgr() ?? '');
+            },
+        );
+
+        $groupedContextes = [];
+        $countsByType = [];
+
+        foreach ($contextesTravail as $contexteTravail) {
+            $contexte = $contexteTravail->getCodeOgrContexte();
+            $type = $contexte?->getTypeContexte() ?? 'unknown';
+            $countsByType[$type] ??= 0;
+
+            if ($countsByType[$type] >= 5) {
+                continue;
+            }
+
+            $groupedContextes[$type][] = [
+                'id' => $contexteTravail->getId(),
+                'libelleGroupe' => $contexteTravail->getLibelleGroupe(),
+                'contexteTravail' => [
+                    'codeOgr' => $contexte?->getCodeOgr(),
+                    'libelle' => $contexte?->getLibelle(),
+                    'typeContexte' => $contexte?->getTypeContexte(),
+                ],
+            ];
+            ++$countsByType[$type];
+        }
+
+        return $groupedContextes;
     }
 
     public function addMetierContexteTravail(MetierContexteTravail $metierContexteTravail): static
@@ -570,13 +636,66 @@ class Metier
     }
 
     /**
-     * @return list<MetierCompetence>
+     * @return array<string, list<array{
+     *     id:int|null,
+     *     libelleEnjeu:?string,
+     *     coeurMetier:?int,
+     *     competence:array{
+     *         codeOgr:?string,
+     *         libelle:?string,
+     *         type:?string,
+     *         transitionEco:?bool,
+     *         transitionNum:?bool
+     *     }
+     * }>>
      */
     #[Groups(['metier:view'])]
     #[SerializedName('competences')]
     public function getCompetencesForView(): array
     {
-        return $this->metierCompetences->toArray();
+        /** @var list<MetierCompetence> $competences */
+        $competences = $this->metierCompetences->toArray();
+
+        usort(
+            $competences,
+            static function (MetierCompetence $left, MetierCompetence $right): int {
+                $weightComparison = ($right->getCoeurMetier() ?? 0) <=> ($left->getCoeurMetier() ?? 0);
+
+                if (0 !== $weightComparison) {
+                    return $weightComparison;
+                }
+
+                return ($left->getId() ?? 0) <=> ($right->getId() ?? 0);
+            },
+        );
+
+        $groupedCompetences = [];
+        $countsByType = [];
+
+        foreach ($competences as $competence) {
+            $type = $competence->getType()->value;
+            $countsByType[$type] ??= 0;
+
+            if ($countsByType[$type] >= 5) {
+                continue;
+            }
+
+            $groupedCompetences[$type][] = [
+                'id' => $competence->getId(),
+                'libelleEnjeu' => $competence->getLibelleEnjeu(),
+                'coeurMetier' => $competence->getCoeurMetier(),
+                'competence' => [
+                    'codeOgr' => $competence->getCodeOgrComp()?->getCodeOgr(),
+                    'libelle' => $competence->getCodeOgrComp()?->getLibelle(),
+                    'type' => $competence->getCodeOgrComp()?->getType()?->value,
+                    'transitionEco' => $competence->getCodeOgrComp()?->isTransitionEco(),
+                    'transitionNum' => $competence->getCodeOgrComp()?->isTransitionNum(),
+                ],
+            ];
+            ++$countsByType[$type];
+        }
+
+        return $groupedCompetences;
     }
 
     public function addMetierAttractivite(MetierAttractivite $metierAttractivite): static

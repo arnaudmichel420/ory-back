@@ -13,6 +13,7 @@ use App\Enum\EtudiantMetierInteractionTypeEnum;
 use App\Repository\EtudiantMetierInteractionRepository;
 use App\Repository\MetierRepository;
 use App\Service\EtudiantMetierInteractionService;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bridge\Doctrine\Attribute\MapEntity;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -22,7 +23,6 @@ use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Attribute\CurrentUser;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
-use Doctrine\ORM\EntityManagerInterface;
 
 #[Route('/api/metiers', name: 'api_metier_')]
 final class MetierController extends AbstractController
@@ -55,8 +55,12 @@ final class MetierController extends AbstractController
 
     #[Route('/{codeOgr}', name: 'show', methods: ['GET'])]
     public function show(
-        #[MapEntity(id: 'codeOgr')] ?Metier $metier,
+        string $codeOgr,
+        #[CurrentUser] ?Utilisateur $utilisateur,
+        MetierRepository $metierRepository,
     ): JsonResponse {
+        $metier = $metierRepository->findDetailedMetier($codeOgr, $utilisateur?->getEtudiant());
+
         if (null === $metier) {
             throw $this->createNotFoundException('Metier introuvable.');
         }
