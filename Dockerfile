@@ -20,6 +20,8 @@ RUN apt-get update \
         pdo_mysql \
         pdo_pgsql \
     && a2enmod rewrite headers \
+    && echo "ServerName localhost" > /etc/apache2/conf-available/servername.conf \
+    && a2enconf servername \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -38,7 +40,7 @@ RUN composer install \
 COPY . .
 
 RUN composer dump-autoload --classmap-authoritative --no-dev \
-    && mkdir -p var/cache var/log \
-    && chown -R www-data:www-data var
+    && mkdir -p var/cache var/log config/jwt \
+    && chown -R www-data:www-data var config/jwt
 
 EXPOSE 80
