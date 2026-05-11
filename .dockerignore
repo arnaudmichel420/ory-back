@@ -1,0 +1,12 @@
+.git
+.env.local
+.env.*.local
+vendor/
+var/cache/
+var/log/
+node_modules/
+coverage/
+.phpunit.cache/
+.idea/
+.vscode/
+docker-compose*.yml
