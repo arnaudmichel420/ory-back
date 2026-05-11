@@ -17,6 +17,7 @@ RUN apt-get update \
     && docker-php-ext-install \
         intl \
         opcache \
+        pdo_mysql \
         pdo_pgsql \
     && a2enmod rewrite headers \
     && apt-get clean \
