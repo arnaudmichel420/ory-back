@@ -1,0 +1,8210 @@
+{
+"arbo_thematique": [
+{
+"code_theme": "001",
+"libelle_theme": "Métiers de l'environnement et du développement durable",
+"definition_theme": "Métiers liés à l'aménagement du cadre de vie (espaces verts, bâtiment), à l'exploitation forestière, à la protection de l'environnement naturel, à la prévention des risques industriels (tourisme, traitement des déchets, ...)",
+"liste_metier": [
+{
+"code_ogr_rome": 6,
+"code_rome": "A1101",
+"libelle_rome": "Conducteur / Conductrice d'engins agricoles"
+}
+,
+{
+"code_ogr_rome": 403950,
+"code_rome": "A1102",
+"libelle_rome": "Conducteur / Conductrice d'engins d'exploitation forestière"
+}
+,
+{
+"code_ogr_rome": 7,
+"code_rome": "A1201",
+"libelle_rome": "Bûcheron / Bûcheronne"
+}
+,
+{
+"code_ogr_rome": 8,
+"code_rome": "A1202",
+"libelle_rome": "Agent / Agente d'entretien des espaces naturels"
+}
+,
+{
+"code_ogr_rome": 9,
+"code_rome": "A1203",
+"libelle_rome": "Agent / Agente d'entretien des espaces verts"
+}
+,
+{
+"code_ogr_rome": 10,
+"code_rome": "A1204",
+"libelle_rome": "Garde de parc naturel"
+}
+,
+{
+"code_ogr_rome": 11,
+"code_rome": "A1205",
+"libelle_rome": "Sylviculteur / Sylvicultrice"
+}
+,
+{
+"code_ogr_rome": 488634,
+"code_rome": "A1206",
+"libelle_rome": "Concepteur / Conceptrice paysagiste"
+}
+,
+{
+"code_ogr_rome": 488640,
+"code_rome": "A1207",
+"libelle_rome": "Chef / Cheffe d'équipe d'entretien d'espaces naturels"
+}
+,
+{
+"code_ogr_rome": 488734,
+"code_rome": "A1208",
+"libelle_rome": "Jardinier / Jardinière paysagiste"
+}
+,
+{
+"code_ogr_rome": 488755,
+"code_rome": "A1209",
+"libelle_rome": "Elagueur / Elagueuse"
+}
+,
+{
+"code_ogr_rome": 488859,
+"code_rome": "A1210",
+"libelle_rome": "Ouvrier forestier / Ouvrière forestière"
+}
+,
+{
+"code_ogr_rome": 489042,
+"code_rome": "A1211",
+"libelle_rome": "Chef / Cheffe d'équipe paysagiste"
+}
+,
+{
+"code_ogr_rome": 489058,
+"code_rome": "A1212",
+"libelle_rome": "Chef / Cheffe d'équipe de travaux forestiers"
+}
+,
+{
+"code_ogr_rome": 489160,
+"code_rome": "A1213",
+"libelle_rome": "Conducteur / Conductrice de travaux forestiers"
+}
+,
+{
+"code_ogr_rome": 510256,
+"code_rome": "A1214",
+"libelle_rome": "Patrouilleur modeleur / Patrouilleuse modeleuse VTT"
+}
+,
+{
+"code_ogr_rome": 12,
+"code_rome": "A1301",
+"libelle_rome": "Technicien / Technicienne de culture maraîchère"
+}
+,
+{
+"code_ogr_rome": 14,
+"code_rome": "A1303",
+"libelle_rome": "Ingénieur / Ingénieure d'études et de recherche agricoles"
+}
+,
+{
+"code_ogr_rome": 403951,
+"code_rome": "A1304",
+"libelle_rome": "Conseiller / Conseillère technique agricole"
+}
+,
+{
+"code_ogr_rome": 509636,
+"code_rome": "A1306",
+"libelle_rome": "Chargé / Chargée de mission biodiversité"
+}
+,
+{
+"code_ogr_rome": 509640,
+"code_rome": "A1307",
+"libelle_rome": "Ingénieur forestier / Ingénieure forestière"
+}
+,
+{
+"code_ogr_rome": 510022,
+"code_rome": "A1310",
+"libelle_rome": "Technicien / Technicienne de production animale"
+}
+,
+{
+"code_ogr_rome": 510154,
+"code_rome": "A1311",
+"libelle_rome": "Technicien forestier / Technicienne forestière"
+}
+,
+{
+"code_ogr_rome": 510270,
+"code_rome": "A1312",
+"libelle_rome": "Directeur / Directrice environnement"
+}
+,
+{
+"code_ogr_rome": 510436,
+"code_rome": "A1313",
+"libelle_rome": "Chargé / Chargée de mission environnement"
+}
+,
+{
+"code_ogr_rome": 16,
+"code_rome": "A1402",
+"libelle_rome": "Aide agricole en production végétale"
+}
+,
+{
+"code_ogr_rome": 19,
+"code_rome": "A1405",
+"libelle_rome": "Arboriculteur / Arboricultrice"
+}
+,
+{
+"code_ogr_rome": 23,
+"code_rome": "A1409",
+"libelle_rome": "Aviculteur / Avicultrice"
+}
+,
+{
+"code_ogr_rome": 24,
+"code_rome": "A1410",
+"libelle_rome": "Eleveur / Eleveuse d'ovins"
+}
+,
+{
+"code_ogr_rome": 28,
+"code_rome": "A1414",
+"libelle_rome": "Horticulteur / Horticultrice"
+}
+,
+{
+"code_ogr_rome": 30,
+"code_rome": "A1416",
+"libelle_rome": "Exploitant / Exploitante agricole"
+}
+,
+{
+"code_ogr_rome": 403955,
+"code_rome": "A1419",
+"libelle_rome": "Ouvrier agricole polyvalent / Ouvrière agricole polyvalente"
+}
+,
+{
+"code_ogr_rome": 403956,
+"code_rome": "A1420",
+"libelle_rome": "Chef / Cheffe de culture responsable d'unité de production agricole"
+}
+,
+{
+"code_ogr_rome": 488776,
+"code_rome": "A1427",
+"libelle_rome": "Goémonier / Goémonière"
+}
+,
+{
+"code_ogr_rome": 488903,
+"code_rome": "A1428",
+"libelle_rome": "Algoculteur / Algocultrice"
+}
+,
+{
+"code_ogr_rome": 488914,
+"code_rome": "A1429",
+"libelle_rome": "Apiculteur / Apicultrice"
+}
+,
+{
+"code_ogr_rome": 509364,
+"code_rome": "A1432",
+"libelle_rome": "Osiériculteur / Osiéricultrice"
+}
+,
+{
+"code_ogr_rome": 509394,
+"code_rome": "A1433",
+"libelle_rome": "Maraîcher / Maraîchère"
+}
+,
+{
+"code_ogr_rome": 509512,
+"code_rome": "A1436",
+"libelle_rome": "Conducteur / Conductrice de travaux en entreprise de travaux agricoles"
+}
+,
+{
+"code_ogr_rome": 509516,
+"code_rome": "A1437",
+"libelle_rome": "Champignonniste"
+}
+,
+{
+"code_ogr_rome": 509694,
+"code_rome": "A1440",
+"libelle_rome": "Cultivateur urbain / Cultivatrice urbaine"
+}
+,
+{
+"code_ogr_rome": 510265,
+"code_rome": "A1447",
+"libelle_rome": "Herboriste"
+}
+,
+{
+"code_ogr_rome": 33,
+"code_rome": "A1502",
+"libelle_rome": "Maréchal-ferrant / Maréchale-ferrante"
+}
+,
+{
+"code_ogr_rome": 489040,
+"code_rome": "C1506",
+"libelle_rome": "Responsable de projet immobilier"
+}
+,
+{
+"code_ogr_rome": 403088,
+"code_rome": "E1109",
+"libelle_rome": "Directeur / Directrice de la communication"
+}
+,
+{
+"code_ogr_rome": 488921,
+"code_rome": "E1112",
+"libelle_rome": "Chargé / Chargée de communication"
+}
+,
+{
+"code_ogr_rome": 144,
+"code_rome": "F1103",
+"libelle_rome": "Diagnostiqueur / Diagnostiqueuse immobilier"
+}
+,
+{
+"code_ogr_rome": 146,
+"code_rome": "F1105",
+"libelle_rome": "Géologue"
+}
+,
+{
+"code_ogr_rome": 404537,
+"code_rome": "F1113",
+"libelle_rome": "Responsable énergie"
+}
+,
+{
+"code_ogr_rome": 404538,
+"code_rome": "F1114",
+"libelle_rome": "Conseiller / Conseillère en rénovation énergétique"
+}
+,
+{
+"code_ogr_rome": 488578,
+"code_rome": "F1115",
+"libelle_rome": "Vulcanologue"
+}
+,
+{
+"code_ogr_rome": 488615,
+"code_rome": "F1118",
+"libelle_rome": "Sismologue"
+}
+,
+{
+"code_ogr_rome": 488621,
+"code_rome": "F1119",
+"libelle_rome": "Pédologue"
+}
+,
+{
+"code_ogr_rome": 488637,
+"code_rome": "F1121",
+"libelle_rome": "Architecte du patrimoine national"
+}
+,
+{
+"code_ogr_rome": 489200,
+"code_rome": "F1123",
+"libelle_rome": "Glaciologue"
+}
+,
+{
+"code_ogr_rome": 488897,
+"code_rome": "F1124",
+"libelle_rome": "Hydrologue"
+}
+,
+{
+"code_ogr_rome": 509938,
+"code_rome": "F1136",
+"libelle_rome": "Chef / Cheffe de projet éolien"
+}
+,
+{
+"code_ogr_rome": 510153,
+"code_rome": "F1138",
+"libelle_rome": "Géothermicien / Géothermicienne"
+}
+,
+{
+"code_ogr_rome": 510177,
+"code_rome": "F1141",
+"libelle_rome": "Ingénieur / Ingénieure études conception électrique"
+}
+,
+{
+"code_ogr_rome": 510427,
+"code_rome": "F1142",
+"libelle_rome": "Océanographe"
+}
+,
+{
+"code_ogr_rome": 151,
+"code_rome": "F1202",
+"libelle_rome": "Chef / Cheffe de chantier bâtiment"
+}
+,
+{
+"code_ogr_rome": 158,
+"code_rome": "F1501",
+"libelle_rome": "Monteur / Monteuse de structures bois"
+}
+,
+{
+"code_ogr_rome": 160,
+"code_rome": "F1503",
+"libelle_rome": "Charpentier / Charpentière"
+}
+,
+{
+"code_ogr_rome": 488871,
+"code_rome": "F1504",
+"libelle_rome": "Charpentier / Charpentière de marine"
+}
+,
+{
+"code_ogr_rome": 170,
+"code_rome": "F1610",
+"libelle_rome": "Installateur mainteneur / Installatrice mainteneuse en systèmes solaires, thermiques et photovoltaïques"
+}
+,
+{
+"code_ogr_rome": 403073,
+"code_rome": "F1614",
+"libelle_rome": "Poseur / Poseuse en fermetures de bâtiment"
+}
+,
+{
+"code_ogr_rome": 509685,
+"code_rome": "F1628",
+"libelle_rome": "Installateur / Installatrice de bornes de recharges électriques"
+}
+,
+{
+"code_ogr_rome": 176,
+"code_rome": "F1703",
+"libelle_rome": "Maçon / Maçonne"
+}
+,
+{
+"code_ogr_rome": 403952,
+"code_rome": "F1707",
+"libelle_rome": "Maçon / Maçonne du paysage"
+}
+,
+{
+"code_ogr_rome": 488584,
+"code_rome": "G1103",
+"libelle_rome": "Directeur / Directrice de parc régional"
+}
+,
+{
+"code_ogr_rome": 488765,
+"code_rome": "G1104",
+"libelle_rome": "Consultant / Consultante tourisme"
+}
+,
+{
+"code_ogr_rome": 488774,
+"code_rome": "G1105",
+"libelle_rome": "Directeur / Directrice d'office du tourisme"
+}
+,
+{
+"code_ogr_rome": 488794,
+"code_rome": "G1106",
+"libelle_rome": "Animateur / Animatrice du patrimoine"
+}
+,
+{
+"code_ogr_rome": 182,
+"code_rome": "G1201",
+"libelle_rome": "Guide-accompagnateur / Guide-accompagnatrice"
+}
+,
+{
+"code_ogr_rome": 488606,
+"code_rome": "G1222",
+"libelle_rome": "Guide-conférencier / Guide-conférencière"
+}
+,
+{
+"code_ogr_rome": 488752,
+"code_rome": "G1227",
+"libelle_rome": "Guide-interprète"
+}
+,
+{
+"code_ogr_rome": 489165,
+"code_rome": "G1229",
+"libelle_rome": "Guide-accompagnateur / Guide-accompagnatrice de pêche"
+}
+,
+{
+"code_ogr_rome": 489016,
+"code_rome": "G1231",
+"libelle_rome": "Accompagnateur / Accompagnatrice en écotourisme"
+}
+,
+{
+"code_ogr_rome": 510150,
+"code_rome": "G1240",
+"libelle_rome": "Animateur / Animatrice nature environnement"
+}
+,
+{
+"code_ogr_rome": 193,
+"code_rome": "G1403",
+"libelle_rome": "Directeur / Directrice de structure touristique"
+}
+,
+{
+"code_ogr_rome": 488348,
+"code_rome": "G1406",
+"libelle_rome": "Directeur / Directrice d'équipement sportif"
+}
+,
+{
+"code_ogr_rome": 488762,
+"code_rome": "G1408",
+"libelle_rome": "Directeur / Directrice de structure d'hébergement touristique"
+}
+,
+{
+"code_ogr_rome": 509931,
+"code_rome": "G1416",
+"libelle_rome": "Directeur / Directrice d'hôtellerie de plein air"
+}
+,
+{
+"code_ogr_rome": 217,
+"code_rome": "H1206",
+"libelle_rome": "Ingénieur / Ingénieure R&D en industrie"
+}
+,
+{
+"code_ogr_rome": 488271,
+"code_rome": "H1212",
+"libelle_rome": "Ingénieur / Ingénieure brevet en industrie"
+}
+,
+{
+"code_ogr_rome": 488303,
+"code_rome": "H1215",
+"libelle_rome": "Bioinformaticien / Bioinformaticienne en études, recherche et développement"
+}
+,
+{
+"code_ogr_rome": 488308,
+"code_rome": "H1216",
+"libelle_rome": "Responsable des études épidémiologiques"
+}
+,
+{
+"code_ogr_rome": 488316,
+"code_rome": "H1218",
+"libelle_rome": "Responsable de projet recherche et développement"
+}
+,
+{
+"code_ogr_rome": 488319,
+"code_rome": "H1219",
+"libelle_rome": "Responsable opérationnel / Responsable opérationnelle des études cliniques en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488322,
+"code_rome": "H1220",
+"libelle_rome": "Responsable formulation en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488335,
+"code_rome": "H1221",
+"libelle_rome": "Responsable des partenariats de recherche en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 510075,
+"code_rome": "H1237",
+"libelle_rome": "Ingénieur / Ingénieure énergies renouvelables"
+}
+,
+{
+"code_ogr_rome": 513844,
+"code_rome": "H1241",
+"libelle_rome": "Architecte système hydrogène"
+}
+,
+{
+"code_ogr_rome": 222,
+"code_rome": "H1301",
+"libelle_rome": "Inspecteur / Inspectrice de conformité"
+}
+,
+{
+"code_ogr_rome": 223,
+"code_rome": "H1302",
+"libelle_rome": "Ingénieur / Ingénieure Hygiène, Sécurité et Environnement en industrie (HSE)"
+}
+,
+{
+"code_ogr_rome": 224,
+"code_rome": "H1303",
+"libelle_rome": "Technicien / Technicienne en Hygiène, Sécurité, Environnement industriel (HSE)"
+}
+,
+{
+"code_ogr_rome": 488285,
+"code_rome": "H1304",
+"libelle_rome": "Responsable environnement en industrie"
+}
+,
+{
+"code_ogr_rome": 489181,
+"code_rome": "H1308",
+"libelle_rome": "Animateur / Animatrice en Hygiène Sécurité Environnement (HSE)"
+}
+,
+{
+"code_ogr_rome": 510069,
+"code_rome": "H1530",
+"libelle_rome": "Technicien / Technicienne de la qualité de l'eau"
+}
+,
+{
+"code_ogr_rome": 510457,
+"code_rome": "H1533",
+"libelle_rome": "Ingénieur / Ingénieure CND END"
+}
+,
+{
+"code_ogr_rome": 510637,
+"code_rome": "H1534",
+"libelle_rome": "Ingénieur / Ingénieure d'analyse industrielle"
+}
+,
+{
+"code_ogr_rome": 272,
+"code_rome": "H2701",
+"libelle_rome": "Technicien / Technicienne énergie"
+}
+,
+{
+"code_ogr_rome": 488631,
+"code_rome": "H2703",
+"libelle_rome": "Technicien / Technicienne de maintenance de batteries de véhicules électriques"
+}
+,
+{
+"code_ogr_rome": 488775,
+"code_rome": "H2704",
+"libelle_rome": "Technicien démonteur / Technicienne démonteuse de batteries de véhicules électriques"
+}
+,
+{
+"code_ogr_rome": 489071,
+"code_rome": "H2705",
+"libelle_rome": "Pilote de ligne de production de composants et de cellules pour batteries de véhicules électriques"
+}
+,
+{
+"code_ogr_rome": 509683,
+"code_rome": "H2709",
+"libelle_rome": "Conducteur / Conductrice d'installation d'incinération"
+}
+,
+{
+"code_ogr_rome": 513846,
+"code_rome": "H2710",
+"libelle_rome": "Responsable technique d'installation hydrogène"
+}
+,
+{
+"code_ogr_rome": 488788,
+"code_rome": "I1107",
+"libelle_rome": "Responsable d'atelier de mécanique parcs et jardins"
+}
+,
+{
+"code_ogr_rome": 509367,
+"code_rome": "I1321",
+"libelle_rome": "Technicien / Technicienne de maintenance d'éoliennes"
+}
+,
+{
+"code_ogr_rome": 509702,
+"code_rome": "I1328",
+"libelle_rome": "Conseiller / Conseillère en hydraulique agricole"
+}
+,
+{
+"code_ogr_rome": 324,
+"code_rome": "I1503",
+"libelle_rome": "Technicien / Technicienne en risques technologiques"
+}
+,
+{
+"code_ogr_rome": 488273,
+"code_rome": "I1504",
+"libelle_rome": "Décontaminateur / Décontamineuse nucléaire et radiologique"
+}
+,
+{
+"code_ogr_rome": 488281,
+"code_rome": "I1505",
+"libelle_rome": "Technicien / Technicienne déchet nucléaire"
+}
+,
+{
+"code_ogr_rome": 489013,
+"code_rome": "I1507",
+"libelle_rome": "Opérateur / Opératrice démantèlement nucléaire"
+}
+,
+{
+"code_ogr_rome": 327,
+"code_rome": "I1603",
+"libelle_rome": "Mécanicien-réparateur / Mécanicienne-réparatrice en matériels agricoles"
+}
+,
+{
+"code_ogr_rome": 328,
+"code_rome": "I1604",
+"libelle_rome": "Mécanicien / Mécanicienne automobile"
+}
+,
+{
+"code_ogr_rome": 488866,
+"code_rome": "I1618",
+"libelle_rome": "Mécanicien / Mécanicienne en matériels motorisés de parcs et jardins"
+}
+,
+{
+"code_ogr_rome": 509371,
+"code_rome": "I1622",
+"libelle_rome": "Technicien expert / Technicienne experte après-vente de véhicules de transport routier"
+}
+,
+{
+"code_ogr_rome": 510155,
+"code_rome": "I1624",
+"libelle_rome": "Mécanicien réparateur / Mécanicienne réparatrice de véhicules anciens et historiques"
+}
+,
+{
+"code_ogr_rome": 510586,
+"code_rome": "I1627",
+"libelle_rome": "Technicien expert / Technicienne experte après vente motocycles"
+}
+,
+{
+"code_ogr_rome": 510466,
+"code_rome": "I1629",
+"libelle_rome": "Technicien / Technicienne de réparation et pose de vitrage des véhicules"
+}
+,
+{
+"code_ogr_rome": 392,
+"code_rome": "K1702",
+"libelle_rome": "Responsable de sécurité civile et de secours"
+}
+,
+{
+"code_ogr_rome": 395,
+"code_rome": "K1705",
+"libelle_rome": "Secouriste"
+}
+,
+{
+"code_ogr_rome": 509794,
+"code_rome": "K1807",
+"libelle_rome": "Urbaniste"
+}
+,
+{
+"code_ogr_rome": 510071,
+"code_rome": "K1811",
+"libelle_rome": "Chargé / Chargée de projet en aménagement du territoire"
+}
+,
+{
+"code_ogr_rome": 510605,
+"code_rome": "K1813",
+"libelle_rome": "Chargé / Chargée de mission eaux pluviales"
+}
+,
+{
+"code_ogr_rome": 420,
+"code_rome": "K2301",
+"libelle_rome": "Agent / Agente d'exploitation des réseaux d'assainissement"
+}
+,
+{
+"code_ogr_rome": 421,
+"code_rome": "K2302",
+"libelle_rome": "Responsable de collecte de déchets"
+}
+,
+{
+"code_ogr_rome": 422,
+"code_rome": "K2303",
+"libelle_rome": "Ripeur / Ripeuse"
+}
+,
+{
+"code_ogr_rome": 423,
+"code_rome": "K2304",
+"libelle_rome": "Agent / Agente de tri des déchets"
+}
+,
+{
+"code_ogr_rome": 425,
+"code_rome": "K2306",
+"libelle_rome": "Responsable de site éco-industriel"
+}
+,
+{
+"code_ogr_rome": 488790,
+"code_rome": "K2307",
+"libelle_rome": "Agent / Agente de propreté urbaine"
+}
+,
+{
+"code_ogr_rome": 489068,
+"code_rome": "K2308",
+"libelle_rome": "Opérateur / Opératrice de tri en récupération et revalorisation"
+}
+,
+{
+"code_ogr_rome": 489069,
+"code_rome": "K2309",
+"libelle_rome": "Technicien / Technicienne réutilisation recyclage"
+}
+,
+{
+"code_ogr_rome": 489221,
+"code_rome": "K2310",
+"libelle_rome": "Ambassadeur / Ambassadrice du tri"
+}
+,
+{
+"code_ogr_rome": 509354,
+"code_rome": "K2311",
+"libelle_rome": "Responsable des déchets"
+}
+,
+{
+"code_ogr_rome": 510266,
+"code_rome": "K2312",
+"libelle_rome": "Ingénieur / Ingénieure responsable propreté nettoiement"
+}
+,
+{
+"code_ogr_rome": 510264,
+"code_rome": "K2313",
+"libelle_rome": "Technicien chargé / Technicienne chargée de la police des eaux"
+}
+,
+{
+"code_ogr_rome": 510200,
+"code_rome": "K2314",
+"libelle_rome": "Technicien / Technicienne de maintenance de systèmes d'irrigation"
+}
+,
+{
+"code_ogr_rome": 510065,
+"code_rome": "K2316",
+"libelle_rome": "Responsable d'usine de production d'eau potable"
+}
+,
+{
+"code_ogr_rome": 509901,
+"code_rome": "K2317",
+"libelle_rome": "Technicien / Technicienne d'exploitation d'eau potable"
+}
+,
+{
+"code_ogr_rome": 509889,
+"code_rome": "K2318",
+"libelle_rome": "Agent / Agente de déchetterie"
+}
+,
+{
+"code_ogr_rome": 509540,
+"code_rome": "K2319",
+"libelle_rome": "Technicien / Technicienne hygiéniste"
+}
+,
+{
+"code_ogr_rome": 509778,
+"code_rome": "K2320",
+"libelle_rome": "Chargé / Chargée du traitement des déchets"
+}
+,
+{
+"code_ogr_rome": 509701,
+"code_rome": "K2321",
+"libelle_rome": "Egoutier / Egoutière"
+}
+,
+{
+"code_ogr_rome": 509680,
+"code_rome": "K2322",
+"libelle_rome": "Technicien / Technicienne en traitement des eaux"
+}
+,
+{
+"code_ogr_rome": 509682,
+"code_rome": "K2323",
+"libelle_rome": "Responsable propreté urbaine"
+}
+,
+{
+"code_ogr_rome": 427,
+"code_rome": "K2402",
+"libelle_rome": "Ingénieur / Ingénieure de recherche scientifique"
+}
+,
+{
+"code_ogr_rome": 488592,
+"code_rome": "K2407",
+"libelle_rome": "Climatologue"
+}
+,
+{
+"code_ogr_rome": 488287,
+"code_rome": "M1406",
+"libelle_rome": "Responsable RSE - Responsabilité Sociétale de l'Entreprise"
+}
+,
+{
+"code_ogr_rome": 488729,
+"code_rome": "M1410",
+"libelle_rome": "Responsable Green IT"
+}
+,
+{
+"code_ogr_rome": 488756,
+"code_rome": "M1411",
+"libelle_rome": "Consultant / Consultante en énergie renouvelable"
+}
+,
+{
+"code_ogr_rome": 488778,
+"code_rome": "M1412",
+"libelle_rome": "Ergonome"
+}
+,
+{
+"code_ogr_rome": 488936,
+"code_rome": "M1413",
+"libelle_rome": "Chargé / Chargée de mission RSE - Responsabilité Sociétale de l'Entreprise"
+}
+,
+{
+"code_ogr_rome": 498,
+"code_rome": "M1809",
+"libelle_rome": "Météorologue"
+}
+,
+{
+"code_ogr_rome": 488890,
+"code_rome": "M1835",
+"libelle_rome": "Architecte systèmes et réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 488917,
+"code_rome": "M1840",
+"libelle_rome": "Directeur / Directrice de projets des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 489174,
+"code_rome": "M1857",
+"libelle_rome": "Urbaniste Datacenter"
+}
+,
+{
+"code_ogr_rome": 510446,
+"code_rome": "M1890",
+"libelle_rome": "Responsable d'opérations en station météorologique"
+}
+,
+{
+"code_ogr_rome": 510447,
+"code_rome": "M1891",
+"libelle_rome": "Ingénieur / Ingénieure prévisionniste météorologue"
+}
+,
+{
+"code_ogr_rome": 510461,
+"code_rome": "M1893",
+"libelle_rome": "Technicien / Technicienne de la météorologie"
+}
+,
+{
+"code_ogr_rome": 488857,
+"code_rome": "N4118",
+"libelle_rome": "Conducteur / Conductrice enlèvement de déchets"
+}
+]
+}
+,
+{
+"code_theme": "002",
+"libelle_theme": "Métiers de la défense et de la sécurité publique (hors logistique, santé, tertiaire, restauration)",
+"definition_theme": "Métiers de l'armée, du contrôle, de la surveillance et de la défense du territoire (terrestre, maritime et aérienne)",
+"liste_metier": [
+{
+"code_ogr_rome": 403075,
+"code_rome": "F1109",
+"libelle_rome": "Assistant / Assistante géomètre"
+}
+,
+{
+"code_ogr_rome": 155,
+"code_rome": "F1302",
+"libelle_rome": "Conducteur / Conductrice d'engins de chantier"
+}
+,
+{
+"code_ogr_rome": 175,
+"code_rome": "F1702",
+"libelle_rome": "Ouvrier / Ouvrière en voiries"
+}
+,
+{
+"code_ogr_rome": 177,
+"code_rome": "F1704",
+"libelle_rome": "Man½uvre bâtiment"
+}
+,
+{
+"code_ogr_rome": 509879,
+"code_rome": "H1529",
+"libelle_rome": "Chargé / Chargée de matériovigilance"
+}
+,
+{
+"code_ogr_rome": 319,
+"code_rome": "I1310",
+"libelle_rome": "Mécanicien / Mécanicienne de maintenance industrielle"
+}
+,
+{
+"code_ogr_rome": 488911,
+"code_rome": "I1318",
+"libelle_rome": "Instrumentiste Industriel / Industrielle"
+}
+,
+{
+"code_ogr_rome": 323,
+"code_rome": "I1502",
+"libelle_rome": "Scaphandrier / Scaphandrière"
+}
+,
+{
+"code_ogr_rome": 324,
+"code_rome": "I1503",
+"libelle_rome": "Technicien / Technicienne en risques technologiques"
+}
+,
+{
+"code_ogr_rome": 489013,
+"code_rome": "I1507",
+"libelle_rome": "Opérateur / Opératrice démantèlement nucléaire"
+}
+,
+{
+"code_ogr_rome": 489079,
+"code_rome": "I1611",
+"libelle_rome": "Préparateur / Préparatrice de véhicules automobiles"
+}
+,
+{
+"code_ogr_rome": 488742,
+"code_rome": "I1615",
+"libelle_rome": "Dépanneur-remorqueur / Dépanneuse-remorqueuse de véhicules"
+}
+,
+{
+"code_ogr_rome": 488791,
+"code_rome": "I1617",
+"libelle_rome": "Contrôleur / Contrôleuse technique de véhicules"
+}
+,
+{
+"code_ogr_rome": 509643,
+"code_rome": "J1123",
+"libelle_rome": "Médecin des armées"
+}
+,
+{
+"code_ogr_rome": 509935,
+"code_rome": "K1416",
+"libelle_rome": "Directeur / Directrice des services pénitentiaires d'insertion et de probation (DSPIP)"
+}
+,
+{
+"code_ogr_rome": 391,
+"code_rome": "K1701",
+"libelle_rome": "Combattant / Combattante en milieu terrestre"
+}
+,
+{
+"code_ogr_rome": 392,
+"code_rome": "K1702",
+"libelle_rome": "Responsable de sécurité civile et de secours"
+}
+,
+{
+"code_ogr_rome": 393,
+"code_rome": "K1703",
+"libelle_rome": "Responsable Opérationnel / Opérationnelle de la défense"
+}
+,
+{
+"code_ogr_rome": 394,
+"code_rome": "K1704",
+"libelle_rome": "Officier / Officière de police"
+}
+,
+{
+"code_ogr_rome": 395,
+"code_rome": "K1705",
+"libelle_rome": "Secouriste"
+}
+,
+{
+"code_ogr_rome": 396,
+"code_rome": "K1706",
+"libelle_rome": "Agent / Agente de la force publique"
+}
+,
+{
+"code_ogr_rome": 488320,
+"code_rome": "K1709",
+"libelle_rome": "Commissaire de police"
+}
+,
+{
+"code_ogr_rome": 488345,
+"code_rome": "K1710",
+"libelle_rome": "Officier de police judiciaire / Officière de police judiciaire"
+}
+,
+{
+"code_ogr_rome": 488593,
+"code_rome": "K1711",
+"libelle_rome": "Surveillant pénitentiaire / Surveillante pénitentiaire"
+}
+,
+{
+"code_ogr_rome": 488708,
+"code_rome": "K1712",
+"libelle_rome": "Conducteur / Conductrice de véhicule de combat"
+}
+,
+{
+"code_ogr_rome": 488712,
+"code_rome": "K1713",
+"libelle_rome": "Tireur / Tireuse d'engin blindé"
+}
+,
+{
+"code_ogr_rome": 488892,
+"code_rome": "K1714",
+"libelle_rome": "Missilier / Missilière artillerie"
+}
+,
+{
+"code_ogr_rome": 488906,
+"code_rome": "K1715",
+"libelle_rome": "Officier / Officière des forces armées"
+}
+,
+{
+"code_ogr_rome": 488907,
+"code_rome": "K1716",
+"libelle_rome": "Chef / Cheffe de service pénitentiaire"
+}
+,
+{
+"code_ogr_rome": 489034,
+"code_rome": "K1717",
+"libelle_rome": "Technicien électronicien / Technicienne électronicienne des armées"
+}
+,
+{
+"code_ogr_rome": 489053,
+"code_rome": "K1718",
+"libelle_rome": "Mécanicien / Mécanicienne de systèmes d'armes"
+}
+,
+{
+"code_ogr_rome": 489212,
+"code_rome": "K1721",
+"libelle_rome": "Technicien / Technicienne en investigation criminelle"
+}
+,
+{
+"code_ogr_rome": 489180,
+"code_rome": "K1722",
+"libelle_rome": "Conducteur / Conductrice d'autorité de l'armée"
+}
+,
+{
+"code_ogr_rome": 488725,
+"code_rome": "K1724",
+"libelle_rome": "Mécanicien / Mécanicienne d'engins blindés"
+}
+,
+{
+"code_ogr_rome": 510608,
+"code_rome": "K1725",
+"libelle_rome": "Responsable des opérations militaires en milieu maritime"
+}
+,
+{
+"code_ogr_rome": 510040,
+"code_rome": "K1726",
+"libelle_rome": "Pisteur / Pisteuse secouriste"
+}
+,
+{
+"code_ogr_rome": 510600,
+"code_rome": "K1727",
+"libelle_rome": "Chargé / Chargée du guidage d'aéronef militaire"
+}
+,
+{
+"code_ogr_rome": 510428,
+"code_rome": "K1728",
+"libelle_rome": "Régulateur / Régulatrice de secours en montagne"
+}
+,
+{
+"code_ogr_rome": 510470,
+"code_rome": "K1729",
+"libelle_rome": "Opérateur / Opératrice en pyrotechnie militaire"
+}
+,
+{
+"code_ogr_rome": 510473,
+"code_rome": "K1730",
+"libelle_rome": "Spécialiste de la protection des forces, installations ou matériels sensibles de l'Etat"
+}
+,
+{
+"code_ogr_rome": 510475,
+"code_rome": "K1731",
+"libelle_rome": "Responsable des opérations militaires en milieu aéroterrestre"
+}
+,
+{
+"code_ogr_rome": 510599,
+"code_rome": "K1732",
+"libelle_rome": "Spécialiste des systèmes de communication opérationnels"
+}
+,
+{
+"code_ogr_rome": 510584,
+"code_rome": "K1733",
+"libelle_rome": "Combattant / Combattante des forces spéciales militaires"
+}
+,
+{
+"code_ogr_rome": 510587,
+"code_rome": "K1734",
+"libelle_rome": "Spécialiste du soutien armement nucléaire"
+}
+,
+{
+"code_ogr_rome": 510588,
+"code_rome": "K1735",
+"libelle_rome": "Architecte système de force, d'arme ou équipement militaire"
+}
+,
+{
+"code_ogr_rome": 510597,
+"code_rome": "K1736",
+"libelle_rome": "Spécialiste de l'aide au déploiement des forces combattantes"
+}
+,
+{
+"code_ogr_rome": 510591,
+"code_rome": "K1737",
+"libelle_rome": "Combattant / Combattante en milieu maritime"
+}
+,
+{
+"code_ogr_rome": 510596,
+"code_rome": "K1738",
+"libelle_rome": "Spécialiste du soutien ou de la formation propulsion nucléaire"
+}
+,
+{
+"code_ogr_rome": 496,
+"code_rome": "M1807",
+"libelle_rome": "Opérateur / Opératrice télécom aux armées"
+}
+,
+{
+"code_ogr_rome": 489017,
+"code_rome": "M1844",
+"libelle_rome": "Analyste en cybersécurité"
+}
+,
+{
+"code_ogr_rome": 489026,
+"code_rome": "M1846",
+"libelle_rome": "Ingénieur / Ingénieure Cybersécurité Datacenter"
+}
+,
+{
+"code_ogr_rome": 511,
+"code_rome": "N2102",
+"libelle_rome": "Pilote de ligne"
+}
+,
+{
+"code_ogr_rome": 513,
+"code_rome": "N2202",
+"libelle_rome": "Contrôleur aérien / Contrôleuse aérienne"
+}
+,
+{
+"code_ogr_rome": 514,
+"code_rome": "N2203",
+"libelle_rome": "Agent / Agente de piste"
+}
+,
+{
+"code_ogr_rome": 489039,
+"code_rome": "N2206",
+"libelle_rome": "Pilote de drone"
+}
+,
+{
+"code_ogr_rome": 510602,
+"code_rome": "N2208",
+"libelle_rome": "Contrôleur / Contrôleuse de la circulation et de la défense aérienne"
+}
+,
+{
+"code_ogr_rome": 517,
+"code_rome": "N3101",
+"libelle_rome": "Officier / Officière de port"
+}
+,
+{
+"code_ogr_rome": 518,
+"code_rome": "N3102",
+"libelle_rome": "Marin"
+}
+,
+{
+"code_ogr_rome": 523,
+"code_rome": "N4101",
+"libelle_rome": "Conducteur / Conductrice de poids lourd"
+}
+,
+{
+"code_ogr_rome": 488611,
+"code_rome": "N4111",
+"libelle_rome": "Conducteur / Conductrice super poids lourd de l'armée"
+}
+,
+{
+"code_ogr_rome": 489057,
+"code_rome": "N4130",
+"libelle_rome": "Conducteur / Conductrice de voiture radar à conduite externalisée"
+}
+]
+}
+,
+{
+"code_theme": "003",
+"libelle_theme": "Métiers du patrimoine et de la restauration d'oeuvres d'art",
+"definition_theme": "Métiers liés au patrimoine naturel et culturel (gestion, animation, tourisme, protection, métiers d'art et restauration d'ouvrages et d'½uvres d'art, ...)",
+"liste_metier": [
+{
+"code_ogr_rome": 10,
+"code_rome": "A1204",
+"libelle_rome": "Garde de parc naturel"
+}
+,
+{
+"code_ogr_rome": 488634,
+"code_rome": "A1206",
+"libelle_rome": "Concepteur / Conceptrice paysagiste"
+}
+,
+{
+"code_ogr_rome": 488346,
+"code_rome": "A1423",
+"libelle_rome": "¼nologue"
+}
+,
+{
+"code_ogr_rome": 36,
+"code_rome": "B1101",
+"libelle_rome": "Artiste Plasticien / Plasticienne"
+}
+,
+{
+"code_ogr_rome": 488793,
+"code_rome": "B1102",
+"libelle_rome": "Mosaïste d'art"
+}
+,
+{
+"code_ogr_rome": 489159,
+"code_rome": "B1103",
+"libelle_rome": "Sculpteur / Sculptrice ornemaniste sur pierre"
+}
+,
+{
+"code_ogr_rome": 39,
+"code_rome": "B1302",
+"libelle_rome": "Décorateur / Décoratrice d'objets d'art"
+}
+,
+{
+"code_ogr_rome": 40,
+"code_rome": "B1303",
+"libelle_rome": "Graveur / Graveuse d'art"
+}
+,
+{
+"code_ogr_rome": 488724,
+"code_rome": "B1304",
+"libelle_rome": "Artisan démonstrateur / Artisane démonstratrice"
+}
+,
+{
+"code_ogr_rome": 42,
+"code_rome": "B1402",
+"libelle_rome": "Relieur / Relieuse d'art"
+}
+,
+{
+"code_ogr_rome": 489064,
+"code_rome": "B1403",
+"libelle_rome": "Restaurateur / Restauratrice de livres anciens"
+}
+,
+{
+"code_ogr_rome": 43,
+"code_rome": "B1501",
+"libelle_rome": "Facteur / Factrice d'instruments à clavier"
+}
+,
+{
+"code_ogr_rome": 509353,
+"code_rome": "B1502",
+"libelle_rome": "Facteur / Factrice d'instruments de musique anciens"
+}
+,
+{
+"code_ogr_rome": 509888,
+"code_rome": "B1503",
+"libelle_rome": "Facteur / Factrice d'instruments à vent"
+}
+,
+{
+"code_ogr_rome": 509773,
+"code_rome": "B1504",
+"libelle_rome": "Facteur / Factrice de percussions"
+}
+,
+{
+"code_ogr_rome": 509801,
+"code_rome": "B1505",
+"libelle_rome": "Luthier / Luthière"
+}
+,
+{
+"code_ogr_rome": 44,
+"code_rome": "B1601",
+"libelle_rome": "Métallier / Métallière d'art"
+}
+,
+{
+"code_ogr_rome": 45,
+"code_rome": "B1602",
+"libelle_rome": "Souffleur / Souffleuse de verre"
+}
+,
+{
+"code_ogr_rome": 47,
+"code_rome": "B1604",
+"libelle_rome": "Horloger / Horlogère"
+}
+,
+{
+"code_ogr_rome": 404972,
+"code_rome": "B1608",
+"libelle_rome": "Orfèvre planeur / Orfèvre planeuse"
+}
+,
+{
+"code_ogr_rome": 488744,
+"code_rome": "B1613",
+"libelle_rome": "Orfèvre"
+}
+,
+{
+"code_ogr_rome": 489215,
+"code_rome": "B1614",
+"libelle_rome": "Monteur / Monteuse en orfèvrerie"
+}
+,
+{
+"code_ogr_rome": 509929,
+"code_rome": "B1616",
+"libelle_rome": "Opérateur / Opératrice en horlogerie"
+}
+,
+{
+"code_ogr_rome": 48,
+"code_rome": "B1701",
+"libelle_rome": "Taxidermiste"
+}
+,
+{
+"code_ogr_rome": 50,
+"code_rome": "B1802",
+"libelle_rome": "Maroquinier / Maroquinière"
+}
+,
+{
+"code_ogr_rome": 52,
+"code_rome": "B1804",
+"libelle_rome": "Brodeur / Brodeuse"
+}
+,
+{
+"code_ogr_rome": 54,
+"code_rome": "B1806",
+"libelle_rome": "Tapissier / Tapissière d'ameublement"
+}
+,
+{
+"code_ogr_rome": 509703,
+"code_rome": "D1233",
+"libelle_rome": "Galeriste"
+}
+,
+{
+"code_ogr_rome": 143,
+"code_rome": "F1102",
+"libelle_rome": "Architecte d'intérieur"
+}
+,
+{
+"code_ogr_rome": 488637,
+"code_rome": "F1121",
+"libelle_rome": "Architecte du patrimoine national"
+}
+,
+{
+"code_ogr_rome": 161,
+"code_rome": "F1601",
+"libelle_rome": "Plâtrier / Plâtrière"
+}
+,
+{
+"code_ogr_rome": 172,
+"code_rome": "F1612",
+"libelle_rome": "Tailleur / Tailleuse de pierre"
+}
+,
+{
+"code_ogr_rome": 404037,
+"code_rome": "F1619",
+"libelle_rome": "Couvreur / Couvreuse"
+}
+,
+{
+"code_ogr_rome": 489084,
+"code_rome": "F1624",
+"libelle_rome": "Staffeur Stuqueur / Staffeuse Stuqueuse"
+}
+,
+{
+"code_ogr_rome": 488765,
+"code_rome": "G1104",
+"libelle_rome": "Consultant / Consultante tourisme"
+}
+,
+{
+"code_ogr_rome": 488774,
+"code_rome": "G1105",
+"libelle_rome": "Directeur / Directrice d'office du tourisme"
+}
+,
+{
+"code_ogr_rome": 488794,
+"code_rome": "G1106",
+"libelle_rome": "Animateur / Animatrice du patrimoine"
+}
+,
+{
+"code_ogr_rome": 182,
+"code_rome": "G1201",
+"libelle_rome": "Guide-accompagnateur / Guide-accompagnatrice"
+}
+,
+{
+"code_ogr_rome": 488606,
+"code_rome": "G1222",
+"libelle_rome": "Guide-conférencier / Guide-conférencière"
+}
+,
+{
+"code_ogr_rome": 488752,
+"code_rome": "G1227",
+"libelle_rome": "Guide-interprète"
+}
+,
+{
+"code_ogr_rome": 242,
+"code_rome": "H2206",
+"libelle_rome": "Menuisier / Menuisière"
+}
+,
+{
+"code_ogr_rome": 243,
+"code_rome": "H2207",
+"libelle_rome": "Ebéniste"
+}
+,
+{
+"code_ogr_rome": 244,
+"code_rome": "H2208",
+"libelle_rome": "Façonnier / Façonnière d'ouvrages décoratifs en bois et matériaux associés"
+}
+,
+{
+"code_ogr_rome": 489038,
+"code_rome": "H2210",
+"libelle_rome": "Tonnelier / Tonnelière"
+}
+,
+{
+"code_ogr_rome": 247,
+"code_rome": "H2401",
+"libelle_rome": "Opérateur / Opératrice de fabrication industrie des cuirs, peaux et matériaux associés"
+}
+,
+{
+"code_ogr_rome": 304,
+"code_rome": "I1101",
+"libelle_rome": "Directeur / Directrice de la gestion technique des bâtiments"
+}
+,
+{
+"code_ogr_rome": 389,
+"code_rome": "K1601",
+"libelle_rome": "Documentaliste"
+}
+,
+{
+"code_ogr_rome": 390,
+"code_rome": "K1602",
+"libelle_rome": "Conservateur / Conservatrice du patrimoine"
+}
+,
+{
+"code_ogr_rome": 488610,
+"code_rome": "K1604",
+"libelle_rome": "Directeur / Directrice d'établissement culturel"
+}
+,
+{
+"code_ogr_rome": 488727,
+"code_rome": "K1605",
+"libelle_rome": "Commissaire d'exposition"
+}
+,
+{
+"code_ogr_rome": 488758,
+"code_rome": "K1606",
+"libelle_rome": "Responsable de la conservation préventive"
+}
+,
+{
+"code_ogr_rome": 489080,
+"code_rome": "K1607",
+"libelle_rome": "Conservateur / Conservatrice des antiquités et objets d'art"
+}
+,
+{
+"code_ogr_rome": 488737,
+"code_rome": "K1907",
+"libelle_rome": "Commissaire-priseur / Commissaire-priseure"
+}
+,
+{
+"code_ogr_rome": 411,
+"code_rome": "K2108",
+"libelle_rome": "Professeur / Professeure des universités"
+}
+,
+{
+"code_ogr_rome": 509546,
+"code_rome": "K2125",
+"libelle_rome": "Archéologue"
+}
+,
+{
+"code_ogr_rome": 509940,
+"code_rome": "K2135",
+"libelle_rome": "Ethnologue"
+}
+,
+{
+"code_ogr_rome": 510074,
+"code_rome": "K2140",
+"libelle_rome": "Historien / Historienne"
+}
+,
+{
+"code_ogr_rome": 427,
+"code_rome": "K2402",
+"libelle_rome": "Ingénieur / Ingénieure de recherche scientifique"
+}
+]
+}
+,
+{
+"code_theme": "004",
+"libelle_theme": "Métiers de l'intelligence économique",
+"definition_theme": "Métiers liés aux activités de collecte, de traitement et de diffusion de l'information utile aux décisions des acteurs économiques (études socio-économiques, marketing, stratégie commerciale, ...)",
+"liste_metier": [
+{
+"code_ogr_rome": 57,
+"code_rome": "C1103",
+"libelle_rome": "Courtier / Courtière en assurance"
+}
+,
+{
+"code_ogr_rome": 404510,
+"code_rome": "C1111",
+"libelle_rome": "Mandataire en assurance"
+}
+,
+{
+"code_ogr_rome": 404511,
+"code_rome": "C1112",
+"libelle_rome": "Agent général / Agente générale d'assurance"
+}
+,
+{
+"code_ogr_rome": 107,
+"code_rome": "D1406",
+"libelle_rome": "Directeur / Directrice des ventes"
+}
+,
+{
+"code_ogr_rome": 488282,
+"code_rome": "D1411",
+"libelle_rome": "Responsable Efficacité Commerciale (SFE) en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488301,
+"code_rome": "D1413",
+"libelle_rome": "Délégué / Déléguée pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488326,
+"code_rome": "D1414",
+"libelle_rome": "Responsable de zone internationale"
+}
+,
+{
+"code_ogr_rome": 488879,
+"code_rome": "D1416",
+"libelle_rome": "Commercial / Commerciale auprès d'une clientèle d'entreprises"
+}
+,
+{
+"code_ogr_rome": 124,
+"code_rome": "E1106",
+"libelle_rome": "Journaliste"
+}
+,
+{
+"code_ogr_rome": 403088,
+"code_rome": "E1109",
+"libelle_rome": "Directeur / Directrice de la communication"
+}
+,
+{
+"code_ogr_rome": 488749,
+"code_rome": "E1110",
+"libelle_rome": "Directeur / Directrice de la rédaction"
+}
+,
+{
+"code_ogr_rome": 489052,
+"code_rome": "E1113",
+"libelle_rome": "Responsable e-commerce"
+}
+,
+{
+"code_ogr_rome": 509668,
+"code_rome": "E1116",
+"libelle_rome": "Responsable d'édition en presse"
+}
+,
+{
+"code_ogr_rome": 488302,
+"code_rome": "H1103",
+"libelle_rome": "Responsable d'affaires en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 217,
+"code_rome": "H1206",
+"libelle_rome": "Ingénieur / Ingénieure R&D en industrie"
+}
+,
+{
+"code_ogr_rome": 221,
+"code_rome": "H1210",
+"libelle_rome": "Technicien / Technicienne R&D"
+}
+,
+{
+"code_ogr_rome": 488308,
+"code_rome": "H1216",
+"libelle_rome": "Responsable des études épidémiologiques"
+}
+,
+{
+"code_ogr_rome": 488285,
+"code_rome": "H1304",
+"libelle_rome": "Responsable environnement en industrie"
+}
+,
+{
+"code_ogr_rome": 488902,
+"code_rome": "I1104",
+"libelle_rome": "Ingénieur / Ingénieure infrastructures télécoms réseaux mobiles"
+}
+,
+{
+"code_ogr_rome": 489085,
+"code_rome": "I1106",
+"libelle_rome": "Responsable de maintenance réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 379,
+"code_rome": "K1401",
+"libelle_rome": "Cadre Dirigeant / Dirigeante d'administration centrale"
+}
+,
+{
+"code_ogr_rome": 382,
+"code_rome": "K1404",
+"libelle_rome": "Chargé / Chargée de mission développement territorial"
+}
+,
+{
+"code_ogr_rome": 383,
+"code_rome": "K1405",
+"libelle_rome": "Préfet / Préfète"
+}
+,
+{
+"code_ogr_rome": 510287,
+"code_rome": "K1412",
+"libelle_rome": "Chargé / Chargée de mission aux relations internationales"
+}
+,
+{
+"code_ogr_rome": 510045,
+"code_rome": "K1418",
+"libelle_rome": "Ambassadeur / Ambassadrice"
+}
+,
+{
+"code_ogr_rome": 510148,
+"code_rome": "K1419",
+"libelle_rome": "Responsable du service des assemblées"
+}
+,
+{
+"code_ogr_rome": 510263,
+"code_rome": "K1422",
+"libelle_rome": "Directeur général / Directrice générale d'établissement public"
+}
+,
+{
+"code_ogr_rome": 389,
+"code_rome": "K1601",
+"libelle_rome": "Documentaliste"
+}
+,
+{
+"code_ogr_rome": 399,
+"code_rome": "K1802",
+"libelle_rome": "Chargé / Chargée de développement économique et local"
+}
+,
+{
+"code_ogr_rome": 489169,
+"code_rome": "K1908",
+"libelle_rome": "Responsable de service contentieux et recouvrement"
+}
+,
+{
+"code_ogr_rome": 510013,
+"code_rome": "K1910",
+"libelle_rome": "Commissaire à la Cour des comptes"
+}
+,
+{
+"code_ogr_rome": 427,
+"code_rome": "K2402",
+"libelle_rome": "Ingénieur / Ingénieure de recherche scientifique"
+}
+,
+{
+"code_ogr_rome": 429,
+"code_rome": "K2502",
+"libelle_rome": "Responsable sécurité de site"
+}
+,
+{
+"code_ogr_rome": 488622,
+"code_rome": "K2505",
+"libelle_rome": "Enquêteur privé / Enquêtrice privée"
+}
+,
+{
+"code_ogr_rome": 456,
+"code_rome": "M1101",
+"libelle_rome": "Acheteur / Acheteuse"
+}
+,
+{
+"code_ogr_rome": 457,
+"code_rome": "M1102",
+"libelle_rome": "Responsable des achats"
+}
+,
+{
+"code_ogr_rome": 458,
+"code_rome": "M1201",
+"libelle_rome": "Analyste financier / Analyste financière"
+}
+,
+{
+"code_ogr_rome": 459,
+"code_rome": "M1202",
+"libelle_rome": "Auditeur comptable et financier / Auditrice comptable et financière"
+}
+,
+{
+"code_ogr_rome": 461,
+"code_rome": "M1204",
+"libelle_rome": "Contrôleur / Contrôleuse de gestion"
+}
+,
+{
+"code_ogr_rome": 462,
+"code_rome": "M1205",
+"libelle_rome": "Directeur / Directrice des services administratifs et financiers"
+}
+,
+{
+"code_ogr_rome": 464,
+"code_rome": "M1207",
+"libelle_rome": "Trésorier / Trésorière"
+}
+,
+{
+"code_ogr_rome": 488629,
+"code_rome": "M1208",
+"libelle_rome": "Responsable contrôle de gestion"
+}
+,
+{
+"code_ogr_rome": 488910,
+"code_rome": "M1209",
+"libelle_rome": "Conseiller / Conseillère en gestion"
+}
+,
+{
+"code_ogr_rome": 509798,
+"code_rome": "M1219",
+"libelle_rome": "Conseiller / Conseillère en fusion et acquisition"
+}
+,
+{
+"code_ogr_rome": 509824,
+"code_rome": "M1221",
+"libelle_rome": "Responsable financement de projet"
+}
+,
+{
+"code_ogr_rome": 510034,
+"code_rome": "M1224",
+"libelle_rome": "Economiste financier / Economiste financière"
+}
+,
+{
+"code_ogr_rome": 466,
+"code_rome": "M1302",
+"libelle_rome": "Responsable de Petite ou Moyenne Entreprise -PME-"
+}
+,
+{
+"code_ogr_rome": 509930,
+"code_rome": "M1303",
+"libelle_rome": "Directeur / Directrice de filiale"
+}
+,
+{
+"code_ogr_rome": 468,
+"code_rome": "M1402",
+"libelle_rome": "Responsable en organisation en entreprise"
+}
+,
+{
+"code_ogr_rome": 469,
+"code_rome": "M1403",
+"libelle_rome": "Chargé / Chargée d'études socio-économiques"
+}
+,
+{
+"code_ogr_rome": 404047,
+"code_rome": "M1405",
+"libelle_rome": "Data scientist"
+}
+,
+{
+"code_ogr_rome": 488287,
+"code_rome": "M1406",
+"libelle_rome": "Responsable RSE - Responsabilité Sociétale de l'Entreprise"
+}
+,
+{
+"code_ogr_rome": 488639,
+"code_rome": "M1409",
+"libelle_rome": "Ingénieur / Ingénieure économiste en entreprise"
+}
+,
+{
+"code_ogr_rome": 488729,
+"code_rome": "M1410",
+"libelle_rome": "Responsable Green IT"
+}
+,
+{
+"code_ogr_rome": 488778,
+"code_rome": "M1412",
+"libelle_rome": "Ergonome"
+}
+,
+{
+"code_ogr_rome": 489213,
+"code_rome": "M1414",
+"libelle_rome": "Ingénieur statisticien / Ingénieure statisticienne"
+}
+,
+{
+"code_ogr_rome": 509391,
+"code_rome": "M1415",
+"libelle_rome": "Auditeur social / Auditrice sociale"
+}
+,
+{
+"code_ogr_rome": 509531,
+"code_rome": "M1419",
+"libelle_rome": "Data analyst"
+}
+,
+{
+"code_ogr_rome": 509536,
+"code_rome": "M1420",
+"libelle_rome": "Responsable en intelligence économique"
+}
+,
+{
+"code_ogr_rome": 509641,
+"code_rome": "M1422",
+"libelle_rome": "Directeur / Directrice d'études socio-économiques"
+}
+,
+{
+"code_ogr_rome": 510245,
+"code_rome": "M1423",
+"libelle_rome": "Chief Data Officer"
+}
+,
+{
+"code_ogr_rome": 509806,
+"code_rome": "M1424",
+"libelle_rome": "Consultant / Consultante en intelligence économique"
+}
+,
+{
+"code_ogr_rome": 510019,
+"code_rome": "M1426",
+"libelle_rome": "Chief digital officer - Responsable de la transformation digitale"
+}
+,
+{
+"code_ogr_rome": 510157,
+"code_rome": "M1430",
+"libelle_rome": "Chargé / Chargée d'études commerciales"
+}
+,
+{
+"code_ogr_rome": 473,
+"code_rome": "M1503",
+"libelle_rome": "Directeur / Directrice des Ressources Humaines (DRH)"
+}
+,
+{
+"code_ogr_rome": 488608,
+"code_rome": "M1506",
+"libelle_rome": "Manager de proximité"
+}
+,
+{
+"code_ogr_rome": 485,
+"code_rome": "M1703",
+"libelle_rome": "Chef / Cheffe de produit"
+}
+,
+{
+"code_ogr_rome": 487,
+"code_rome": "M1705",
+"libelle_rome": "Responsable marketing"
+}
+,
+{
+"code_ogr_rome": 488,
+"code_rome": "M1706",
+"libelle_rome": "Chef / Cheffe de promotion des ventes"
+}
+,
+{
+"code_ogr_rome": 489,
+"code_rome": "M1707",
+"libelle_rome": "Responsable Commercial / Commerciale"
+}
+,
+{
+"code_ogr_rome": 488274,
+"code_rome": "M1708",
+"libelle_rome": "Directeur / Directrice de l'accès au marché en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488275,
+"code_rome": "M1709",
+"libelle_rome": "Chef / Cheffe de gamme en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488310,
+"code_rome": "M1711",
+"libelle_rome": "Directeur / Directrice du marketing"
+}
+,
+{
+"code_ogr_rome": 488340,
+"code_rome": "M1712",
+"libelle_rome": "Directeur / Directrice de l'information promotionnelle du médicament en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488569,
+"code_rome": "M1714",
+"libelle_rome": "Chargé / Chargée de l'information promotionnelle du médicament en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488738,
+"code_rome": "M1715",
+"libelle_rome": "Directeur commercial / Directrice commerciale"
+}
+,
+{
+"code_ogr_rome": 510431,
+"code_rome": "M1717",
+"libelle_rome": "Responsable innovation"
+}
+,
+{
+"code_ogr_rome": 490,
+"code_rome": "M1801",
+"libelle_rome": "Administrateur / Administratrice de systèmes d'information (SI)"
+}
+,
+{
+"code_ogr_rome": 491,
+"code_rome": "M1802",
+"libelle_rome": "Expert / Experte systèmes et réseaux informatiques"
+}
+,
+{
+"code_ogr_rome": 493,
+"code_rome": "M1804",
+"libelle_rome": "Ingénieur / Ingénieure télécoms"
+}
+,
+{
+"code_ogr_rome": 488636,
+"code_rome": "M1817",
+"libelle_rome": "Administrateur / Administratrice sécurité informatique"
+}
+,
+{
+"code_ogr_rome": 488753,
+"code_rome": "M1826",
+"libelle_rome": "Ingénieur / Ingénieure supervision IT Datacenter"
+}
+,
+{
+"code_ogr_rome": 488768,
+"code_rome": "M1828",
+"libelle_rome": "Chef de projet / Cheffe de projet (Project Management Officer)"
+}
+,
+{
+"code_ogr_rome": 488772,
+"code_rome": "M1829",
+"libelle_rome": "Ingénieur / Ingénieure systèmes et réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 488785,
+"code_rome": "M1830",
+"libelle_rome": "Administrateur / Administratrice réseaux - télécoms"
+}
+,
+{
+"code_ogr_rome": 488890,
+"code_rome": "M1835",
+"libelle_rome": "Architecte systèmes et réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 488917,
+"code_rome": "M1840",
+"libelle_rome": "Directeur / Directrice de projets des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 489026,
+"code_rome": "M1846",
+"libelle_rome": "Ingénieur / Ingénieure Cybersécurité Datacenter"
+}
+,
+{
+"code_ogr_rome": 489067,
+"code_rome": "M1851",
+"libelle_rome": "Analyste décisionnel - Business Intelligence"
+}
+,
+{
+"code_ogr_rome": 489072,
+"code_rome": "M1852",
+"libelle_rome": "Analyste d'étude informatique"
+}
+,
+{
+"code_ogr_rome": 489174,
+"code_rome": "M1857",
+"libelle_rome": "Urbaniste Datacenter"
+}
+,
+{
+"code_ogr_rome": 489217,
+"code_rome": "M1862",
+"libelle_rome": "Responsable d'exploitation fibre optique"
+}
+,
+{
+"code_ogr_rome": 509762,
+"code_rome": "M1872",
+"libelle_rome": "Consultant décisionnel / Consultante décisionnelle - Business Intelligence"
+}
+,
+{
+"code_ogr_rome": 510315,
+"code_rome": "M1883",
+"libelle_rome": "Analyste SOC (Security Operations Center)"
+}
+,
+{
+"code_ogr_rome": 510440,
+"code_rome": "M1889",
+"libelle_rome": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)"
+}
+,
+{
+"code_ogr_rome": 510465,
+"code_rome": "M1894",
+"libelle_rome": "Gestionnaire de base de données"
+}
+,
+{
+"code_ogr_rome": 488741,
+"code_rome": "N1205",
+"libelle_rome": "Responsable de service transit"
+}
+,
+{
+"code_ogr_rome": 489020,
+"code_rome": "N1305",
+"libelle_rome": "Ingénieur / Ingénieure logistique"
+}
+]
+}
+,
+{
+"code_theme": "005",
+"libelle_theme": "Métiers de la recherche",
+"definition_theme": "Métiers liés au développement de la connaissance (enseignement, recherche scientifique, culture) ou à la recherche industrielle",
+"liste_metier": [
+{
+"code_ogr_rome": 14,
+"code_rome": "A1303",
+"libelle_rome": "Ingénieur / Ingénieure d'études et de recherche agricoles"
+}
+,
+{
+"code_ogr_rome": 509640,
+"code_rome": "A1307",
+"libelle_rome": "Ingénieur forestier / Ingénieure forestière"
+}
+,
+{
+"code_ogr_rome": 510270,
+"code_rome": "A1312",
+"libelle_rome": "Directeur / Directrice environnement"
+}
+,
+{
+"code_ogr_rome": 488346,
+"code_rome": "A1423",
+"libelle_rome": "¼nologue"
+}
+,
+{
+"code_ogr_rome": 146,
+"code_rome": "F1105",
+"libelle_rome": "Géologue"
+}
+,
+{
+"code_ogr_rome": 488578,
+"code_rome": "F1115",
+"libelle_rome": "Vulcanologue"
+}
+,
+{
+"code_ogr_rome": 488615,
+"code_rome": "F1118",
+"libelle_rome": "Sismologue"
+}
+,
+{
+"code_ogr_rome": 488621,
+"code_rome": "F1119",
+"libelle_rome": "Pédologue"
+}
+,
+{
+"code_ogr_rome": 489200,
+"code_rome": "F1123",
+"libelle_rome": "Glaciologue"
+}
+,
+{
+"code_ogr_rome": 488897,
+"code_rome": "F1124",
+"libelle_rome": "Hydrologue"
+}
+,
+{
+"code_ogr_rome": 509417,
+"code_rome": "F1129",
+"libelle_rome": "Ingénieur / Ingénieure réservoir"
+}
+,
+{
+"code_ogr_rome": 510153,
+"code_rome": "F1138",
+"libelle_rome": "Géothermicien / Géothermicienne"
+}
+,
+{
+"code_ogr_rome": 510427,
+"code_rome": "F1142",
+"libelle_rome": "Océanographe"
+}
+,
+{
+"code_ogr_rome": 510268,
+"code_rome": "F1143",
+"libelle_rome": "Géophysicien / Géophysicienne"
+}
+,
+{
+"code_ogr_rome": 217,
+"code_rome": "H1206",
+"libelle_rome": "Ingénieur / Ingénieure R&D en industrie"
+}
+,
+{
+"code_ogr_rome": 221,
+"code_rome": "H1210",
+"libelle_rome": "Technicien / Technicienne R&D"
+}
+,
+{
+"code_ogr_rome": 488271,
+"code_rome": "H1212",
+"libelle_rome": "Ingénieur / Ingénieure brevet en industrie"
+}
+,
+{
+"code_ogr_rome": 488291,
+"code_rome": "H1213",
+"libelle_rome": "Responsable du développement clinique en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488299,
+"code_rome": "H1214",
+"libelle_rome": "Agent / Agente de laboratoire de recherche industrielle"
+}
+,
+{
+"code_ogr_rome": 488303,
+"code_rome": "H1215",
+"libelle_rome": "Bioinformaticien / Bioinformaticienne en études, recherche et développement"
+}
+,
+{
+"code_ogr_rome": 488308,
+"code_rome": "H1216",
+"libelle_rome": "Responsable des études épidémiologiques"
+}
+,
+{
+"code_ogr_rome": 488313,
+"code_rome": "H1217",
+"libelle_rome": "Technicien / Technicienne formulation en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488316,
+"code_rome": "H1218",
+"libelle_rome": "Responsable de projet recherche et développement"
+}
+,
+{
+"code_ogr_rome": 488319,
+"code_rome": "H1219",
+"libelle_rome": "Responsable opérationnel / Responsable opérationnelle des études cliniques en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488322,
+"code_rome": "H1220",
+"libelle_rome": "Responsable formulation en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488335,
+"code_rome": "H1221",
+"libelle_rome": "Responsable des partenariats de recherche en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488347,
+"code_rome": "H1222",
+"libelle_rome": "Responsable médical / Responsable médicale des études cliniques en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488351,
+"code_rome": "H1223",
+"libelle_rome": "Coordinateur / Coordinatrice d'études cliniques en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488566,
+"code_rome": "H1224",
+"libelle_rome": "Technicien / Technicienne de laboratoire de recherche-développement"
+}
+,
+{
+"code_ogr_rome": 489219,
+"code_rome": "H1225",
+"libelle_rome": "Ingénieur / Ingénieure développement nucléaire"
+}
+,
+{
+"code_ogr_rome": 510309,
+"code_rome": "H1226",
+"libelle_rome": "Rédacteur médical / Rédactrice médicale en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 223,
+"code_rome": "H1302",
+"libelle_rome": "Ingénieur / Ingénieure Hygiène, Sécurité et Environnement en industrie (HSE)"
+}
+,
+{
+"code_ogr_rome": 488619,
+"code_rome": "H1306",
+"libelle_rome": "Ingénieur / Ingénieure sûreté en industrie nucléaire"
+}
+,
+{
+"code_ogr_rome": 229,
+"code_rome": "H1501",
+"libelle_rome": "Responsable de laboratoire d'analyse industrielle"
+}
+,
+{
+"code_ogr_rome": 231,
+"code_rome": "H1503",
+"libelle_rome": "Technicien / Technicienne de laboratoire d'analyse industrielle"
+}
+,
+{
+"code_ogr_rome": 488296,
+"code_rome": "H1510",
+"libelle_rome": "Technicien / Technicienne de laboratoire de contrôle en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488309,
+"code_rome": "H1511",
+"libelle_rome": "Chargé / Chargée de validation-qualification en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488314,
+"code_rome": "H1513",
+"libelle_rome": "Responsable de pharmacovigilance en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488330,
+"code_rome": "H1514",
+"libelle_rome": "Chargé / Chargée de pharmacovigilance en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488336,
+"code_rome": "H1515",
+"libelle_rome": "Auditeur / Auditrice qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488343,
+"code_rome": "H1517",
+"libelle_rome": "Responsable de laboratoire de contrôle en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 509528,
+"code_rome": "H1525",
+"libelle_rome": "Biologiste de contrôle fabrication en industrie"
+}
+,
+{
+"code_ogr_rome": 488318,
+"code_rome": "H2303",
+"libelle_rome": "Opérateur / Opératrice de fabrication en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 333,
+"code_rome": "J1102",
+"libelle_rome": "Médecin généraliste"
+}
+,
+{
+"code_ogr_rome": 509388,
+"code_rome": "J1112",
+"libelle_rome": "Oncologue"
+}
+,
+{
+"code_ogr_rome": 509405,
+"code_rome": "J1113",
+"libelle_rome": "Dermatologue"
+}
+,
+{
+"code_ogr_rome": 509638,
+"code_rome": "J1122",
+"libelle_rome": "Chirurgien plasticien / Chirurgienne plasticienne"
+}
+,
+{
+"code_ogr_rome": 510286,
+"code_rome": "J1124",
+"libelle_rome": "Médecin Anesthésiste Réanimateur / Réanimatrice (MAR)"
+}
+,
+{
+"code_ogr_rome": 509770,
+"code_rome": "J1126",
+"libelle_rome": "Médecin du sport"
+}
+,
+{
+"code_ogr_rome": 509785,
+"code_rome": "J1128",
+"libelle_rome": "Pneumologue"
+}
+,
+{
+"code_ogr_rome": 509807,
+"code_rome": "J1129",
+"libelle_rome": "Allergologue"
+}
+,
+{
+"code_ogr_rome": 509949,
+"code_rome": "J1131",
+"libelle_rome": "Psychiatre"
+}
+,
+{
+"code_ogr_rome": 509927,
+"code_rome": "J1134",
+"libelle_rome": "Ophtalmologue"
+}
+,
+{
+"code_ogr_rome": 509942,
+"code_rome": "J1135",
+"libelle_rome": "Urologue"
+}
+,
+{
+"code_ogr_rome": 488594,
+"code_rome": "J1203",
+"libelle_rome": "Directeur / Directrice de laboratoire d'analyses vétérinaires"
+}
+,
+{
+"code_ogr_rome": 488743,
+"code_rome": "J1204",
+"libelle_rome": "Directeur / Directrice de laboratoire d'analyses de biologie médicale"
+}
+,
+{
+"code_ogr_rome": 351,
+"code_rome": "J1407",
+"libelle_rome": "Orthoptiste"
+}
+,
+{
+"code_ogr_rome": 352,
+"code_rome": "J1408",
+"libelle_rome": "Ostéopathe"
+}
+,
+{
+"code_ogr_rome": 353,
+"code_rome": "J1409",
+"libelle_rome": "Pédicure-podologue"
+}
+,
+{
+"code_ogr_rome": 355,
+"code_rome": "J1411",
+"libelle_rome": "Orthoprothésiste"
+}
+,
+{
+"code_ogr_rome": 390,
+"code_rome": "K1602",
+"libelle_rome": "Conservateur / Conservatrice du patrimoine"
+}
+,
+{
+"code_ogr_rome": 488758,
+"code_rome": "K1606",
+"libelle_rome": "Responsable de la conservation préventive"
+}
+,
+{
+"code_ogr_rome": 411,
+"code_rome": "K2108",
+"libelle_rome": "Professeur / Professeure des universités"
+}
+,
+{
+"code_ogr_rome": 509546,
+"code_rome": "K2125",
+"libelle_rome": "Archéologue"
+}
+,
+{
+"code_ogr_rome": 509902,
+"code_rome": "K2133",
+"libelle_rome": "Sociologue"
+}
+,
+{
+"code_ogr_rome": 509932,
+"code_rome": "K2134",
+"libelle_rome": "Démographe"
+}
+,
+{
+"code_ogr_rome": 509940,
+"code_rome": "K2135",
+"libelle_rome": "Ethnologue"
+}
+,
+{
+"code_ogr_rome": 510074,
+"code_rome": "K2140",
+"libelle_rome": "Historien / Historienne"
+}
+,
+{
+"code_ogr_rome": 510407,
+"code_rome": "K2143",
+"libelle_rome": "Anthropologue"
+}
+,
+{
+"code_ogr_rome": 426,
+"code_rome": "K2401",
+"libelle_rome": "Chercheur / Chercheuse en sciences humaines et sociales"
+}
+,
+{
+"code_ogr_rome": 427,
+"code_rome": "K2402",
+"libelle_rome": "Ingénieur / Ingénieure de recherche scientifique"
+}
+,
+{
+"code_ogr_rome": 488272,
+"code_rome": "K2404",
+"libelle_rome": "Chargé / Chargée de recherche en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488279,
+"code_rome": "K2405",
+"libelle_rome": "Attaché / Attachée de recherche clinique en milieu hospitalier"
+}
+,
+{
+"code_ogr_rome": 488570,
+"code_rome": "K2406",
+"libelle_rome": "Directeur / Directrice de recherche en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488864,
+"code_rome": "K2408",
+"libelle_rome": "Mathématicien / Mathématicienne"
+}
+,
+{
+"code_ogr_rome": 488918,
+"code_rome": "K2409",
+"libelle_rome": "Astronome"
+}
+,
+{
+"code_ogr_rome": 489170,
+"code_rome": "K2410",
+"libelle_rome": "Astrophysicien / Astrophysicienne"
+}
+,
+{
+"code_ogr_rome": 509819,
+"code_rome": "K2411",
+"libelle_rome": "Musicologue"
+}
+,
+{
+"code_ogr_rome": 469,
+"code_rome": "M1403",
+"libelle_rome": "Chargé / Chargée d'études socio-économiques"
+}
+,
+{
+"code_ogr_rome": 488300,
+"code_rome": "M1407",
+"libelle_rome": "Responsable de la veille scientifique et technique en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488337,
+"code_rome": "M1408",
+"libelle_rome": "Responsable des études pharmaco-économiques en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 497,
+"code_rome": "M1808",
+"libelle_rome": "Cartographe"
+}
+,
+{
+"code_ogr_rome": 498,
+"code_rome": "M1809",
+"libelle_rome": "Météorologue"
+}
+,
+{
+"code_ogr_rome": 510430,
+"code_rome": "M1888",
+"libelle_rome": "Spécialiste en modélisation climatique"
+}
+,
+{
+"code_ogr_rome": 510446,
+"code_rome": "M1890",
+"libelle_rome": "Responsable d'opérations en station météorologique"
+}
+,
+{
+"code_ogr_rome": 510447,
+"code_rome": "M1891",
+"libelle_rome": "Ingénieur / Ingénieure prévisionniste météorologue"
+}
+,
+{
+"code_ogr_rome": 510461,
+"code_rome": "M1893",
+"libelle_rome": "Technicien / Technicienne de la météorologie"
+}
+]
+}
+,
+{
+"code_theme": "006",
+"libelle_theme": "Métiers de la mer, du nautisme et de la construction navale",
+"definition_theme": "Métiers du secteur naval (conception, construction navale et maintenance), du transport maritime (transport de personnes et de marchandises) et des activités liées à la mer (loisirs, pêche, aquaculture)",
+"liste_metier": [
+{
+"code_ogr_rome": 10,
+"code_rome": "A1204",
+"libelle_rome": "Garde de parc naturel"
+}
+,
+{
+"code_ogr_rome": 12,
+"code_rome": "A1301",
+"libelle_rome": "Technicien / Technicienne de culture maraîchère"
+}
+,
+{
+"code_ogr_rome": 18,
+"code_rome": "A1404",
+"libelle_rome": "Aquaculteur / Aquacultrice"
+}
+,
+{
+"code_ogr_rome": 20,
+"code_rome": "A1406",
+"libelle_rome": "Capitaine de pêche"
+}
+,
+{
+"code_ogr_rome": 29,
+"code_rome": "A1415",
+"libelle_rome": "Marin-pêcheur"
+}
+,
+{
+"code_ogr_rome": 31,
+"code_rome": "A1417",
+"libelle_rome": "Saliculteur / Salicultrice"
+}
+,
+{
+"code_ogr_rome": 488709,
+"code_rome": "A1424",
+"libelle_rome": "Pisciculteur / Piscicultrice"
+}
+,
+{
+"code_ogr_rome": 488728,
+"code_rome": "A1425",
+"libelle_rome": "Ramendeur / Ramendeuse"
+}
+,
+{
+"code_ogr_rome": 488776,
+"code_rome": "A1427",
+"libelle_rome": "Goémonier / Goémonière"
+}
+,
+{
+"code_ogr_rome": 488903,
+"code_rome": "A1428",
+"libelle_rome": "Algoculteur / Algocultrice"
+}
+,
+{
+"code_ogr_rome": 489025,
+"code_rome": "A1430",
+"libelle_rome": "Ouvrier / Ouvrière aquacole"
+}
+,
+{
+"code_ogr_rome": 489063,
+"code_rome": "A1431",
+"libelle_rome": "Ouvrier / Ouvrière piscicole"
+}
+,
+{
+"code_ogr_rome": 509530,
+"code_rome": "A1438",
+"libelle_rome": "Pêcheur / Pêcheuse à pied"
+}
+,
+{
+"code_ogr_rome": 510171,
+"code_rome": "A1445",
+"libelle_rome": "Pêcheur sous-marin / Pêcheuse sous-marine"
+}
+,
+{
+"code_ogr_rome": 84,
+"code_rome": "D1105",
+"libelle_rome": "Poissonnier / Poissonnière"
+}
+,
+{
+"code_ogr_rome": 97,
+"code_rome": "D1211",
+"libelle_rome": "Vendeur / Vendeuse d'articles de sport et loisirs"
+}
+,
+{
+"code_ogr_rome": 509347,
+"code_rome": "D1421",
+"libelle_rome": "Conseiller commercial / Conseillère commerciale en véhicules industriels"
+}
+,
+{
+"code_ogr_rome": 509532,
+"code_rome": "D1426",
+"libelle_rome": "Vendeur / Vendeuse en véhicules de collection"
+}
+,
+{
+"code_ogr_rome": 510043,
+"code_rome": "D1434",
+"libelle_rome": "Conseiller commercial / Conseillère commerciale motocycles"
+}
+,
+{
+"code_ogr_rome": 488897,
+"code_rome": "F1124",
+"libelle_rome": "Hydrologue"
+}
+,
+{
+"code_ogr_rome": 152,
+"code_rome": "F1203",
+"libelle_rome": "Responsable d'exploitation de gisements et de carrières"
+}
+,
+{
+"code_ogr_rome": 156,
+"code_rome": "F1401",
+"libelle_rome": "Foreur / Foreuse"
+}
+,
+{
+"code_ogr_rome": 488871,
+"code_rome": "F1504",
+"libelle_rome": "Charpentier / Charpentière de marine"
+}
+,
+{
+"code_ogr_rome": 489189,
+"code_rome": "F1625",
+"libelle_rome": "Monteur / Monteuse en agencement"
+}
+,
+{
+"code_ogr_rome": 403072,
+"code_rome": "G1207",
+"libelle_rome": "Surveillant / Surveillante de baignade"
+}
+,
+{
+"code_ogr_rome": 217,
+"code_rome": "H1206",
+"libelle_rome": "Ingénieur / Ingénieure R&D en industrie"
+}
+,
+{
+"code_ogr_rome": 488308,
+"code_rome": "H1216",
+"libelle_rome": "Responsable des études épidémiologiques"
+}
+,
+{
+"code_ogr_rome": 509693,
+"code_rome": "H2213",
+"libelle_rome": "Menuisier / Menuisière en construction nautique"
+}
+,
+{
+"code_ogr_rome": 279,
+"code_rome": "H2902",
+"libelle_rome": "Chaudronnier / Chaudronnière"
+}
+,
+{
+"code_ogr_rome": 288,
+"code_rome": "H2911",
+"libelle_rome": "Métallier / Métallière"
+}
+,
+{
+"code_ogr_rome": 291,
+"code_rome": "H2914",
+"libelle_rome": "Tuyauteur / Tuyauteuse"
+}
+,
+{
+"code_ogr_rome": 489024,
+"code_rome": "H2915",
+"libelle_rome": "Chef soudeur / Cheffe soudeuse"
+}
+,
+{
+"code_ogr_rome": 489047,
+"code_rome": "H2916",
+"libelle_rome": "Soudeur / Soudeuse Tungsten Inert Gas -TIG-"
+}
+,
+{
+"code_ogr_rome": 489194,
+"code_rome": "H2917",
+"libelle_rome": "Soudeur / Soudeuse MIG MAG"
+}
+,
+{
+"code_ogr_rome": 296,
+"code_rome": "H3203",
+"libelle_rome": "Mouleur-stratifieur / Mouleuse-stratifieuse"
+}
+,
+{
+"code_ogr_rome": 303,
+"code_rome": "H3404",
+"libelle_rome": "Peintre industriel / Peintre industrielle"
+}
+,
+{
+"code_ogr_rome": 318,
+"code_rome": "I1309",
+"libelle_rome": "Electricien / Electricienne de maintenance"
+}
+,
+{
+"code_ogr_rome": 323,
+"code_rome": "I1502",
+"libelle_rome": "Scaphandrier / Scaphandrière"
+}
+,
+{
+"code_ogr_rome": 325,
+"code_rome": "I1601",
+"libelle_rome": "Préparateur / Préparatrice de bateau"
+}
+,
+{
+"code_ogr_rome": 329,
+"code_rome": "I1605",
+"libelle_rome": "Mécanicien / Mécanicienne en mécanique marine ou navale"
+}
+,
+{
+"code_ogr_rome": 488870,
+"code_rome": "I1619",
+"libelle_rome": "Mécanicien / Mécanicienne cycles"
+}
+,
+{
+"code_ogr_rome": 392,
+"code_rome": "K1702",
+"libelle_rome": "Responsable de sécurité civile et de secours"
+}
+,
+{
+"code_ogr_rome": 395,
+"code_rome": "K1705",
+"libelle_rome": "Secouriste"
+}
+,
+{
+"code_ogr_rome": 396,
+"code_rome": "K1706",
+"libelle_rome": "Agent / Agente de la force publique"
+}
+,
+{
+"code_ogr_rome": 427,
+"code_rome": "K2402",
+"libelle_rome": "Ingénieur / Ingénieure de recherche scientifique"
+}
+,
+{
+"code_ogr_rome": 446,
+"code_rome": "L1401",
+"libelle_rome": "Sportif professionnel / Sportive professionnelle"
+}
+,
+{
+"code_ogr_rome": 488306,
+"code_rome": "L1402",
+"libelle_rome": "Arbitre professionnel / Professionnelle de discipline sportive"
+}
+,
+{
+"code_ogr_rome": 496,
+"code_rome": "M1807",
+"libelle_rome": "Opérateur / Opératrice télécom aux armées"
+}
+,
+{
+"code_ogr_rome": 517,
+"code_rome": "N3101",
+"libelle_rome": "Officier / Officière de port"
+}
+,
+{
+"code_ogr_rome": 518,
+"code_rome": "N3102",
+"libelle_rome": "Marin"
+}
+,
+{
+"code_ogr_rome": 519,
+"code_rome": "N3103",
+"libelle_rome": "Matelot de la navigation fluviale"
+}
+,
+{
+"code_ogr_rome": 509922,
+"code_rome": "N3104",
+"libelle_rome": "Conducteur / Conductrice de navigation fluviale"
+}
+,
+{
+"code_ogr_rome": 520,
+"code_rome": "N3201",
+"libelle_rome": "Responsable d'exploitation transport maritime"
+}
+,
+{
+"code_ogr_rome": 521,
+"code_rome": "N3202",
+"libelle_rome": "Responsable d'exploitation transport fluvial"
+}
+,
+{
+"code_ogr_rome": 522,
+"code_rome": "N3203",
+"libelle_rome": "Ouvrier / Ouvrière de manutention portuaire"
+}
+,
+{
+"code_ogr_rome": 510185,
+"code_rome": "N3205",
+"libelle_rome": "Assistant / Assistante d'exploitation du transport fluvial"
+}
+]
+}
+,
+{
+"code_theme": "007",
+"libelle_theme": "Métiers de l'aéronautique",
+"definition_theme": "Métiers liés au secteur aéronautique (conception, construction et entretien d'aéronefs) et au transport aérien (navigation aérienne, exploitation aéroportuaire)",
+"liste_metier": [
+{
+"code_ogr_rome": 210,
+"code_rome": "H1101",
+"libelle_rome": "Ingénieur / Ingénieure support technique"
+}
+,
+{
+"code_ogr_rome": 488627,
+"code_rome": "H1106",
+"libelle_rome": "Responsable support technique clients"
+}
+,
+{
+"code_ogr_rome": 489015,
+"code_rome": "H1107",
+"libelle_rome": "Directeur / Directrice assistance technique"
+}
+,
+{
+"code_ogr_rome": 489029,
+"code_rome": "H1108",
+"libelle_rome": "Technicien / Technicienne support client en industrie"
+}
+,
+{
+"code_ogr_rome": 217,
+"code_rome": "H1206",
+"libelle_rome": "Ingénieur / Ingénieure R&D en industrie"
+}
+,
+{
+"code_ogr_rome": 488271,
+"code_rome": "H1212",
+"libelle_rome": "Ingénieur / Ingénieure brevet en industrie"
+}
+,
+{
+"code_ogr_rome": 488308,
+"code_rome": "H1216",
+"libelle_rome": "Responsable des études épidémiologiques"
+}
+,
+{
+"code_ogr_rome": 225,
+"code_rome": "H1401",
+"libelle_rome": "Responsable ordonnancement-lancement-planification en industrie"
+}
+,
+{
+"code_ogr_rome": 226,
+"code_rome": "H1402",
+"libelle_rome": "Ingénieur / Ingénieure méthodes et process"
+}
+,
+{
+"code_ogr_rome": 227,
+"code_rome": "H1403",
+"libelle_rome": "Gestionnaire de flux de production"
+}
+,
+{
+"code_ogr_rome": 228,
+"code_rome": "H1404",
+"libelle_rome": "Technicien / Technicienne méthodes"
+}
+,
+{
+"code_ogr_rome": 488297,
+"code_rome": "H1405",
+"libelle_rome": "Responsable supply chain en industrie"
+}
+,
+{
+"code_ogr_rome": 488331,
+"code_rome": "H1406",
+"libelle_rome": "Ingénieur / Ingénieure supply chain en industrie"
+}
+,
+{
+"code_ogr_rome": 234,
+"code_rome": "H1506",
+"libelle_rome": "Contrôleur / Contrôleuse technique en métallurgie"
+}
+,
+{
+"code_ogr_rome": 488278,
+"code_rome": "H1508",
+"libelle_rome": "Assureur / Assureuse qualité industrie"
+}
+,
+{
+"code_ogr_rome": 488284,
+"code_rome": "H1509",
+"libelle_rome": "Responsable des affaires règlementaires en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488309,
+"code_rome": "H1511",
+"libelle_rome": "Chargé / Chargée de validation-qualification en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488312,
+"code_rome": "H1512",
+"libelle_rome": "Directeur / Directrice de zone en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488336,
+"code_rome": "H1515",
+"libelle_rome": "Auditeur / Auditrice qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488341,
+"code_rome": "H1516",
+"libelle_rome": "Expert / Experte métrologue"
+}
+,
+{
+"code_ogr_rome": 488344,
+"code_rome": "H1518",
+"libelle_rome": "Responsable assurance qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488352,
+"code_rome": "H1519",
+"libelle_rome": "Responsable éthique-déontologie-conformité en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488353,
+"code_rome": "H1520",
+"libelle_rome": "Ingénieur / Ingénieure assurance qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488565,
+"code_rome": "H1521",
+"libelle_rome": "Technicien / Technicienne de validation-qualification"
+}
+,
+{
+"code_ogr_rome": 488632,
+"code_rome": "H1522",
+"libelle_rome": "Technicien / Technicienne en contrôles et essais non destructifs (CND END)"
+}
+,
+{
+"code_ogr_rome": 263,
+"code_rome": "H2502",
+"libelle_rome": "Responsable d'unité de production industrielle"
+}
+,
+{
+"code_ogr_rome": 268,
+"code_rome": "H2602",
+"libelle_rome": "Câbleur / Câbleuse d'armoires"
+}
+,
+{
+"code_ogr_rome": 278,
+"code_rome": "H2901",
+"libelle_rome": "Ajusteur-monteur / Ajusteuse-monteuse"
+}
+,
+{
+"code_ogr_rome": 279,
+"code_rome": "H2902",
+"libelle_rome": "Chaudronnier / Chaudronnière"
+}
+,
+{
+"code_ogr_rome": 280,
+"code_rome": "H2903",
+"libelle_rome": "Tourneur-fraiseur / Tourneuse-fraiseuse"
+}
+,
+{
+"code_ogr_rome": 282,
+"code_rome": "H2905",
+"libelle_rome": "Cisailleur / Cisailleuse en métallurgie"
+}
+,
+{
+"code_ogr_rome": 284,
+"code_rome": "H2907",
+"libelle_rome": "Fondeur / Fondeuse en métallurgie"
+}
+,
+{
+"code_ogr_rome": 296,
+"code_rome": "H3203",
+"libelle_rome": "Mouleur-stratifieur / Mouleuse-stratifieuse"
+}
+,
+{
+"code_ogr_rome": 301,
+"code_rome": "H3402",
+"libelle_rome": "Agent / Agente de traitement de surface"
+}
+,
+{
+"code_ogr_rome": 303,
+"code_rome": "H3404",
+"libelle_rome": "Peintre industriel / Peintre industrielle"
+}
+,
+{
+"code_ogr_rome": 305,
+"code_rome": "I1102",
+"libelle_rome": "Ingénieur / Ingénieure de maintenance industrielle"
+}
+,
+{
+"code_ogr_rome": 313,
+"code_rome": "I1304",
+"libelle_rome": "Technicien / Technicienne de maintenance industrielle"
+}
+,
+{
+"code_ogr_rome": 510142,
+"code_rome": "I1334",
+"libelle_rome": "Electronicien / Electronicienne de maintenance aéronautique"
+}
+,
+{
+"code_ogr_rome": 326,
+"code_rome": "I1602",
+"libelle_rome": "Mécanicien / Mécanicienne avion"
+}
+,
+{
+"code_ogr_rome": 430,
+"code_rome": "K2503",
+"libelle_rome": "Agent / Agente de prévention et de sécurité"
+}
+,
+{
+"code_ogr_rome": 488730,
+"code_rome": "K2506",
+"libelle_rome": "Convoyeur / Convoyeuse de fonds"
+}
+,
+{
+"code_ogr_rome": 510292,
+"code_rome": "K2510",
+"libelle_rome": "Agent / Agente cynophile de sécurité"
+}
+,
+{
+"code_ogr_rome": 488641,
+"code_rome": "M1818",
+"libelle_rome": "Ingénieur / Ingénieure d'étude informatique"
+}
+,
+{
+"code_ogr_rome": 488754,
+"code_rome": "M1827",
+"libelle_rome": "Ingénieur / Ingénieure DevOps"
+}
+,
+{
+"code_ogr_rome": 488894,
+"code_rome": "M1836",
+"libelle_rome": "Ingénieur concepteur / Ingénieure conceptrice informatique"
+}
+,
+{
+"code_ogr_rome": 489017,
+"code_rome": "M1844",
+"libelle_rome": "Analyste en cybersécurité"
+}
+,
+{
+"code_ogr_rome": 510,
+"code_rome": "N2101",
+"libelle_rome": "Personnel Navigant Commercial - PNC -"
+}
+,
+{
+"code_ogr_rome": 511,
+"code_rome": "N2102",
+"libelle_rome": "Pilote de ligne"
+}
+,
+{
+"code_ogr_rome": 512,
+"code_rome": "N2201",
+"libelle_rome": "Agent / Agente d'Escale Commerciale aéroportuaire -AEC-"
+}
+,
+{
+"code_ogr_rome": 513,
+"code_rome": "N2202",
+"libelle_rome": "Contrôleur aérien / Contrôleuse aérienne"
+}
+,
+{
+"code_ogr_rome": 514,
+"code_rome": "N2203",
+"libelle_rome": "Agent / Agente de piste"
+}
+,
+{
+"code_ogr_rome": 515,
+"code_rome": "N2204",
+"libelle_rome": "Agent / Agente de trafic aérien"
+}
+,
+{
+"code_ogr_rome": 516,
+"code_rome": "N2205",
+"libelle_rome": "Chef / Cheffe d'escale"
+}
+,
+{
+"code_ogr_rome": 489039,
+"code_rome": "N2206",
+"libelle_rome": "Pilote de drone"
+}
+,
+{
+"code_ogr_rome": 510602,
+"code_rome": "N2208",
+"libelle_rome": "Contrôleur / Contrôleuse de la circulation et de la défense aérienne"
+}
+]
+}
+,
+{
+"code_theme": "008",
+"libelle_theme": "Métiers de la sécurité publique et privée",
+"definition_theme": "Métiers de la prévention, de la sécurité civile, des secours, de la surveillance auprès des personnes et du gardiennage",
+"liste_metier": [
+{
+"code_ogr_rome": 223,
+"code_rome": "H1302",
+"libelle_rome": "Ingénieur / Ingénieure Hygiène, Sécurité et Environnement en industrie (HSE)"
+}
+,
+{
+"code_ogr_rome": 224,
+"code_rome": "H1303",
+"libelle_rome": "Technicien / Technicienne en Hygiène, Sécurité, Environnement industriel (HSE)"
+}
+,
+{
+"code_ogr_rome": 488285,
+"code_rome": "H1304",
+"libelle_rome": "Responsable environnement en industrie"
+}
+,
+{
+"code_ogr_rome": 488596,
+"code_rome": "H1305",
+"libelle_rome": "Vérificateur / Vérificatrice de conformité industrielle"
+}
+,
+{
+"code_ogr_rome": 489181,
+"code_rome": "H1308",
+"libelle_rome": "Animateur / Animatrice en Hygiène Sécurité Environnement (HSE)"
+}
+,
+{
+"code_ogr_rome": 489183,
+"code_rome": "H1309",
+"libelle_rome": "Technicien / Technicienne en radioprotection"
+}
+,
+{
+"code_ogr_rome": 488284,
+"code_rome": "H1509",
+"libelle_rome": "Responsable des affaires règlementaires en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 489085,
+"code_rome": "I1106",
+"libelle_rome": "Responsable de maintenance réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 308,
+"code_rome": "I1202",
+"libelle_rome": "Agent / Agente d'exploitation de la voirie"
+}
+,
+{
+"code_ogr_rome": 488628,
+"code_rome": "I1205",
+"libelle_rome": "Installateur vérificateur / Installatrice vérificatrice d'extincteurs"
+}
+,
+{
+"code_ogr_rome": 509643,
+"code_rome": "J1123",
+"libelle_rome": "Médecin des armées"
+}
+,
+{
+"code_ogr_rome": 509923,
+"code_rome": "K1414",
+"libelle_rome": "Chargé / Chargée de mission santé publique"
+}
+,
+{
+"code_ogr_rome": 509935,
+"code_rome": "K1416",
+"libelle_rome": "Directeur / Directrice des services pénitentiaires d'insertion et de probation (DSPIP)"
+}
+,
+{
+"code_ogr_rome": 384,
+"code_rome": "K1501",
+"libelle_rome": "Agent / Agente d'administration principal(e) des douanes"
+}
+,
+{
+"code_ogr_rome": 386,
+"code_rome": "K1503",
+"libelle_rome": "Contrôleur / Contrôleuse des impôts"
+}
+,
+{
+"code_ogr_rome": 387,
+"code_rome": "K1504",
+"libelle_rome": "Percepteur / Perceptrice des impôts et du Trésor Public"
+}
+,
+{
+"code_ogr_rome": 388,
+"code_rome": "K1505",
+"libelle_rome": "Inspecteur / Inspectrice des douanes"
+}
+,
+{
+"code_ogr_rome": 510301,
+"code_rome": "K1509",
+"libelle_rome": "Adjoint / Adjointe de contrôle de la concurrence, de la consommation et de la répression des fraudes"
+}
+,
+{
+"code_ogr_rome": 509669,
+"code_rome": "K1510",
+"libelle_rome": "Contrôleur / Contrôleuse du Trésor public"
+}
+,
+{
+"code_ogr_rome": 509772,
+"code_rome": "K1512",
+"libelle_rome": "Chef / Cheffe de poste du Trésor public"
+}
+,
+{
+"code_ogr_rome": 392,
+"code_rome": "K1702",
+"libelle_rome": "Responsable de sécurité civile et de secours"
+}
+,
+{
+"code_ogr_rome": 395,
+"code_rome": "K1705",
+"libelle_rome": "Secouriste"
+}
+,
+{
+"code_ogr_rome": 396,
+"code_rome": "K1706",
+"libelle_rome": "Agent / Agente de la force publique"
+}
+,
+{
+"code_ogr_rome": 397,
+"code_rome": "K1707",
+"libelle_rome": "Policier municipal / Policière municipale"
+}
+,
+{
+"code_ogr_rome": 488295,
+"code_rome": "K1708",
+"libelle_rome": "Gardien / Gardienne de la paix"
+}
+,
+{
+"code_ogr_rome": 488320,
+"code_rome": "K1709",
+"libelle_rome": "Commissaire de police"
+}
+,
+{
+"code_ogr_rome": 488345,
+"code_rome": "K1710",
+"libelle_rome": "Officier de police judiciaire / Officière de police judiciaire"
+}
+,
+{
+"code_ogr_rome": 488907,
+"code_rome": "K1716",
+"libelle_rome": "Chef / Cheffe de service pénitentiaire"
+}
+,
+{
+"code_ogr_rome": 489167,
+"code_rome": "K1719",
+"libelle_rome": "Chef / Cheffe de police municipale"
+}
+,
+{
+"code_ogr_rome": 489186,
+"code_rome": "K1720",
+"libelle_rome": "Gardien / Gardienne de compagnie républicaine de sécurité"
+}
+,
+{
+"code_ogr_rome": 510013,
+"code_rome": "K1910",
+"libelle_rome": "Commissaire à la Cour des comptes"
+}
+,
+{
+"code_ogr_rome": 429,
+"code_rome": "K2502",
+"libelle_rome": "Responsable sécurité de site"
+}
+,
+{
+"code_ogr_rome": 430,
+"code_rome": "K2503",
+"libelle_rome": "Agent / Agente de prévention et de sécurité"
+}
+,
+{
+"code_ogr_rome": 404548,
+"code_rome": "K2504",
+"libelle_rome": "Agent / Agente de sécurité événementielle"
+}
+,
+{
+"code_ogr_rome": 488622,
+"code_rome": "K2505",
+"libelle_rome": "Enquêteur privé / Enquêtrice privée"
+}
+,
+{
+"code_ogr_rome": 488730,
+"code_rome": "K2506",
+"libelle_rome": "Convoyeur / Convoyeuse de fonds"
+}
+,
+{
+"code_ogr_rome": 509543,
+"code_rome": "K2507",
+"libelle_rome": "Agent / Agente d'exploitation et de sûreté aéroportuaire"
+}
+,
+{
+"code_ogr_rome": 509689,
+"code_rome": "K2508",
+"libelle_rome": "Agent / Agente de protection rapprochée"
+}
+,
+{
+"code_ogr_rome": 509690,
+"code_rome": "K2509",
+"libelle_rome": "Opérateur / Opératrice en télésurveillance"
+}
+,
+{
+"code_ogr_rome": 510292,
+"code_rome": "K2510",
+"libelle_rome": "Agent / Agente cynophile de sécurité"
+}
+,
+{
+"code_ogr_rome": 489039,
+"code_rome": "N2206",
+"libelle_rome": "Pilote de drone"
+}
+]
+}
+,
+{
+"code_theme": "009",
+"libelle_theme": "Métiers du multimédia",
+"definition_theme": "Métiers du traitement de l'information basés sur des supports de communication tels que des textes, des sons, des images fixes et des vidéos (jeux vidéos, films d'animation, site web...)",
+"liste_metier": [
+{
+"code_ogr_rome": 119,
+"code_rome": "E1101",
+"libelle_rome": "Community manager"
+}
+,
+{
+"code_ogr_rome": 122,
+"code_rome": "E1104",
+"libelle_rome": "Concepteur / Conceptrice de contenus multimedia"
+}
+,
+{
+"code_ogr_rome": 124,
+"code_rome": "E1106",
+"libelle_rome": "Journaliste"
+}
+,
+{
+"code_ogr_rome": 403088,
+"code_rome": "E1109",
+"libelle_rome": "Directeur / Directrice de la communication"
+}
+,
+{
+"code_ogr_rome": 488749,
+"code_rome": "E1110",
+"libelle_rome": "Directeur / Directrice de la rédaction"
+}
+,
+{
+"code_ogr_rome": 488867,
+"code_rome": "E1111",
+"libelle_rome": "Game master"
+}
+,
+{
+"code_ogr_rome": 488921,
+"code_rome": "E1112",
+"libelle_rome": "Chargé / Chargée de communication"
+}
+,
+{
+"code_ogr_rome": 509400,
+"code_rome": "E1114",
+"libelle_rome": "Reporter / Reportrice"
+}
+,
+{
+"code_ogr_rome": 509653,
+"code_rome": "E1115",
+"libelle_rome": "Chef / Cheffe de projet jeux vidéo"
+}
+,
+{
+"code_ogr_rome": 509668,
+"code_rome": "E1116",
+"libelle_rome": "Responsable d'édition en presse"
+}
+,
+{
+"code_ogr_rome": 510054,
+"code_rome": "E1119",
+"libelle_rome": "Concepteur rédacteur / Conceptrice rédactrice"
+}
+,
+{
+"code_ogr_rome": 510598,
+"code_rome": "E1124",
+"libelle_rome": "Social media manager - Responsable des médias sociaux"
+}
+,
+{
+"code_ogr_rome": 510429,
+"code_rome": "E1125",
+"libelle_rome": "Concepteur / Conceptrice de jeux vidéo"
+}
+,
+{
+"code_ogr_rome": 510439,
+"code_rome": "E1126",
+"libelle_rome": "Auteur / Auteure de jeux de société"
+}
+,
+{
+"code_ogr_rome": 510441,
+"code_rome": "E1127",
+"libelle_rome": "Brand content manager"
+}
+,
+{
+"code_ogr_rome": 510443,
+"code_rome": "E1128",
+"libelle_rome": "Directeur / Directrice de création"
+}
+,
+{
+"code_ogr_rome": 510449,
+"code_rome": "E1129",
+"libelle_rome": "Directeur / Directrice artistique communication"
+}
+,
+{
+"code_ogr_rome": 131,
+"code_rome": "E1205",
+"libelle_rome": "Designer graphique"
+}
+,
+{
+"code_ogr_rome": 404036,
+"code_rome": "E1206",
+"libelle_rome": "UX - UI Designer"
+}
+,
+{
+"code_ogr_rome": 488782,
+"code_rome": "E1207",
+"libelle_rome": "Motion designer"
+}
+,
+{
+"code_ogr_rome": 510604,
+"code_rome": "E1210",
+"libelle_rome": "Web designer"
+}
+,
+{
+"code_ogr_rome": 139,
+"code_rome": "E1308",
+"libelle_rome": "Technicien / Technicienne des industries graphiques"
+}
+,
+{
+"code_ogr_rome": 140,
+"code_rome": "E1401",
+"libelle_rome": "Chef / Cheffe de publicité"
+}
+,
+{
+"code_ogr_rome": 141,
+"code_rome": "E1402",
+"libelle_rome": "Média planneur / Média planneuse"
+}
+,
+{
+"code_ogr_rome": 509504,
+"code_rome": "E1403",
+"libelle_rome": "Consultant / Consultante média"
+}
+,
+{
+"code_ogr_rome": 509820,
+"code_rome": "E1405",
+"libelle_rome": "Référenceur / Référenceuse web"
+}
+,
+{
+"code_ogr_rome": 510209,
+"code_rome": "E1406",
+"libelle_rome": "Influenceur / Influenceuse web"
+}
+,
+{
+"code_ogr_rome": 510298,
+"code_rome": "E1407",
+"libelle_rome": "Traffic manager"
+}
+,
+{
+"code_ogr_rome": 510412,
+"code_rome": "E1409",
+"libelle_rome": "Acheteur / Acheteuse média"
+}
+,
+{
+"code_ogr_rome": 510420,
+"code_rome": "E1410",
+"libelle_rome": "Responsable programmatique"
+}
+,
+{
+"code_ogr_rome": 510426,
+"code_rome": "E1411",
+"libelle_rome": "Chargé / Chargée de développement du patrimoine publicitaire"
+}
+,
+{
+"code_ogr_rome": 510444,
+"code_rome": "E1412",
+"libelle_rome": "Directeur / Directrice média"
+}
+,
+{
+"code_ogr_rome": 509760,
+"code_rome": "G1238",
+"libelle_rome": "Animateur / Animatrice d'atelier multimédia"
+}
+,
+{
+"code_ogr_rome": 488902,
+"code_rome": "I1104",
+"libelle_rome": "Ingénieur / Ingénieure infrastructures télécoms réseaux mobiles"
+}
+,
+{
+"code_ogr_rome": 488292,
+"code_rome": "I1311",
+"libelle_rome": "Technicien / Technicienne installation réseaux câblés fibre optique"
+}
+,
+{
+"code_ogr_rome": 489195,
+"code_rome": "I1405",
+"libelle_rome": "Administrateur / Administratrice bureautique"
+}
+,
+{
+"code_ogr_rome": 509360,
+"code_rome": "I1406",
+"libelle_rome": "Superviseur / Superviseuse hot line en informatique"
+}
+,
+{
+"code_ogr_rome": 509771,
+"code_rome": "I1407",
+"libelle_rome": "Réparateur / Réparatrice en produits de télécommunication et multimédia"
+}
+,
+{
+"code_ogr_rome": 389,
+"code_rome": "K1601",
+"libelle_rome": "Documentaliste"
+}
+,
+{
+"code_ogr_rome": 437,
+"code_rome": "L1103",
+"libelle_rome": "Animateur / Animatrice d'antenne"
+}
+,
+{
+"code_ogr_rome": 510454,
+"code_rome": "L1104",
+"libelle_rome": "Animateur / Animatrice événementiel"
+}
+,
+{
+"code_ogr_rome": 39022,
+"code_rome": "L1510",
+"libelle_rome": "Animateur / Animatrice 3D - films d'animation"
+}
+,
+{
+"code_ogr_rome": 510308,
+"code_rome": "M1418",
+"libelle_rome": "Recruteur / Recruteuse de donateurs"
+}
+,
+{
+"code_ogr_rome": 485,
+"code_rome": "M1703",
+"libelle_rome": "Chef / Cheffe de produit"
+}
+,
+{
+"code_ogr_rome": 487,
+"code_rome": "M1705",
+"libelle_rome": "Responsable marketing"
+}
+,
+{
+"code_ogr_rome": 488873,
+"code_rome": "M1716",
+"libelle_rome": "Directeur / Directrice marketing digital"
+}
+,
+{
+"code_ogr_rome": 510431,
+"code_rome": "M1717",
+"libelle_rome": "Responsable innovation"
+}
+,
+{
+"code_ogr_rome": 510434,
+"code_rome": "M1718",
+"libelle_rome": "Chargé / Chargée de marketing digital"
+}
+,
+{
+"code_ogr_rome": 490,
+"code_rome": "M1801",
+"libelle_rome": "Administrateur / Administratrice de systèmes d'information (SI)"
+}
+,
+{
+"code_ogr_rome": 491,
+"code_rome": "M1802",
+"libelle_rome": "Expert / Experte systèmes et réseaux informatiques"
+}
+,
+{
+"code_ogr_rome": 494,
+"code_rome": "M1805",
+"libelle_rome": "Développeur / Développeuse informatique"
+}
+,
+{
+"code_ogr_rome": 499,
+"code_rome": "M1810",
+"libelle_rome": "Technicien / Technicienne d'exploitation informatique"
+}
+,
+{
+"code_ogr_rome": 488329,
+"code_rome": "M1814",
+"libelle_rome": "Scrum Master"
+}
+,
+{
+"code_ogr_rome": 488576,
+"code_rome": "M1815",
+"libelle_rome": "Spécialiste test et validation logiciel ou application"
+}
+,
+{
+"code_ogr_rome": 488636,
+"code_rome": "M1817",
+"libelle_rome": "Administrateur / Administratrice sécurité informatique"
+}
+,
+{
+"code_ogr_rome": 488641,
+"code_rome": "M1818",
+"libelle_rome": "Ingénieur / Ingénieure d'étude informatique"
+}
+,
+{
+"code_ogr_rome": 488716,
+"code_rome": "M1821",
+"libelle_rome": "Analyste d'application informatique"
+}
+,
+{
+"code_ogr_rome": 488721,
+"code_rome": "M1823",
+"libelle_rome": "Consultant / Consultante avant-vente"
+}
+,
+{
+"code_ogr_rome": 488748,
+"code_rome": "M1824",
+"libelle_rome": "Développeur / Développeuse décisionnel - Business Intelligence"
+}
+,
+{
+"code_ogr_rome": 488750,
+"code_rome": "M1825",
+"libelle_rome": "Coordinateur / Coordinatrice de production web"
+}
+,
+{
+"code_ogr_rome": 488754,
+"code_rome": "M1827",
+"libelle_rome": "Ingénieur / Ingénieure DevOps"
+}
+,
+{
+"code_ogr_rome": 488768,
+"code_rome": "M1828",
+"libelle_rome": "Chef de projet / Cheffe de projet (Project Management Officer)"
+}
+,
+{
+"code_ogr_rome": 488772,
+"code_rome": "M1829",
+"libelle_rome": "Ingénieur / Ingénieure systèmes et réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 488785,
+"code_rome": "M1830",
+"libelle_rome": "Administrateur / Administratrice réseaux - télécoms"
+}
+,
+{
+"code_ogr_rome": 488786,
+"code_rome": "M1831",
+"libelle_rome": "Développeur / Développeuse - jeux vidéo"
+}
+,
+{
+"code_ogr_rome": 488865,
+"code_rome": "M1832",
+"libelle_rome": "Homologateur / Homologatrice fonctionnel de logiciel"
+}
+,
+{
+"code_ogr_rome": 488888,
+"code_rome": "M1834",
+"libelle_rome": "Administrateur / Administratrice de site internet"
+}
+,
+{
+"code_ogr_rome": 488890,
+"code_rome": "M1835",
+"libelle_rome": "Architecte systèmes et réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 488894,
+"code_rome": "M1836",
+"libelle_rome": "Ingénieur concepteur / Ingénieure conceptrice informatique"
+}
+,
+{
+"code_ogr_rome": 488904,
+"code_rome": "M1837",
+"libelle_rome": "Développeur / Développeuse multimédia"
+}
+,
+{
+"code_ogr_rome": 488905,
+"code_rome": "M1838",
+"libelle_rome": "Urbaniste des systèmes d'information"
+}
+,
+{
+"code_ogr_rome": 488909,
+"code_rome": "M1839",
+"libelle_rome": "Architecte systèmes et réseaux"
+}
+,
+{
+"code_ogr_rome": 488922,
+"code_rome": "M1841",
+"libelle_rome": "Ingénieur informaticien / Ingénieure informaticienne"
+}
+,
+{
+"code_ogr_rome": 488933,
+"code_rome": "M1842",
+"libelle_rome": "Qualiticien / Qualiticienne logiciel en informatique"
+}
+,
+{
+"code_ogr_rome": 489009,
+"code_rome": "M1843",
+"libelle_rome": "Administrateur / Administratrice de serveurs"
+}
+,
+{
+"code_ogr_rome": 489017,
+"code_rome": "M1844",
+"libelle_rome": "Analyste en cybersécurité"
+}
+,
+{
+"code_ogr_rome": 489023,
+"code_rome": "M1845",
+"libelle_rome": "Architecte IoT - Internet des Objets"
+}
+,
+{
+"code_ogr_rome": 489035,
+"code_rome": "M1847",
+"libelle_rome": "Expert / Experte en communication et réseaux"
+}
+,
+{
+"code_ogr_rome": 489055,
+"code_rome": "M1848",
+"libelle_rome": "Analyste Concepteur / Conceptrice informatique"
+}
+,
+{
+"code_ogr_rome": 489061,
+"code_rome": "M1849",
+"libelle_rome": "Administrateur / Administratrice de messagerie"
+}
+,
+{
+"code_ogr_rome": 489066,
+"code_rome": "M1850",
+"libelle_rome": "Architecte multimédias interactifs"
+}
+,
+{
+"code_ogr_rome": 489072,
+"code_rome": "M1852",
+"libelle_rome": "Analyste d'étude informatique"
+}
+,
+{
+"code_ogr_rome": 489073,
+"code_rome": "M1853",
+"libelle_rome": "Chef / Cheffe de projet étude et développement informatique"
+}
+,
+{
+"code_ogr_rome": 489078,
+"code_rome": "M1854",
+"libelle_rome": "Administrateur / Administratrice réseau informatique"
+}
+,
+{
+"code_ogr_rome": 489081,
+"code_rome": "M1855",
+"libelle_rome": "Développeur / Développeuse web"
+}
+,
+{
+"code_ogr_rome": 489179,
+"code_rome": "M1858",
+"libelle_rome": "Chef / Cheffe de projet TMA - Tierce Maintenance Applicative"
+}
+,
+{
+"code_ogr_rome": 489188,
+"code_rome": "M1859",
+"libelle_rome": "Chef / Cheffe de projet maîtrise d'½uvre informatique"
+}
+,
+{
+"code_ogr_rome": 489199,
+"code_rome": "M1860",
+"libelle_rome": "Architecte cloud"
+}
+,
+{
+"code_ogr_rome": 489209,
+"code_rome": "M1861",
+"libelle_rome": "Développeur / Développeuse logiciel ou d'application"
+}
+,
+{
+"code_ogr_rome": 489218,
+"code_rome": "M1863",
+"libelle_rome": "Evaluateur / Evaluatrice sécurité des systèmes et produits informatiques"
+}
+,
+{
+"code_ogr_rome": 510638,
+"code_rome": "M1864",
+"libelle_rome": "Product Owner"
+}
+,
+{
+"code_ogr_rome": 509549,
+"code_rome": "M1867",
+"libelle_rome": "Responsable des systèmes d'information (SI)"
+}
+,
+{
+"code_ogr_rome": 509658,
+"code_rome": "M1869",
+"libelle_rome": "Gestionnaire de parc informatique"
+}
+,
+{
+"code_ogr_rome": 509700,
+"code_rome": "M1871",
+"libelle_rome": "Gestionnaire d'applications système d'information"
+}
+,
+{
+"code_ogr_rome": 509762,
+"code_rome": "M1872",
+"libelle_rome": "Consultant décisionnel / Consultante décisionnelle - Business Intelligence"
+}
+,
+{
+"code_ogr_rome": 509943,
+"code_rome": "M1874",
+"libelle_rome": "Spécialiste support"
+}
+,
+{
+"code_ogr_rome": 510169,
+"code_rome": "M1879",
+"libelle_rome": "Ingénieur / Ingénieure Cloud computing"
+}
+,
+{
+"code_ogr_rome": 510247,
+"code_rome": "M1880",
+"libelle_rome": "Spécialiste e-santé"
+}
+,
+{
+"code_ogr_rome": 510450,
+"code_rome": "M1892",
+"libelle_rome": "Ingénieur / Ingénieure en informatique embarquée"
+}
+,
+{
+"code_ogr_rome": 510465,
+"code_rome": "M1894",
+"libelle_rome": "Gestionnaire de base de données"
+}
+]
+}
+,
+{
+"code_theme": "010",
+"libelle_theme": "Métiers de l'humanitaire (hors santé et tertiaire)",
+"definition_theme": "Métiers liés à la mise en ½uvre d'actions élaborées par les organisations humanitaires (éducation, agriculture, bâtiment, logistique, marketing, ...)",
+"liste_metier": [
+{
+"code_ogr_rome": 12,
+"code_rome": "A1301",
+"libelle_rome": "Technicien / Technicienne de culture maraîchère"
+}
+,
+{
+"code_ogr_rome": 66,
+"code_rome": "C1202",
+"libelle_rome": "Analyste de crédits et risques bancaires"
+}
+,
+{
+"code_ogr_rome": 403088,
+"code_rome": "E1109",
+"libelle_rome": "Directeur / Directrice de la communication"
+}
+,
+{
+"code_ogr_rome": 488921,
+"code_rome": "E1112",
+"libelle_rome": "Chargé / Chargée de communication"
+}
+,
+{
+"code_ogr_rome": 509643,
+"code_rome": "J1123",
+"libelle_rome": "Médecin des armées"
+}
+,
+{
+"code_ogr_rome": 391,
+"code_rome": "K1701",
+"libelle_rome": "Combattant / Combattante en milieu terrestre"
+}
+,
+{
+"code_ogr_rome": 392,
+"code_rome": "K1702",
+"libelle_rome": "Responsable de sécurité civile et de secours"
+}
+,
+{
+"code_ogr_rome": 395,
+"code_rome": "K1705",
+"libelle_rome": "Secouriste"
+}
+,
+{
+"code_ogr_rome": 510040,
+"code_rome": "K1726",
+"libelle_rome": "Pisteur / Pisteuse secouriste"
+}
+,
+{
+"code_ogr_rome": 510584,
+"code_rome": "K1733",
+"libelle_rome": "Combattant / Combattante des forces spéciales militaires"
+}
+,
+{
+"code_ogr_rome": 510591,
+"code_rome": "K1737",
+"libelle_rome": "Combattant / Combattante en milieu maritime"
+}
+,
+{
+"code_ogr_rome": 409,
+"code_rome": "K2106",
+"libelle_rome": "Professeur / Professeure des écoles"
+}
+,
+{
+"code_ogr_rome": 420,
+"code_rome": "K2301",
+"libelle_rome": "Agent / Agente d'exploitation des réseaux d'assainissement"
+}
+,
+{
+"code_ogr_rome": 510308,
+"code_rome": "M1418",
+"libelle_rome": "Recruteur / Recruteuse de donateurs"
+}
+,
+{
+"code_ogr_rome": 487,
+"code_rome": "M1705",
+"libelle_rome": "Responsable marketing"
+}
+,
+{
+"code_ogr_rome": 510431,
+"code_rome": "M1717",
+"libelle_rome": "Responsable innovation"
+}
+,
+{
+"code_ogr_rome": 488601,
+"code_rome": "N1204",
+"libelle_rome": "Coordinateur / Coordinatrice transit en import - export"
+}
+,
+{
+"code_ogr_rome": 508,
+"code_rome": "N1302",
+"libelle_rome": "Responsable entrepôt logistique"
+}
+,
+{
+"code_ogr_rome": 509,
+"code_rome": "N1303",
+"libelle_rome": "Approvisionneur / Approvisionneuse logistique"
+}
+,
+{
+"code_ogr_rome": 523,
+"code_rome": "N4101",
+"libelle_rome": "Conducteur / Conductrice de poids lourd"
+}
+]
+}
+,
+{
+"code_theme": "011",
+"libelle_theme": "Métiers du nucléaire",
+"definition_theme": "Métiers liés au développement, à la production et à la maintenance industrielles des énergies nucléaires (bâtiment, industrie, production d'énergie, ...)",
+"liste_metier": [
+{
+"code_ogr_rome": 488589,
+"code_rome": "F1116",
+"libelle_rome": "Ingénieur / Ingénieure démantèlement nucléaire"
+}
+,
+{
+"code_ogr_rome": 488719,
+"code_rome": "F1122",
+"libelle_rome": "Ingénieur / Ingénieure Chantier nucléaire"
+}
+,
+{
+"code_ogr_rome": 509352,
+"code_rome": "F1626",
+"libelle_rome": "Calorifugeur / Calorifugeuse"
+}
+,
+{
+"code_ogr_rome": 211,
+"code_rome": "H1102",
+"libelle_rome": "Ingénieur / Ingénieure d'affaires en industrie"
+}
+,
+{
+"code_ogr_rome": 488302,
+"code_rome": "H1103",
+"libelle_rome": "Responsable d'affaires en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 489219,
+"code_rome": "H1225",
+"libelle_rome": "Ingénieur / Ingénieure développement nucléaire"
+}
+,
+{
+"code_ogr_rome": 509402,
+"code_rome": "H1230",
+"libelle_rome": "Ingénieur / Ingénieure essais vérification et validation (V&V) en milieu nucléaire"
+}
+,
+{
+"code_ogr_rome": 223,
+"code_rome": "H1302",
+"libelle_rome": "Ingénieur / Ingénieure Hygiène, Sécurité et Environnement en industrie (HSE)"
+}
+,
+{
+"code_ogr_rome": 224,
+"code_rome": "H1303",
+"libelle_rome": "Technicien / Technicienne en Hygiène, Sécurité, Environnement industriel (HSE)"
+}
+,
+{
+"code_ogr_rome": 488285,
+"code_rome": "H1304",
+"libelle_rome": "Responsable environnement en industrie"
+}
+,
+{
+"code_ogr_rome": 488619,
+"code_rome": "H1306",
+"libelle_rome": "Ingénieur / Ingénieure sûreté en industrie nucléaire"
+}
+,
+{
+"code_ogr_rome": 489181,
+"code_rome": "H1308",
+"libelle_rome": "Animateur / Animatrice en Hygiène Sécurité Environnement (HSE)"
+}
+,
+{
+"code_ogr_rome": 489183,
+"code_rome": "H1309",
+"libelle_rome": "Technicien / Technicienne en radioprotection"
+}
+,
+{
+"code_ogr_rome": 234,
+"code_rome": "H1506",
+"libelle_rome": "Contrôleur / Contrôleuse technique en métallurgie"
+}
+,
+{
+"code_ogr_rome": 488278,
+"code_rome": "H1508",
+"libelle_rome": "Assureur / Assureuse qualité industrie"
+}
+,
+{
+"code_ogr_rome": 488284,
+"code_rome": "H1509",
+"libelle_rome": "Responsable des affaires règlementaires en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488296,
+"code_rome": "H1510",
+"libelle_rome": "Technicien / Technicienne de laboratoire de contrôle en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488309,
+"code_rome": "H1511",
+"libelle_rome": "Chargé / Chargée de validation-qualification en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488312,
+"code_rome": "H1512",
+"libelle_rome": "Directeur / Directrice de zone en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488314,
+"code_rome": "H1513",
+"libelle_rome": "Responsable de pharmacovigilance en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488336,
+"code_rome": "H1515",
+"libelle_rome": "Auditeur / Auditrice qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488341,
+"code_rome": "H1516",
+"libelle_rome": "Expert / Experte métrologue"
+}
+,
+{
+"code_ogr_rome": 488344,
+"code_rome": "H1518",
+"libelle_rome": "Responsable assurance qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488352,
+"code_rome": "H1519",
+"libelle_rome": "Responsable éthique-déontologie-conformité en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488353,
+"code_rome": "H1520",
+"libelle_rome": "Ingénieur / Ingénieure assurance qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488565,
+"code_rome": "H1521",
+"libelle_rome": "Technicien / Technicienne de validation-qualification"
+}
+,
+{
+"code_ogr_rome": 488632,
+"code_rome": "H1522",
+"libelle_rome": "Technicien / Technicienne en contrôles et essais non destructifs (CND END)"
+}
+,
+{
+"code_ogr_rome": 510457,
+"code_rome": "H1533",
+"libelle_rome": "Ingénieur / Ingénieure CND END"
+}
+,
+{
+"code_ogr_rome": 488862,
+"code_rome": "H2508",
+"libelle_rome": "Ingénieur / Ingénieure exploitation nucléaire"
+}
+,
+{
+"code_ogr_rome": 272,
+"code_rome": "H2701",
+"libelle_rome": "Technicien / Technicienne énergie"
+}
+,
+{
+"code_ogr_rome": 488305,
+"code_rome": "H2702",
+"libelle_rome": "Conducteur / Conductrice de bloc nucléaire"
+}
+,
+{
+"code_ogr_rome": 510173,
+"code_rome": "H2706",
+"libelle_rome": "Opérateur / Opératrice de production en énergie nucléaire"
+}
+,
+{
+"code_ogr_rome": 509386,
+"code_rome": "H2707",
+"libelle_rome": "Technicien / Technicienne essais en industrie nucléaire"
+}
+,
+{
+"code_ogr_rome": 509525,
+"code_rome": "H2708",
+"libelle_rome": "Technicien / Technicienne d'exploitation nucléaire"
+}
+,
+{
+"code_ogr_rome": 279,
+"code_rome": "H2902",
+"libelle_rome": "Chaudronnier / Chaudronnière"
+}
+,
+{
+"code_ogr_rome": 291,
+"code_rome": "H2914",
+"libelle_rome": "Tuyauteur / Tuyauteuse"
+}
+,
+{
+"code_ogr_rome": 489024,
+"code_rome": "H2915",
+"libelle_rome": "Chef soudeur / Cheffe soudeuse"
+}
+,
+{
+"code_ogr_rome": 489047,
+"code_rome": "H2916",
+"libelle_rome": "Soudeur / Soudeuse Tungsten Inert Gas -TIG-"
+}
+,
+{
+"code_ogr_rome": 489194,
+"code_rome": "H2917",
+"libelle_rome": "Soudeur / Soudeuse MIG MAG"
+}
+,
+{
+"code_ogr_rome": 304,
+"code_rome": "I1101",
+"libelle_rome": "Directeur / Directrice de la gestion technique des bâtiments"
+}
+,
+{
+"code_ogr_rome": 488930,
+"code_rome": "I1105",
+"libelle_rome": "Responsable de maintenance et d'exploitation"
+}
+,
+{
+"code_ogr_rome": 313,
+"code_rome": "I1304",
+"libelle_rome": "Technicien / Technicienne de maintenance industrielle"
+}
+,
+{
+"code_ogr_rome": 318,
+"code_rome": "I1309",
+"libelle_rome": "Electricien / Electricienne de maintenance"
+}
+,
+{
+"code_ogr_rome": 319,
+"code_rome": "I1310",
+"libelle_rome": "Mécanicien / Mécanicienne de maintenance industrielle"
+}
+,
+{
+"code_ogr_rome": 323,
+"code_rome": "I1502",
+"libelle_rome": "Scaphandrier / Scaphandrière"
+}
+,
+{
+"code_ogr_rome": 324,
+"code_rome": "I1503",
+"libelle_rome": "Technicien / Technicienne en risques technologiques"
+}
+,
+{
+"code_ogr_rome": 488273,
+"code_rome": "I1504",
+"libelle_rome": "Décontaminateur / Décontamineuse nucléaire et radiologique"
+}
+,
+{
+"code_ogr_rome": 488281,
+"code_rome": "I1505",
+"libelle_rome": "Technicien / Technicienne déchet nucléaire"
+}
+,
+{
+"code_ogr_rome": 488770,
+"code_rome": "I1506",
+"libelle_rome": "Chef / Cheffe d'équipe cordiste"
+}
+,
+{
+"code_ogr_rome": 489013,
+"code_rome": "I1507",
+"libelle_rome": "Opérateur / Opératrice démantèlement nucléaire"
+}
+]
+}
+,
+{
+"code_theme": "012",
+"libelle_theme": "Métiers auprès des enfants",
+"definition_theme": "Métiers liés à l'éducation, l'enseignement, l'animation, aux loisirs et aux soins des enfants ",
+"liste_metier": [
+{
+"code_ogr_rome": 183,
+"code_rome": "G1202",
+"libelle_rome": "Animateur / Animatrice d'atelier artistique ou ludique"
+}
+,
+{
+"code_ogr_rome": 184,
+"code_rome": "G1203",
+"libelle_rome": "Animateur / Animatrice jeunesse"
+}
+,
+{
+"code_ogr_rome": 403072,
+"code_rome": "G1207",
+"libelle_rome": "Surveillant / Surveillante de baignade"
+}
+,
+{
+"code_ogr_rome": 403078,
+"code_rome": "G1209",
+"libelle_rome": "Animateur / Animatrice de loisirs sportifs"
+}
+,
+{
+"code_ogr_rome": 403958,
+"code_rome": "G1210",
+"libelle_rome": "Enseignant / Enseignante d'équitation"
+}
+,
+{
+"code_ogr_rome": 488598,
+"code_rome": "G1221",
+"libelle_rome": "Responsable des attractions"
+}
+,
+{
+"code_ogr_rome": 489046,
+"code_rome": "G1232",
+"libelle_rome": "Opérateur / Opératrice de parcours acrobatique dans les arbres"
+}
+,
+{
+"code_ogr_rome": 509374,
+"code_rome": "G1235",
+"libelle_rome": "Animateur / Animatrice de séjour de vacances"
+}
+,
+{
+"code_ogr_rome": 509387,
+"code_rome": "G1236",
+"libelle_rome": "Animateur / Animatrice de club de vacances"
+}
+,
+{
+"code_ogr_rome": 509666,
+"code_rome": "G1237",
+"libelle_rome": "Directeur / Directrice d'accueil de loisirs sans hébergement"
+}
+,
+{
+"code_ogr_rome": 509764,
+"code_rome": "G1239",
+"libelle_rome": "Responsable d'animation"
+}
+,
+{
+"code_ogr_rome": 510396,
+"code_rome": "G1241",
+"libelle_rome": "Directeur / Directrice de centre de séjour de vacances"
+}
+,
+{
+"code_ogr_rome": 488726,
+"code_rome": "J1107",
+"libelle_rome": "Médecin scolaire"
+}
+,
+{
+"code_ogr_rome": 488880,
+"code_rome": "J1109",
+"libelle_rome": "Médecin de la Protection Maternelle et Infantile -PMI-"
+}
+,
+{
+"code_ogr_rome": 341,
+"code_rome": "J1304",
+"libelle_rome": "Auxiliaire de puériculture"
+}
+,
+{
+"code_ogr_rome": 363,
+"code_rome": "J1507",
+"libelle_rome": "Puériculteur / Puéricultrice"
+}
+,
+{
+"code_ogr_rome": 488872,
+"code_rome": "J1511",
+"libelle_rome": "Infirmier / Infirmière scolaire"
+}
+,
+{
+"code_ogr_rome": 369,
+"code_rome": "K1202",
+"libelle_rome": "Educateur / Educatrice de jeunes enfants"
+}
+,
+{
+"code_ogr_rome": 370,
+"code_rome": "K1203",
+"libelle_rome": "Educateur technique spécialisé / Educatrice technique spécialisée"
+}
+,
+{
+"code_ogr_rome": 373,
+"code_rome": "K1206",
+"libelle_rome": "Animateur coordinateur socioculturel / Animatrice coordinatrice socioculturelle"
+}
+,
+{
+"code_ogr_rome": 374,
+"code_rome": "K1207",
+"libelle_rome": "Educateur spécialisé / Educatrice spécialisée"
+}
+,
+{
+"code_ogr_rome": 488325,
+"code_rome": "K1208",
+"libelle_rome": "Moniteur éducateur / Monitrice éducatrice"
+}
+,
+{
+"code_ogr_rome": 488783,
+"code_rome": "K1210",
+"libelle_rome": "Educateur / Educatrice de la protection judiciaire de la jeunesse"
+}
+,
+{
+"code_ogr_rome": 509415,
+"code_rome": "K1216",
+"libelle_rome": "Responsable de structure multi accueil petite enfance"
+}
+,
+{
+"code_ogr_rome": 509503,
+"code_rome": "K1217",
+"libelle_rome": "Animateur socioéducatif / Animatrice socioéducative"
+}
+,
+{
+"code_ogr_rome": 509696,
+"code_rome": "K1219",
+"libelle_rome": "Directeur / Directrice de centre socioculturel"
+}
+,
+{
+"code_ogr_rome": 377,
+"code_rome": "K1303",
+"libelle_rome": "Garde d'enfant"
+}
+,
+{
+"code_ogr_rome": 404045,
+"code_rome": "K1307",
+"libelle_rome": "Animateur / Animatrice petite enfance"
+}
+,
+{
+"code_ogr_rome": 404046,
+"code_rome": "K1308",
+"libelle_rome": "Agent territorial spécialisé / Agente territoriale spécialisée des écoles maternelles (ATSEM)"
+}
+,
+{
+"code_ogr_rome": 489223,
+"code_rome": "K1313",
+"libelle_rome": "Employé / Employée au pair"
+}
+,
+{
+"code_ogr_rome": 509757,
+"code_rome": "K1314",
+"libelle_rome": "Auxiliaire de vie sociale auprès d'enfants"
+}
+,
+{
+"code_ogr_rome": 389,
+"code_rome": "K1601",
+"libelle_rome": "Documentaliste"
+}
+,
+{
+"code_ogr_rome": 488327,
+"code_rome": "K1603",
+"libelle_rome": "Bibliothécaire"
+}
+,
+{
+"code_ogr_rome": 407,
+"code_rome": "K2104",
+"libelle_rome": "Surveillant / Surveillante en milieu scolaire"
+}
+,
+{
+"code_ogr_rome": 408,
+"code_rome": "K2105",
+"libelle_rome": "Professeur / Professeure de musique"
+}
+,
+{
+"code_ogr_rome": 409,
+"code_rome": "K2106",
+"libelle_rome": "Professeur / Professeure des écoles"
+}
+,
+{
+"code_ogr_rome": 488886,
+"code_rome": "K2115",
+"libelle_rome": "Conseiller principal / Conseillère principale d'éducation"
+}
+,
+{
+"code_ogr_rome": 489031,
+"code_rome": "K2118",
+"libelle_rome": "Directeur / Directrice d'école primaire"
+}
+,
+{
+"code_ogr_rome": 509673,
+"code_rome": "K2129",
+"libelle_rome": "Professeur / Professeure en soutien scolaire"
+}
+,
+{
+"code_ogr_rome": 509706,
+"code_rome": "K2130",
+"libelle_rome": "Professeur / Professeure de Français Langue Etrangère (FLE)"
+}
+,
+{
+"code_ogr_rome": 510418,
+"code_rome": "K2136",
+"libelle_rome": "Professeur territorial / Professeure territoriale d'enseignement artistique"
+}
+,
+{
+"code_ogr_rome": 510044,
+"code_rome": "K2137",
+"libelle_rome": "Assistant / Assistante pédagogique en milieu scolaire"
+}
+,
+{
+"code_ogr_rome": 510284,
+"code_rome": "M1217",
+"libelle_rome": "Intendant / Intendante d'établissement scolaire (lycée, collège...)"
+}
+]
+}
+,
+{
+"code_theme": "013",
+"libelle_theme": "Métiers saisonniers, de vacances / Jobs d'été",
+"definition_theme": "Métiers dont l'exercice et les recrutements sont liés aux saisons (agriculture) ou aux périodes de fortes activités touristiques (hôtellerie restauration, animation, loisirs...)",
+"liste_metier": [
+{
+"code_ogr_rome": 15,
+"code_rome": "A1401",
+"libelle_rome": "Cueilleur / Cueilleuse de fruits"
+}
+,
+{
+"code_ogr_rome": 16,
+"code_rome": "A1402",
+"libelle_rome": "Aide agricole en production végétale"
+}
+,
+{
+"code_ogr_rome": 510021,
+"code_rome": "A1444",
+"libelle_rome": "Aide agricole en production fruitière"
+}
+,
+{
+"code_ogr_rome": 85,
+"code_rome": "D1106",
+"libelle_rome": "Vendeur / Vendeuse en épicerie"
+}
+,
+{
+"code_ogr_rome": 90,
+"code_rome": "D1204",
+"libelle_rome": "Agent technico-commercial / Agente technico-commerciale en location de véhicules"
+}
+,
+{
+"code_ogr_rome": 97,
+"code_rome": "D1211",
+"libelle_rome": "Vendeur / Vendeuse d'articles de sport et loisirs"
+}
+,
+{
+"code_ogr_rome": 489056,
+"code_rome": "D1221",
+"libelle_rome": "Vendeur / Vendeuse de produits culturels et ludiques"
+}
+,
+{
+"code_ogr_rome": 509755,
+"code_rome": "D1234",
+"libelle_rome": "Chargé / Chargée de location de matériel de transport ou de loisirs"
+}
+,
+{
+"code_ogr_rome": 509761,
+"code_rome": "D1235",
+"libelle_rome": "Plagiste"
+}
+,
+{
+"code_ogr_rome": 510014,
+"code_rome": "D1238",
+"libelle_rome": "Chef / Cheffe d'agence de location de véhicules"
+}
+,
+{
+"code_ogr_rome": 114,
+"code_rome": "D1505",
+"libelle_rome": "Hôte / Hôtesse de caisse"
+}
+,
+{
+"code_ogr_rome": 116,
+"code_rome": "D1507",
+"libelle_rome": "Employé / Employée de rayon libre-service"
+}
+,
+{
+"code_ogr_rome": 509899,
+"code_rome": "D1511",
+"libelle_rome": "Opérateur / Opératrice de station service"
+}
+,
+{
+"code_ogr_rome": 180,
+"code_rome": "G1101",
+"libelle_rome": "Agent / Agente d'accueil touristique"
+}
+,
+{
+"code_ogr_rome": 488895,
+"code_rome": "G1107",
+"libelle_rome": "Hôte / Hôtesse d'accueil et d'animation de croisière"
+}
+,
+{
+"code_ogr_rome": 182,
+"code_rome": "G1201",
+"libelle_rome": "Guide-accompagnateur / Guide-accompagnatrice"
+}
+,
+{
+"code_ogr_rome": 183,
+"code_rome": "G1202",
+"libelle_rome": "Animateur / Animatrice d'atelier artistique ou ludique"
+}
+,
+{
+"code_ogr_rome": 186,
+"code_rome": "G1205",
+"libelle_rome": "Opérateur / Opératrice d'attraction"
+}
+,
+{
+"code_ogr_rome": 187,
+"code_rome": "G1206",
+"libelle_rome": "Croupier / Croupière"
+}
+,
+{
+"code_ogr_rome": 403072,
+"code_rome": "G1207",
+"libelle_rome": "Surveillant / Surveillante de baignade"
+}
+,
+{
+"code_ogr_rome": 488598,
+"code_rome": "G1221",
+"libelle_rome": "Responsable des attractions"
+}
+,
+{
+"code_ogr_rome": 489193,
+"code_rome": "G1223",
+"libelle_rome": "Animateur / Animatrice en site de divertissement"
+}
+,
+{
+"code_ogr_rome": 488633,
+"code_rome": "G1225",
+"libelle_rome": "Ouvreur / Ouvreuse de salle de spectacles"
+}
+,
+{
+"code_ogr_rome": 488752,
+"code_rome": "G1227",
+"libelle_rome": "Guide-interprète"
+}
+,
+{
+"code_ogr_rome": 488779,
+"code_rome": "G1228",
+"libelle_rome": "Guide de haute montagne"
+}
+,
+{
+"code_ogr_rome": 489165,
+"code_rome": "G1229",
+"libelle_rome": "Guide-accompagnateur / Guide-accompagnatrice de pêche"
+}
+,
+{
+"code_ogr_rome": 488860,
+"code_rome": "G1230",
+"libelle_rome": "Guide de tourisme équestre"
+}
+,
+{
+"code_ogr_rome": 489016,
+"code_rome": "G1231",
+"libelle_rome": "Accompagnateur / Accompagnatrice en écotourisme"
+}
+,
+{
+"code_ogr_rome": 489046,
+"code_rome": "G1232",
+"libelle_rome": "Opérateur / Opératrice de parcours acrobatique dans les arbres"
+}
+,
+{
+"code_ogr_rome": 489070,
+"code_rome": "G1234",
+"libelle_rome": "Musher guide de randonnée en traîneau"
+}
+,
+{
+"code_ogr_rome": 509374,
+"code_rome": "G1235",
+"libelle_rome": "Animateur / Animatrice de séjour de vacances"
+}
+,
+{
+"code_ogr_rome": 509387,
+"code_rome": "G1236",
+"libelle_rome": "Animateur / Animatrice de club de vacances"
+}
+,
+{
+"code_ogr_rome": 188,
+"code_rome": "G1301",
+"libelle_rome": "Concepteur / Conceptrice de produits touristiques"
+}
+,
+{
+"code_ogr_rome": 509947,
+"code_rome": "G1306",
+"libelle_rome": "Billettiste voyages"
+}
+,
+{
+"code_ogr_rome": 193,
+"code_rome": "G1403",
+"libelle_rome": "Directeur / Directrice de structure touristique"
+}
+,
+{
+"code_ogr_rome": 488762,
+"code_rome": "G1408",
+"libelle_rome": "Directeur / Directrice de structure d'hébergement touristique"
+}
+,
+{
+"code_ogr_rome": 509931,
+"code_rome": "G1416",
+"libelle_rome": "Directeur / Directrice d'hôtellerie de plein air"
+}
+,
+{
+"code_ogr_rome": 195,
+"code_rome": "G1501",
+"libelle_rome": "Employé / Employée d'étage"
+}
+,
+{
+"code_ogr_rome": 196,
+"code_rome": "G1502",
+"libelle_rome": "Employé / Employée d'hôtel"
+}
+,
+{
+"code_ogr_rome": 200,
+"code_rome": "G1603",
+"libelle_rome": "Equipier polyvalent / Equipière polyvalente de restauration rapide"
+}
+,
+{
+"code_ogr_rome": 202,
+"code_rome": "G1605",
+"libelle_rome": "Plongeur officier / Plongeuse officière de cuisine"
+}
+,
+{
+"code_ogr_rome": 489173,
+"code_rome": "G1611",
+"libelle_rome": "Steward / Hôtesse de train"
+}
+,
+{
+"code_ogr_rome": 204,
+"code_rome": "G1702",
+"libelle_rome": "Bagagiste en établissement hôtelier"
+}
+,
+{
+"code_ogr_rome": 488891,
+"code_rome": "G1707",
+"libelle_rome": "Responsable de vestiaire"
+}
+,
+{
+"code_ogr_rome": 489018,
+"code_rome": "G1708",
+"libelle_rome": "Voiturier / Voiturière"
+}
+,
+{
+"code_ogr_rome": 206,
+"code_rome": "G1801",
+"libelle_rome": "Barman / Barmaid"
+}
+,
+{
+"code_ogr_rome": 208,
+"code_rome": "G1803",
+"libelle_rome": "Serveur / Serveuse en restauration"
+}
+,
+{
+"code_ogr_rome": 489037,
+"code_rome": "G1805",
+"libelle_rome": "Gérant / Gérante de café, bar-brasserie"
+}
+,
+{
+"code_ogr_rome": 488582,
+"code_rome": "G1807",
+"libelle_rome": "Gérant / Gérante de bar-tabac"
+}
+,
+{
+"code_ogr_rome": 488635,
+"code_rome": "G1808",
+"libelle_rome": "Chef barman / Cheffe barmaid"
+}
+,
+{
+"code_ogr_rome": 488718,
+"code_rome": "G1809",
+"libelle_rome": "Barista"
+}
+,
+{
+"code_ogr_rome": 488587,
+"code_rome": "K1209",
+"libelle_rome": "Coordonnateur / Coordonnatrice de projet socioéducatif"
+}
+,
+{
+"code_ogr_rome": 376,
+"code_rome": "K1302",
+"libelle_rome": "Assistant / Assistante de vie dépendance"
+}
+,
+{
+"code_ogr_rome": 377,
+"code_rome": "K1303",
+"libelle_rome": "Garde d'enfant"
+}
+,
+{
+"code_ogr_rome": 404044,
+"code_rome": "K1306",
+"libelle_rome": "Accompagnant Educatif et Social (AES) / Accompagnante Educative et Sociale (AES)"
+}
+,
+{
+"code_ogr_rome": 488323,
+"code_rome": "K1311",
+"libelle_rome": "Assistant / Assistante de vie aux familles"
+}
+,
+{
+"code_ogr_rome": 488338,
+"code_rome": "K1312",
+"libelle_rome": "Accueillant familial / Accueillante familiale thérapeutique auprès d'adultes"
+}
+,
+{
+"code_ogr_rome": 489223,
+"code_rome": "K1313",
+"libelle_rome": "Employé / Employée au pair"
+}
+,
+{
+"code_ogr_rome": 395,
+"code_rome": "K1705",
+"libelle_rome": "Secouriste"
+}
+,
+{
+"code_ogr_rome": 488934,
+"code_rome": "K1723",
+"libelle_rome": "Conducteur / Conductrice Véhicule Léger de l'armée"
+}
+,
+{
+"code_ogr_rome": 510040,
+"code_rome": "K1726",
+"libelle_rome": "Pisteur / Pisteuse secouriste"
+}
+,
+{
+"code_ogr_rome": 440,
+"code_rome": "L1203",
+"libelle_rome": "Comédien / Comédienne"
+}
+,
+{
+"code_ogr_rome": 489202,
+"code_rome": "L1208",
+"libelle_rome": "Mascotte-personnage"
+}
+,
+{
+"code_ogr_rome": 474,
+"code_rome": "M1601",
+"libelle_rome": "Chargé / Chargée d'accueil"
+}
+,
+{
+"code_ogr_rome": 488927,
+"code_rome": "M1614",
+"libelle_rome": "Standardiste"
+}
+,
+{
+"code_ogr_rome": 489051,
+"code_rome": "N1113",
+"libelle_rome": "Préparateur / Préparatrice au drive"
+}
+,
+{
+"code_ogr_rome": 526,
+"code_rome": "N4104",
+"libelle_rome": "Coursier / Coursière"
+}
+,
+{
+"code_ogr_rome": 488935,
+"code_rome": "N4125",
+"libelle_rome": "Conducteur / Conductrice de transport routier d'animaux vivants"
+}
+,
+{
+"code_ogr_rome": 489032,
+"code_rome": "N4127",
+"libelle_rome": "Conducteur / Conductrice de car tourisme"
+}
+,
+{
+"code_ogr_rome": 489043,
+"code_rome": "N4128",
+"libelle_rome": "Conducteur / Conductrice de navette de moins de 9 personnes"
+}
+]
+}
+,
+{
+"code_theme": "014",
+"libelle_theme": "Métiers des services à la personne à domicile",
+"definition_theme": "Métiers susceptibles d'être exercés au domicile du particulier, quel que soit le domaine (culturel et sportif, médical et paramédical, entretien des jardins et des bâtiments, garde d'enfants, aide à domicile ...)",
+"liste_metier": [
+{
+"code_ogr_rome": 488734,
+"code_rome": "A1208",
+"libelle_rome": "Jardinier / Jardinière paysagiste"
+}
+,
+{
+"code_ogr_rome": 510288,
+"code_rome": "A1511",
+"libelle_rome": "Gardien / Gardienne d'animaux"
+}
+,
+{
+"code_ogr_rome": 88,
+"code_rome": "D1202",
+"libelle_rome": "Coiffeur / Coiffeuse"
+}
+,
+{
+"code_ogr_rome": 94,
+"code_rome": "D1208",
+"libelle_rome": "Esthéticien / Esthéticienne"
+}
+,
+{
+"code_ogr_rome": 488614,
+"code_rome": "D1215",
+"libelle_rome": "Posticheur / Posticheuse"
+}
+,
+{
+"code_ogr_rome": 488617,
+"code_rome": "D1216",
+"libelle_rome": "Coiffeur barbier / Coiffeuse barbière"
+}
+,
+{
+"code_ogr_rome": 488784,
+"code_rome": "D1217",
+"libelle_rome": "Socio-coiffeur / Socio-coiffeuse"
+}
+,
+{
+"code_ogr_rome": 120,
+"code_rome": "E1102",
+"libelle_rome": "Ecrivain / Ecrivaine"
+}
+,
+{
+"code_ogr_rome": 403072,
+"code_rome": "G1207",
+"libelle_rome": "Surveillant / Surveillante de baignade"
+}
+,
+{
+"code_ogr_rome": 488568,
+"code_rome": "G1609",
+"libelle_rome": "Cuisinier / Cuisinière"
+}
+,
+{
+"code_ogr_rome": 309,
+"code_rome": "I1203",
+"libelle_rome": "Agent / Agente d'entretien du bâtiment"
+}
+,
+{
+"code_ogr_rome": 320,
+"code_rome": "I1401",
+"libelle_rome": "Technicien / Technicienne de maintenance en informatique"
+}
+,
+{
+"code_ogr_rome": 348,
+"code_rome": "J1404",
+"libelle_rome": "Kinésithérapeute"
+}
+,
+{
+"code_ogr_rome": 488767,
+"code_rome": "J1413",
+"libelle_rome": "Physiothérapeute"
+}
+,
+{
+"code_ogr_rome": 357,
+"code_rome": "J1501",
+"libelle_rome": "Aide-soignant / Aide-soignante"
+}
+,
+{
+"code_ogr_rome": 362,
+"code_rome": "J1506",
+"libelle_rome": "Infirmier / Infirmière en soins généraux (IDE)"
+}
+,
+{
+"code_ogr_rome": 488289,
+"code_rome": "J1508",
+"libelle_rome": "Infirmier / Infirmière en Pratique Avancée (IPA)"
+}
+,
+{
+"code_ogr_rome": 488567,
+"code_rome": "J1510",
+"libelle_rome": "Infirmier coordinateur / Infirmière coordinatrice (IDEC)"
+}
+,
+{
+"code_ogr_rome": 364,
+"code_rome": "K1101",
+"libelle_rome": "Médiateur familial / Médiatrice familiale"
+}
+,
+{
+"code_ogr_rome": 376,
+"code_rome": "K1302",
+"libelle_rome": "Assistant / Assistante de vie dépendance"
+}
+,
+{
+"code_ogr_rome": 378,
+"code_rome": "K1304",
+"libelle_rome": "Employé familial / Employée familiale"
+}
+,
+{
+"code_ogr_rome": 28964,
+"code_rome": "K1305",
+"libelle_rome": "Technicien / Technicienne d'Intervention Sociale et Familiale (TISF)"
+}
+,
+{
+"code_ogr_rome": 404044,
+"code_rome": "K1306",
+"libelle_rome": "Accompagnant Educatif et Social (AES) / Accompagnante Educative et Sociale (AES)"
+}
+,
+{
+"code_ogr_rome": 488323,
+"code_rome": "K1311",
+"libelle_rome": "Assistant / Assistante de vie aux familles"
+}
+,
+{
+"code_ogr_rome": 488338,
+"code_rome": "K1312",
+"libelle_rome": "Accueillant familial / Accueillante familiale thérapeutique auprès d'adultes"
+}
+,
+{
+"code_ogr_rome": 489223,
+"code_rome": "K1313",
+"libelle_rome": "Employé / Employée au pair"
+}
+,
+{
+"code_ogr_rome": 488934,
+"code_rome": "K1723",
+"libelle_rome": "Conducteur / Conductrice Véhicule Léger de l'armée"
+}
+,
+{
+"code_ogr_rome": 409,
+"code_rome": "K2106",
+"libelle_rome": "Professeur / Professeure des écoles"
+}
+,
+{
+"code_ogr_rome": 410,
+"code_rome": "K2107",
+"libelle_rome": "Professeur / Professeure de collège et de lycée"
+}
+,
+{
+"code_ogr_rome": 509529,
+"code_rome": "K2122",
+"libelle_rome": "Professeur / Professeure à domicile"
+}
+,
+{
+"code_ogr_rome": 509559,
+"code_rome": "K2127",
+"libelle_rome": "Professeur / Professeure d'enseignement général pour déficients sensoriels"
+}
+,
+{
+"code_ogr_rome": 509673,
+"code_rome": "K2129",
+"libelle_rome": "Professeur / Professeure en soutien scolaire"
+}
+,
+{
+"code_ogr_rome": 428,
+"code_rome": "K2501",
+"libelle_rome": "Gardien / Gardienne d'immeuble"
+}
+,
+{
+"code_ogr_rome": 430,
+"code_rome": "K2503",
+"libelle_rome": "Agent / Agente de prévention et de sécurité"
+}
+,
+{
+"code_ogr_rome": 488730,
+"code_rome": "K2506",
+"libelle_rome": "Convoyeur / Convoyeuse de fonds"
+}
+,
+{
+"code_ogr_rome": 510292,
+"code_rome": "K2510",
+"libelle_rome": "Agent / Agente cynophile de sécurité"
+}
+,
+{
+"code_ogr_rome": 433,
+"code_rome": "K2603",
+"libelle_rome": "Thanatopracteur / Thanatopractrice"
+}
+,
+{
+"code_ogr_rome": 435,
+"code_rome": "L1101",
+"libelle_rome": "DJ"
+}
+,
+{
+"code_ogr_rome": 441,
+"code_rome": "L1204",
+"libelle_rome": "Artiste de cirque"
+}
+,
+{
+"code_ogr_rome": 488723,
+"code_rome": "L1205",
+"libelle_rome": "Artiste-interprète"
+}
+,
+{
+"code_ogr_rome": 475,
+"code_rome": "M1602",
+"libelle_rome": "Agent administratif / Agente administrative"
+}
+,
+{
+"code_ogr_rome": 480,
+"code_rome": "M1607",
+"libelle_rome": "Secrétaire"
+}
+,
+{
+"code_ogr_rome": 489211,
+"code_rome": "N2207",
+"libelle_rome": "Agent / Agente d'accompagnement du transport"
+}
+,
+{
+"code_ogr_rome": 527,
+"code_rome": "N4105",
+"libelle_rome": "Conducteur-livreur / Conductrice-livreuse"
+}
+,
+{
+"code_ogr_rome": 488591,
+"code_rome": "N4108",
+"libelle_rome": "Conducteur accompagnateur / Conductrice accompagnatrice de personnes à mobilité réduite"
+}
+,
+{
+"code_ogr_rome": 488732,
+"code_rome": "N4114",
+"libelle_rome": "Conducteur livreur avitailleur / Conductrice livreuse avitailleuse en carburant"
+}
+,
+{
+"code_ogr_rome": 488882,
+"code_rome": "N4121",
+"libelle_rome": "Aide-livreur / Aide-livreuse"
+}
+,
+{
+"code_ogr_rome": 488935,
+"code_rome": "N4125",
+"libelle_rome": "Conducteur / Conductrice de transport routier d'animaux vivants"
+}
+,
+{
+"code_ogr_rome": 489043,
+"code_rome": "N4128",
+"libelle_rome": "Conducteur / Conductrice de navette de moins de 9 personnes"
+}
+]
+}
+,
+{
+"code_theme": "015",
+"libelle_theme": "Métiers du sport et autour du sport",
+"definition_theme": "Métiers attachés aux activités sportives (sport professionnel, éducation sportive, art et culture, ...) ou plus largement en lien avec le sport (médical, paramédical, commerce, communication, ...)",
+"liste_metier": [
+{
+"code_ogr_rome": 510256,
+"code_rome": "A1214",
+"libelle_rome": "Patrouilleur modeleur / Patrouilleuse modeleuse VTT"
+}
+,
+{
+"code_ogr_rome": 403957,
+"code_rome": "A1421",
+"libelle_rome": "Palefrenier soigneur / Palefrenière soigneuse"
+}
+,
+{
+"code_ogr_rome": 489019,
+"code_rome": "A1507",
+"libelle_rome": "Ostéopathe animalier / Ostéopathe animalière"
+}
+,
+{
+"code_ogr_rome": 510027,
+"code_rome": "A1510",
+"libelle_rome": "Préparateur / Préparatrice d'équidés"
+}
+,
+{
+"code_ogr_rome": 510274,
+"code_rome": "B1809",
+"libelle_rome": "Sellier / Sellière"
+}
+,
+{
+"code_ogr_rome": 97,
+"code_rome": "D1211",
+"libelle_rome": "Vendeur / Vendeuse d'articles de sport et loisirs"
+}
+,
+{
+"code_ogr_rome": 125,
+"code_rome": "E1107",
+"libelle_rome": "Chef / Cheffe de projet événementiel"
+}
+,
+{
+"code_ogr_rome": 403088,
+"code_rome": "E1109",
+"libelle_rome": "Directeur / Directrice de la communication"
+}
+,
+{
+"code_ogr_rome": 488921,
+"code_rome": "E1112",
+"libelle_rome": "Chargé / Chargée de communication"
+}
+,
+{
+"code_ogr_rome": 185,
+"code_rome": "G1204",
+"libelle_rome": "Educateur sportif / Educatrice sportive"
+}
+,
+{
+"code_ogr_rome": 403072,
+"code_rome": "G1207",
+"libelle_rome": "Surveillant / Surveillante de baignade"
+}
+,
+{
+"code_ogr_rome": 403077,
+"code_rome": "G1208",
+"libelle_rome": "Entraîneur / Entraîneure de sport professionnel et de haut niveau"
+}
+,
+{
+"code_ogr_rome": 403078,
+"code_rome": "G1209",
+"libelle_rome": "Animateur / Animatrice de loisirs sportifs"
+}
+,
+{
+"code_ogr_rome": 403958,
+"code_rome": "G1210",
+"libelle_rome": "Enseignant / Enseignante d'équitation"
+}
+,
+{
+"code_ogr_rome": 404961,
+"code_rome": "G1211",
+"libelle_rome": "Analyste de la performance sportive"
+}
+,
+{
+"code_ogr_rome": 404962,
+"code_rome": "G1212",
+"libelle_rome": "Animateur socio-sportif / Animatrice socio-sportive"
+}
+,
+{
+"code_ogr_rome": 404963,
+"code_rome": "G1213",
+"libelle_rome": "Chargé / Chargée de développement d'activités sportives"
+}
+,
+{
+"code_ogr_rome": 404966,
+"code_rome": "G1214",
+"libelle_rome": "Directeur sportif / Directrice sportive"
+}
+,
+{
+"code_ogr_rome": 404970,
+"code_rome": "G1216",
+"libelle_rome": "Moniteur / Monitrice de sport nature"
+}
+,
+{
+"code_ogr_rome": 404971,
+"code_rome": "G1217",
+"libelle_rome": "Moniteur / Monitrice en salle de sport"
+}
+,
+{
+"code_ogr_rome": 404975,
+"code_rome": "G1218",
+"libelle_rome": "Préparateur / Préparatrice physique"
+}
+,
+{
+"code_ogr_rome": 488277,
+"code_rome": "G1219",
+"libelle_rome": "Recruteur sportif / Recruteuse sportive"
+}
+,
+{
+"code_ogr_rome": 488288,
+"code_rome": "G1220",
+"libelle_rome": "Educateur sportif / Educatrice sportive spécialisé(e) en activités physiques et sportives adaptées"
+}
+,
+{
+"code_ogr_rome": 489193,
+"code_rome": "G1223",
+"libelle_rome": "Animateur / Animatrice en site de divertissement"
+}
+,
+{
+"code_ogr_rome": 488616,
+"code_rome": "G1224",
+"libelle_rome": "Maître-nageur sauveteur / Maître-nageuse sauveteuse"
+}
+,
+{
+"code_ogr_rome": 488733,
+"code_rome": "G1226",
+"libelle_rome": "Chef / Cheffe de bassin"
+}
+,
+{
+"code_ogr_rome": 488779,
+"code_rome": "G1228",
+"libelle_rome": "Guide de haute montagne"
+}
+,
+{
+"code_ogr_rome": 488860,
+"code_rome": "G1230",
+"libelle_rome": "Guide de tourisme équestre"
+}
+,
+{
+"code_ogr_rome": 489050,
+"code_rome": "G1233",
+"libelle_rome": "Préparateur mental / Préparatrice mentale du sport"
+}
+,
+{
+"code_ogr_rome": 489070,
+"code_rome": "G1234",
+"libelle_rome": "Musher guide de randonnée en traîneau"
+}
+,
+{
+"code_ogr_rome": 193,
+"code_rome": "G1403",
+"libelle_rome": "Directeur / Directrice de structure touristique"
+}
+,
+{
+"code_ogr_rome": 404965,
+"code_rome": "G1405",
+"libelle_rome": "Directeur / Directrice de structure sportive"
+}
+,
+{
+"code_ogr_rome": 488348,
+"code_rome": "G1406",
+"libelle_rome": "Directeur / Directrice d'équipement sportif"
+}
+,
+{
+"code_ogr_rome": 488762,
+"code_rome": "G1408",
+"libelle_rome": "Directeur / Directrice de structure d'hébergement touristique"
+}
+,
+{
+"code_ogr_rome": 509931,
+"code_rome": "G1416",
+"libelle_rome": "Directeur / Directrice d'hôtellerie de plein air"
+}
+,
+{
+"code_ogr_rome": 509914,
+"code_rome": "I1331",
+"libelle_rome": "Nivoculteur / Nivocultrice"
+}
+,
+{
+"code_ogr_rome": 322,
+"code_rome": "I1501",
+"libelle_rome": "Cordiste"
+}
+,
+{
+"code_ogr_rome": 331,
+"code_rome": "I1607",
+"libelle_rome": "Mécanicien / Mécanicienne motocycles"
+}
+,
+{
+"code_ogr_rome": 489022,
+"code_rome": "I1616",
+"libelle_rome": "Mécanicien / Mécanicienne d'engins de chantier et de travaux publics"
+}
+,
+{
+"code_ogr_rome": 510471,
+"code_rome": "I1628",
+"libelle_rome": "Conseiller / Conseillère technique cycles"
+}
+,
+{
+"code_ogr_rome": 488764,
+"code_rome": "J1108",
+"libelle_rome": "Médecin régulateur"
+}
+,
+{
+"code_ogr_rome": 488916,
+"code_rome": "J1110",
+"libelle_rome": "Médecin légiste"
+}
+,
+{
+"code_ogr_rome": 509674,
+"code_rome": "J1125",
+"libelle_rome": "Endocrinologue"
+}
+,
+{
+"code_ogr_rome": 509770,
+"code_rome": "J1126",
+"libelle_rome": "Médecin du sport"
+}
+,
+{
+"code_ogr_rome": 348,
+"code_rome": "J1404",
+"libelle_rome": "Kinésithérapeute"
+}
+,
+{
+"code_ogr_rome": 488767,
+"code_rome": "J1413",
+"libelle_rome": "Physiothérapeute"
+}
+,
+{
+"code_ogr_rome": 512364,
+"code_rome": "J1414",
+"libelle_rome": "Coordinateur / Coordinatrice en activité physique adaptée"
+}
+,
+{
+"code_ogr_rome": 410,
+"code_rome": "K2107",
+"libelle_rome": "Professeur / Professeure de collège et de lycée"
+}
+,
+{
+"code_ogr_rome": 438,
+"code_rome": "L1201",
+"libelle_rome": "Danseur / Danseuse"
+}
+,
+{
+"code_ogr_rome": 441,
+"code_rome": "L1204",
+"libelle_rome": "Artiste de cirque"
+}
+,
+{
+"code_ogr_rome": 488723,
+"code_rome": "L1205",
+"libelle_rome": "Artiste-interprète"
+}
+,
+{
+"code_ogr_rome": 488757,
+"code_rome": "L1206",
+"libelle_rome": "Cavalier / Cavalière de spectacle"
+}
+,
+{
+"code_ogr_rome": 488789,
+"code_rome": "L1207",
+"libelle_rome": "Cascadeur / Cascadeuse"
+}
+,
+{
+"code_ogr_rome": 509645,
+"code_rome": "L1209",
+"libelle_rome": "Performeur / Performeuse de cabaret"
+}
+,
+{
+"code_ogr_rome": 510402,
+"code_rome": "L1211",
+"libelle_rome": "Chorégraphe"
+}
+,
+{
+"code_ogr_rome": 444,
+"code_rome": "L1303",
+"libelle_rome": "Agent / Agente de talent"
+}
+,
+{
+"code_ogr_rome": 446,
+"code_rome": "L1401",
+"libelle_rome": "Sportif professionnel / Sportive professionnelle"
+}
+,
+{
+"code_ogr_rome": 488306,
+"code_rome": "L1402",
+"libelle_rome": "Arbitre professionnel / Professionnelle de discipline sportive"
+}
+,
+{
+"code_ogr_rome": 509395,
+"code_rome": "L1403",
+"libelle_rome": "Cavalier / Cavalière d'entraînement"
+}
+,
+{
+"code_ogr_rome": 488304,
+"code_rome": "M1610",
+"libelle_rome": "Intendant / Intendante du sport"
+}
+,
+{
+"code_ogr_rome": 487,
+"code_rome": "M1705",
+"libelle_rome": "Responsable marketing"
+}
+,
+{
+"code_ogr_rome": 510431,
+"code_rome": "M1717",
+"libelle_rome": "Responsable innovation"
+}
+,
+{
+"code_ogr_rome": 517,
+"code_rome": "N3101",
+"libelle_rome": "Officier / Officière de port"
+}
+,
+{
+"code_ogr_rome": 535,
+"code_rome": "N4402",
+"libelle_rome": "Conducteur / Conductrice de remontées mécaniques"
+}
+]
+}
+,
+{
+"code_theme": "016",
+"libelle_theme": "Métiers de l'ingénierie",
+"definition_theme": "Métiers liés à la conception, aux études, à la réalisation et à la mise en ½uvre de produits, de systèmes ou de services (industrie, développement informatique, BTP, ...) ",
+"liste_metier": [
+{
+"code_ogr_rome": 14,
+"code_rome": "A1303",
+"libelle_rome": "Ingénieur / Ingénieure d'études et de recherche agricoles"
+}
+,
+{
+"code_ogr_rome": 403951,
+"code_rome": "A1304",
+"libelle_rome": "Conseiller / Conseillère technique agricole"
+}
+,
+{
+"code_ogr_rome": 509640,
+"code_rome": "A1307",
+"libelle_rome": "Ingénieur forestier / Ingénieure forestière"
+}
+,
+{
+"code_ogr_rome": 510270,
+"code_rome": "A1312",
+"libelle_rome": "Directeur / Directrice environnement"
+}
+,
+{
+"code_ogr_rome": 510436,
+"code_rome": "A1313",
+"libelle_rome": "Chargé / Chargée de mission environnement"
+}
+,
+{
+"code_ogr_rome": 143,
+"code_rome": "F1102",
+"libelle_rome": "Architecte d'intérieur"
+}
+,
+{
+"code_ogr_rome": 147,
+"code_rome": "F1106",
+"libelle_rome": "Ingénieur / Ingénieure d'études de prix BTP"
+}
+,
+{
+"code_ogr_rome": 403075,
+"code_rome": "F1109",
+"libelle_rome": "Assistant / Assistante géomètre"
+}
+,
+{
+"code_ogr_rome": 488589,
+"code_rome": "F1116",
+"libelle_rome": "Ingénieur / Ingénieure démantèlement nucléaire"
+}
+,
+{
+"code_ogr_rome": 488590,
+"code_rome": "F1117",
+"libelle_rome": "Ingénieur / Ingénieure d'étude CVC"
+}
+,
+{
+"code_ogr_rome": 489011,
+"code_rome": "F1125",
+"libelle_rome": "BIM Manager"
+}
+,
+{
+"code_ogr_rome": 509414,
+"code_rome": "F1128",
+"libelle_rome": "Géotechnicien / Géotechnicienne"
+}
+,
+{
+"code_ogr_rome": 509417,
+"code_rome": "F1129",
+"libelle_rome": "Ingénieur / Ingénieure réservoir"
+}
+,
+{
+"code_ogr_rome": 509539,
+"code_rome": "F1132",
+"libelle_rome": "Acousticien / Acousticienne du bâtiment"
+}
+,
+{
+"code_ogr_rome": 509808,
+"code_rome": "F1134",
+"libelle_rome": "Domoticien / Domoticienne"
+}
+,
+{
+"code_ogr_rome": 509938,
+"code_rome": "F1136",
+"libelle_rome": "Chef / Cheffe de projet éolien"
+}
+,
+{
+"code_ogr_rome": 510056,
+"code_rome": "F1137",
+"libelle_rome": "Chargé / Chargée de méthodes BTP"
+}
+,
+{
+"code_ogr_rome": 510153,
+"code_rome": "F1138",
+"libelle_rome": "Géothermicien / Géothermicienne"
+}
+,
+{
+"code_ogr_rome": 510177,
+"code_rome": "F1141",
+"libelle_rome": "Ingénieur / Ingénieure études conception électrique"
+}
+,
+{
+"code_ogr_rome": 510268,
+"code_rome": "F1143",
+"libelle_rome": "Géophysicien / Géophysicienne"
+}
+,
+{
+"code_ogr_rome": 152,
+"code_rome": "F1203",
+"libelle_rome": "Responsable d'exploitation de gisements et de carrières"
+}
+,
+{
+"code_ogr_rome": 153,
+"code_rome": "F1204",
+"libelle_rome": "Animateur / Animatrice QSE - Qualité Sécurité Environnement BTP"
+}
+,
+{
+"code_ogr_rome": 210,
+"code_rome": "H1101",
+"libelle_rome": "Ingénieur / Ingénieure support technique"
+}
+,
+{
+"code_ogr_rome": 211,
+"code_rome": "H1102",
+"libelle_rome": "Ingénieur / Ingénieure d'affaires en industrie"
+}
+,
+{
+"code_ogr_rome": 488302,
+"code_rome": "H1103",
+"libelle_rome": "Responsable d'affaires en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488627,
+"code_rome": "H1106",
+"libelle_rome": "Responsable support technique clients"
+}
+,
+{
+"code_ogr_rome": 489015,
+"code_rome": "H1107",
+"libelle_rome": "Directeur / Directrice assistance technique"
+}
+,
+{
+"code_ogr_rome": 217,
+"code_rome": "H1206",
+"libelle_rome": "Ingénieur / Ingénieure R&D en industrie"
+}
+,
+{
+"code_ogr_rome": 488271,
+"code_rome": "H1212",
+"libelle_rome": "Ingénieur / Ingénieure brevet en industrie"
+}
+,
+{
+"code_ogr_rome": 488291,
+"code_rome": "H1213",
+"libelle_rome": "Responsable du développement clinique en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488303,
+"code_rome": "H1215",
+"libelle_rome": "Bioinformaticien / Bioinformaticienne en études, recherche et développement"
+}
+,
+{
+"code_ogr_rome": 488308,
+"code_rome": "H1216",
+"libelle_rome": "Responsable des études épidémiologiques"
+}
+,
+{
+"code_ogr_rome": 488313,
+"code_rome": "H1217",
+"libelle_rome": "Technicien / Technicienne formulation en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488316,
+"code_rome": "H1218",
+"libelle_rome": "Responsable de projet recherche et développement"
+}
+,
+{
+"code_ogr_rome": 488319,
+"code_rome": "H1219",
+"libelle_rome": "Responsable opérationnel / Responsable opérationnelle des études cliniques en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488322,
+"code_rome": "H1220",
+"libelle_rome": "Responsable formulation en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488335,
+"code_rome": "H1221",
+"libelle_rome": "Responsable des partenariats de recherche en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488347,
+"code_rome": "H1222",
+"libelle_rome": "Responsable médical / Responsable médicale des études cliniques en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 509402,
+"code_rome": "H1230",
+"libelle_rome": "Ingénieur / Ingénieure essais vérification et validation (V&V) en milieu nucléaire"
+}
+,
+{
+"code_ogr_rome": 510075,
+"code_rome": "H1237",
+"libelle_rome": "Ingénieur / Ingénieure énergies renouvelables"
+}
+,
+{
+"code_ogr_rome": 513844,
+"code_rome": "H1241",
+"libelle_rome": "Architecte système hydrogène"
+}
+,
+{
+"code_ogr_rome": 223,
+"code_rome": "H1302",
+"libelle_rome": "Ingénieur / Ingénieure Hygiène, Sécurité et Environnement en industrie (HSE)"
+}
+,
+{
+"code_ogr_rome": 488285,
+"code_rome": "H1304",
+"libelle_rome": "Responsable environnement en industrie"
+}
+,
+{
+"code_ogr_rome": 488619,
+"code_rome": "H1306",
+"libelle_rome": "Ingénieur / Ingénieure sûreté en industrie nucléaire"
+}
+,
+{
+"code_ogr_rome": 488751,
+"code_rome": "H1307",
+"libelle_rome": "Responsable de la conformité industrielle"
+}
+,
+{
+"code_ogr_rome": 225,
+"code_rome": "H1401",
+"libelle_rome": "Responsable ordonnancement-lancement-planification en industrie"
+}
+,
+{
+"code_ogr_rome": 226,
+"code_rome": "H1402",
+"libelle_rome": "Ingénieur / Ingénieure méthodes et process"
+}
+,
+{
+"code_ogr_rome": 488297,
+"code_rome": "H1405",
+"libelle_rome": "Responsable supply chain en industrie"
+}
+,
+{
+"code_ogr_rome": 488331,
+"code_rome": "H1406",
+"libelle_rome": "Ingénieur / Ingénieure supply chain en industrie"
+}
+,
+{
+"code_ogr_rome": 229,
+"code_rome": "H1501",
+"libelle_rome": "Responsable de laboratoire d'analyse industrielle"
+}
+,
+{
+"code_ogr_rome": 230,
+"code_rome": "H1502",
+"libelle_rome": "Responsable qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 231,
+"code_rome": "H1503",
+"libelle_rome": "Technicien / Technicienne de laboratoire d'analyse industrielle"
+}
+,
+{
+"code_ogr_rome": 488278,
+"code_rome": "H1508",
+"libelle_rome": "Assureur / Assureuse qualité industrie"
+}
+,
+{
+"code_ogr_rome": 488284,
+"code_rome": "H1509",
+"libelle_rome": "Responsable des affaires règlementaires en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488296,
+"code_rome": "H1510",
+"libelle_rome": "Technicien / Technicienne de laboratoire de contrôle en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488309,
+"code_rome": "H1511",
+"libelle_rome": "Chargé / Chargée de validation-qualification en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488312,
+"code_rome": "H1512",
+"libelle_rome": "Directeur / Directrice de zone en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488336,
+"code_rome": "H1515",
+"libelle_rome": "Auditeur / Auditrice qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488341,
+"code_rome": "H1516",
+"libelle_rome": "Expert / Experte métrologue"
+}
+,
+{
+"code_ogr_rome": 488344,
+"code_rome": "H1518",
+"libelle_rome": "Responsable assurance qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488352,
+"code_rome": "H1519",
+"libelle_rome": "Responsable éthique-déontologie-conformité en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 488353,
+"code_rome": "H1520",
+"libelle_rome": "Ingénieur / Ingénieure assurance qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 488565,
+"code_rome": "H1521",
+"libelle_rome": "Technicien / Technicienne de validation-qualification"
+}
+,
+{
+"code_ogr_rome": 509345,
+"code_rome": "H1523",
+"libelle_rome": "Responsable Qualité Sécurité Environnement -QSE- en industrie"
+}
+,
+{
+"code_ogr_rome": 509526,
+"code_rome": "H1524",
+"libelle_rome": "Qualiticien / Qualiticienne en industrie"
+}
+,
+{
+"code_ogr_rome": 509528,
+"code_rome": "H1525",
+"libelle_rome": "Biologiste de contrôle fabrication en industrie"
+}
+,
+{
+"code_ogr_rome": 509670,
+"code_rome": "H1527",
+"libelle_rome": "Ingénieur / Ingénieure qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 509786,
+"code_rome": "H1528",
+"libelle_rome": "Technicien / Technicienne qualité en industrie"
+}
+,
+{
+"code_ogr_rome": 509879,
+"code_rome": "H1529",
+"libelle_rome": "Chargé / Chargée de matériovigilance"
+}
+,
+{
+"code_ogr_rome": 510069,
+"code_rome": "H1530",
+"libelle_rome": "Technicien / Technicienne de la qualité de l'eau"
+}
+,
+{
+"code_ogr_rome": 510271,
+"code_rome": "H1531",
+"libelle_rome": "Opérateur / Opératrice de laboratoire d'analyse industrielle"
+}
+,
+{
+"code_ogr_rome": 510305,
+"code_rome": "H1532",
+"libelle_rome": "Responsable de contrôle non destructif en industrie"
+}
+,
+{
+"code_ogr_rome": 510457,
+"code_rome": "H1533",
+"libelle_rome": "Ingénieur / Ingénieure CND END"
+}
+,
+{
+"code_ogr_rome": 510637,
+"code_rome": "H1534",
+"libelle_rome": "Ingénieur / Ingénieure d'analyse industrielle"
+}
+,
+{
+"code_ogr_rome": 488276,
+"code_rome": "H2302",
+"libelle_rome": "Conducteur / Conductrice de procédé de fabrication en industrie pharmaceutique"
+}
+,
+{
+"code_ogr_rome": 263,
+"code_rome": "H2502",
+"libelle_rome": "Responsable d'unité de production industrielle"
+}
+,
+{
+"code_ogr_rome": 488315,
+"code_rome": "H2507",
+"libelle_rome": "Responsable de ligne de production industrielle"
+}
+,
+{
+"code_ogr_rome": 488862,
+"code_rome": "H2508",
+"libelle_rome": "Ingénieur / Ingénieure exploitation nucléaire"
+}
+,
+{
+"code_ogr_rome": 509384,
+"code_rome": "H2509",
+"libelle_rome": "Ingénieur / Ingénieure de fonderie ou de forge"
+}
+,
+{
+"code_ogr_rome": 489024,
+"code_rome": "H2915",
+"libelle_rome": "Chef soudeur / Cheffe soudeuse"
+}
+,
+{
+"code_ogr_rome": 304,
+"code_rome": "I1101",
+"libelle_rome": "Directeur / Directrice de la gestion technique des bâtiments"
+}
+,
+{
+"code_ogr_rome": 305,
+"code_rome": "I1102",
+"libelle_rome": "Ingénieur / Ingénieure de maintenance industrielle"
+}
+,
+{
+"code_ogr_rome": 488902,
+"code_rome": "I1104",
+"libelle_rome": "Ingénieur / Ingénieure infrastructures télécoms réseaux mobiles"
+}
+,
+{
+"code_ogr_rome": 488332,
+"code_rome": "I1312",
+"libelle_rome": "Technicien / Technicienne réseaux mobiles"
+}
+,
+{
+"code_ogr_rome": 489191,
+"code_rome": "I1319",
+"libelle_rome": "Technicien / Technicienne de maintenance réseaux mobiles"
+}
+,
+{
+"code_ogr_rome": 489033,
+"code_rome": "I1404",
+"libelle_rome": "Conseiller / Conseillère support technique informatique"
+}
+,
+{
+"code_ogr_rome": 488889,
+"code_rome": "I1620",
+"libelle_rome": "Mécanicien-réparateur / Mécanicienne-réparatrice d'engins de levage et de manutention"
+}
+,
+{
+"code_ogr_rome": 509361,
+"code_rome": "K2119",
+"libelle_rome": "Consultant / Consultante en ingénierie pédagogique"
+}
+,
+{
+"code_ogr_rome": 509533,
+"code_rome": "K2123",
+"libelle_rome": "Responsable programme enseignement supérieur"
+}
+,
+{
+"code_ogr_rome": 509895,
+"code_rome": "K2132",
+"libelle_rome": "Responsable ingénierie de la formation professionnelle"
+}
+,
+{
+"code_ogr_rome": 421,
+"code_rome": "K2302",
+"libelle_rome": "Responsable de collecte de déchets"
+}
+,
+{
+"code_ogr_rome": 510266,
+"code_rome": "K2312",
+"libelle_rome": "Ingénieur / Ingénieure responsable propreté nettoiement"
+}
+,
+{
+"code_ogr_rome": 404047,
+"code_rome": "M1405",
+"libelle_rome": "Data scientist"
+}
+,
+{
+"code_ogr_rome": 488639,
+"code_rome": "M1409",
+"libelle_rome": "Ingénieur / Ingénieure économiste en entreprise"
+}
+,
+{
+"code_ogr_rome": 489213,
+"code_rome": "M1414",
+"libelle_rome": "Ingénieur statisticien / Ingénieure statisticienne"
+}
+,
+{
+"code_ogr_rome": 491,
+"code_rome": "M1802",
+"libelle_rome": "Expert / Experte systèmes et réseaux informatiques"
+}
+,
+{
+"code_ogr_rome": 493,
+"code_rome": "M1804",
+"libelle_rome": "Ingénieur / Ingénieure télécoms"
+}
+,
+{
+"code_ogr_rome": 494,
+"code_rome": "M1805",
+"libelle_rome": "Développeur / Développeuse informatique"
+}
+,
+{
+"code_ogr_rome": 404048,
+"code_rome": "M1811",
+"libelle_rome": "Data engineer"
+}
+,
+{
+"code_ogr_rome": 488329,
+"code_rome": "M1814",
+"libelle_rome": "Scrum Master"
+}
+,
+{
+"code_ogr_rome": 488576,
+"code_rome": "M1815",
+"libelle_rome": "Spécialiste test et validation logiciel ou application"
+}
+,
+{
+"code_ogr_rome": 488641,
+"code_rome": "M1818",
+"libelle_rome": "Ingénieur / Ingénieure d'étude informatique"
+}
+,
+{
+"code_ogr_rome": 488707,
+"code_rome": "M1819",
+"libelle_rome": "Ingénieur / Ingénieure sécurité informatique"
+}
+,
+{
+"code_ogr_rome": 488713,
+"code_rome": "M1820",
+"libelle_rome": "Expert / Experte méthodes et qualité informatique"
+}
+,
+{
+"code_ogr_rome": 488716,
+"code_rome": "M1821",
+"libelle_rome": "Analyste d'application informatique"
+}
+,
+{
+"code_ogr_rome": 488717,
+"code_rome": "M1822",
+"libelle_rome": "Ingénieur / Ingénieure systèmes et réseaux informatiques"
+}
+,
+{
+"code_ogr_rome": 488721,
+"code_rome": "M1823",
+"libelle_rome": "Consultant / Consultante avant-vente"
+}
+,
+{
+"code_ogr_rome": 488748,
+"code_rome": "M1824",
+"libelle_rome": "Développeur / Développeuse décisionnel - Business Intelligence"
+}
+,
+{
+"code_ogr_rome": 488753,
+"code_rome": "M1826",
+"libelle_rome": "Ingénieur / Ingénieure supervision IT Datacenter"
+}
+,
+{
+"code_ogr_rome": 488754,
+"code_rome": "M1827",
+"libelle_rome": "Ingénieur / Ingénieure DevOps"
+}
+,
+{
+"code_ogr_rome": 488768,
+"code_rome": "M1828",
+"libelle_rome": "Chef de projet / Cheffe de projet (Project Management Officer)"
+}
+,
+{
+"code_ogr_rome": 488772,
+"code_rome": "M1829",
+"libelle_rome": "Ingénieur / Ingénieure systèmes et réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 488865,
+"code_rome": "M1832",
+"libelle_rome": "Homologateur / Homologatrice fonctionnel de logiciel"
+}
+,
+{
+"code_ogr_rome": 488877,
+"code_rome": "M1833",
+"libelle_rome": "Ingénieur / Ingénieure sécurité web"
+}
+,
+{
+"code_ogr_rome": 488890,
+"code_rome": "M1835",
+"libelle_rome": "Architecte systèmes et réseaux des territoires connectés"
+}
+,
+{
+"code_ogr_rome": 488894,
+"code_rome": "M1836",
+"libelle_rome": "Ingénieur concepteur / Ingénieure conceptrice informatique"
+}
+,
+{
+"code_ogr_rome": 488905,
+"code_rome": "M1838",
+"libelle_rome": "Urbaniste des systèmes d'information"
+}
+,
+{
+"code_ogr_rome": 488909,
+"code_rome": "M1839",
+"libelle_rome": "Architecte systèmes et réseaux"
+}
+,
+{
+"code_ogr_rome": 488922,
+"code_rome": "M1841",
+"libelle_rome": "Ingénieur informaticien / Ingénieure informaticienne"
+}
+,
+{
+"code_ogr_rome": 488933,
+"code_rome": "M1842",
+"libelle_rome": "Qualiticien / Qualiticienne logiciel en informatique"
+}
+,
+{
+"code_ogr_rome": 489009,
+"code_rome": "M1843",
+"libelle_rome": "Administrateur / Administratrice de serveurs"
+}
+,
+{
+"code_ogr_rome": 489017,
+"code_rome": "M1844",
+"libelle_rome": "Analyste en cybersécurité"
+}
+,
+{
+"code_ogr_rome": 489023,
+"code_rome": "M1845",
+"libelle_rome": "Architecte IoT - Internet des Objets"
+}
+,
+{
+"code_ogr_rome": 489026,
+"code_rome": "M1846",
+"libelle_rome": "Ingénieur / Ingénieure Cybersécurité Datacenter"
+}
+,
+{
+"code_ogr_rome": 489055,
+"code_rome": "M1848",
+"libelle_rome": "Analyste Concepteur / Conceptrice informatique"
+}
+,
+{
+"code_ogr_rome": 489061,
+"code_rome": "M1849",
+"libelle_rome": "Administrateur / Administratrice de messagerie"
+}
+,
+{
+"code_ogr_rome": 489066,
+"code_rome": "M1850",
+"libelle_rome": "Architecte multimédias interactifs"
+}
+,
+{
+"code_ogr_rome": 489067,
+"code_rome": "M1851",
+"libelle_rome": "Analyste décisionnel - Business Intelligence"
+}
+,
+{
+"code_ogr_rome": 489072,
+"code_rome": "M1852",
+"libelle_rome": "Analyste d'étude informatique"
+}
+,
+{
+"code_ogr_rome": 489073,
+"code_rome": "M1853",
+"libelle_rome": "Chef / Cheffe de projet étude et développement informatique"
+}
+,
+{
+"code_ogr_rome": 489078,
+"code_rome": "M1854",
+"libelle_rome": "Administrateur / Administratrice réseau informatique"
+}
+,
+{
+"code_ogr_rome": 489081,
+"code_rome": "M1855",
+"libelle_rome": "Développeur / Développeuse web"
+}
+,
+{
+"code_ogr_rome": 489082,
+"code_rome": "M1856",
+"libelle_rome": "Expert / Experte en cybersécurité"
+}
+,
+{
+"code_ogr_rome": 489179,
+"code_rome": "M1858",
+"libelle_rome": "Chef / Cheffe de projet TMA - Tierce Maintenance Applicative"
+}
+,
+{
+"code_ogr_rome": 489188,
+"code_rome": "M1859",
+"libelle_rome": "Chef / Cheffe de projet maîtrise d'½uvre informatique"
+}
+,
+{
+"code_ogr_rome": 489199,
+"code_rome": "M1860",
+"libelle_rome": "Architecte cloud"
+}
+,
+{
+"code_ogr_rome": 489209,
+"code_rome": "M1861",
+"libelle_rome": "Développeur / Développeuse logiciel ou d'application"
+}
+,
+{
+"code_ogr_rome": 489218,
+"code_rome": "M1863",
+"libelle_rome": "Evaluateur / Evaluatrice sécurité des systèmes et produits informatiques"
+}
+,
+{
+"code_ogr_rome": 510638,
+"code_rome": "M1864",
+"libelle_rome": "Product Owner"
+}
+,
+{
+"code_ogr_rome": 509517,
+"code_rome": "M1865",
+"libelle_rome": "Ingénieur / Ingénieure blockchain"
+}
+,
+{
+"code_ogr_rome": 509541,
+"code_rome": "M1866",
+"libelle_rome": "Pentesteur / Pentesteuse"
+}
+,
+{
+"code_ogr_rome": 509550,
+"code_rome": "M1868",
+"libelle_rome": "Architecte base de données"
+}
+,
+{
+"code_ogr_rome": 509762,
+"code_rome": "M1872",
+"libelle_rome": "Consultant décisionnel / Consultante décisionnelle - Business Intelligence"
+}
+,
+{
+"code_ogr_rome": 509919,
+"code_rome": "M1873",
+"libelle_rome": "Spécialiste IA embarquée"
+}
+,
+{
+"code_ogr_rome": 510033,
+"code_rome": "M1875",
+"libelle_rome": "Coordinateur / Coordinatrice Maitrise d'Ouvrage Système d'Information (MOA SI)"
+}
+,
+{
+"code_ogr_rome": 510055,
+"code_rome": "M1877",
+"libelle_rome": "Développeur / Développeuse blockchain"
+}
+,
+{
+"code_ogr_rome": 510169,
+"code_rome": "M1879",
+"libelle_rome": "Ingénieur / Ingénieure Cloud computing"
+}
+,
+{
+"code_ogr_rome": 510289,
+"code_rome": "M1882",
+"libelle_rome": "Architecte sécurité informatique"
+}
+,
+{
+"code_ogr_rome": 510317,
+"code_rome": "M1884",
+"libelle_rome": "Ingénieur / Ingénieure systèmes, réseaux et sécurité informatique"
+}
+,
+{
+"code_ogr_rome": 510419,
+"code_rome": "M1887",
+"libelle_rome": "Product builder no code"
+}
+,
+{
+"code_ogr_rome": 510440,
+"code_rome": "M1889",
+"libelle_rome": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)"
+}
+,
+{
+"code_ogr_rome": 510447,
+"code_rome": "M1891",
+"libelle_rome": "Ingénieur / Ingénieure prévisionniste météorologue"
+}
+,
+{
+"code_ogr_rome": 510450,
+"code_rome": "M1892",
+"libelle_rome": "Ingénieur / Ingénieure en informatique embarquée"
+}
+,
+{
+"code_ogr_rome": 489020,
+"code_rome": "N1305",
+"libelle_rome": "Ingénieur / Ingénieure logistique"
+}
+,
+{
+"code_ogr_rome": 511,
+"code_rome": "N2102",
+"libelle_rome": "Pilote de ligne"
+}
+]
+}
+,
+{
+"code_theme": "017",
+"libelle_theme": "Métiers accessibles sans diplôme et sans expérience",
+"definition_theme": "Métiers qui ne nécessitent ni diplôme particulier, ni expérience longue. Certains métiers peuvent cependant être soumis à l'obtention d'un permis ou d'une habilitation particulière (Permis de conduire, CACES, ...)",
+"liste_metier": [
+{
+"code_ogr_rome": 8,
+"code_rome": "A1202",
+"libelle_rome": "Agent / Agente d'entretien des espaces naturels"
+}
+,
+{
+"code_ogr_rome": 9,
+"code_rome": "A1203",
+"libelle_rome": "Agent / Agente d'entretien des espaces verts"
+}
+,
+{
+"code_ogr_rome": 15,
+"code_rome": "A1401",
+"libelle_rome": "Cueilleur / Cueilleuse de fruits"
+}
+,
+{
+"code_ogr_rome": 16,
+"code_rome": "A1402",
+"libelle_rome": "Aide agricole en production végétale"
+}
+,
+{
+"code_ogr_rome": 17,
+"code_rome": "A1403",
+"libelle_rome": "Aide d'élevage agricole"
+}
+,
+{
+"code_ogr_rome": 19,
+"code_rome": "A1405",
+"libelle_rome": "Arboriculteur / Arboricultrice"
+}
+,
+{
+"code_ogr_rome": 27,
+"code_rome": "A1413",
+"libelle_rome": "Brasseur / Brasseuse de bière"
+}
+,
+{
+"code_ogr_rome": 403953,
+"code_rome": "A1418",
+"libelle_rome": "Viticulteur / Viticultrice"
+}
+,
+{
+"code_ogr_rome": 403955,
+"code_rome": "A1419",
+"libelle_rome": "Ouvrier agricole polyvalent / Ouvrière agricole polyvalente"
+}
+,
+{
+"code_ogr_rome": 403957,
+"code_rome": "A1421",
+"libelle_rome": "Palefrenier soigneur / Palefrenière soigneuse"
+}
+,
+{
+"code_ogr_rome": 489025,
+"code_rome": "A1430",
+"libelle_rome": "Ouvrier / Ouvrière aquacole"
+}
+,
+{
+"code_ogr_rome": 509364,
+"code_rome": "A1432",
+"libelle_rome": "Osiériculteur / Osiéricultrice"
+}
+,
+{
+"code_ogr_rome": 510303,
+"code_rome": "A1434",
+"libelle_rome": "Tabaculteur / Tabacultrice"
+}
+,
+{
+"code_ogr_rome": 509407,
+"code_rome": "A1435",
+"libelle_rome": "Eleveur / Eleveuse d'animaux de compagnie"
+}
+,
+{
+"code_ogr_rome": 509530,
+"code_rome": "A1438",
+"libelle_rome": "Pêcheur / Pêcheuse à pied"
+}
+,
+{
+"code_ogr_rome": 509917,
+"code_rome": "A1443",
+"libelle_rome": "Cidrier / Cidrière"
+}
+,
+{
+"code_ogr_rome": 510021,
+"code_rome": "A1444",
+"libelle_rome": "Aide agricole en production fruitière"
+}
+,
+{
+"code_ogr_rome": 510171,
+"code_rome": "A1445",
+"libelle_rome": "Pêcheur sous-marin / Pêcheuse sous-marine"
+}
+,
+{
+"code_ogr_rome": 510288,
+"code_rome": "A1511",
+"libelle_rome": "Gardien / Gardienne d'animaux"
+}
+,
+{
+"code_ogr_rome": 510020,
+"code_rome": "B1404",
+"libelle_rome": "Canneur rempailleur / Canneuse rempailleuse"
+}
+,
+{
+"code_ogr_rome": 46,
+"code_rome": "B1603",
+"libelle_rome": "Opérateur / Opératrice en bijouterie"
+}
+,
+{
+"code_ogr_rome": 404978,
+"code_rome": "B1611",
+"libelle_rome": "Trieur / Trieuse de pierres et perles"
+}
+,
+{
+"code_ogr_rome": 84,
+"code_rome": "D1105",
+"libelle_rome": "Poissonnier / Poissonnière"
+}
+,
+{
+"code_ogr_rome": 509365,
+"code_rome": "D1110",
+"libelle_rome": "Vendeur ambulant / Vendeuse ambulante"
+}
+,
+{
+"code_ogr_rome": 90,
+"code_rome": "D1204",
+"libelle_rome": "Agent technico-commercial / Agente technico-commerciale en location de véhicules"
+}
+,
+{
+"code_ogr_rome": 489010,
+"code_rome": "D1219",
+"libelle_rome": "Vendeur / Vendeuse conseil en jardinerie"
+}
+,
+{
+"code_ogr_rome": 509363,
+"code_rome": "D1224",
+"libelle_rome": "Chargé / Chargée de location d'engins et de matériel de chantier"
+}
+,
+{
+"code_ogr_rome": 509547,
+"code_rome": "D1226",
+"libelle_rome": "Nettoyeur / Nettoyeuse en cuir et peausserie"
+}
+,
+{
+"code_ogr_rome": 510300,
+"code_rome": "D1228",
+"libelle_rome": "Employé / Employée de laverie automatique"
+}
+,
+{
+"code_ogr_rome": 509567,
+"code_rome": "D1229",
+"libelle_rome": "Responsable de pressing"
+}
+,
+{
+"code_ogr_rome": 509761,
+"code_rome": "D1235",
+"libelle_rome": "Plagiste"
+}
+,
+{
+"code_ogr_rome": 509793,
+"code_rome": "D1236",
+"libelle_rome": "Repasseur / Repasseuse"
+}
+,
+{
+"code_ogr_rome": 510203,
+"code_rome": "D1242",
+"libelle_rome": "Linger / Lingère"
+}
+,
+{
+"code_ogr_rome": 509522,
+"code_rome": "D1424",
+"libelle_rome": "Conseiller vendeur / Conseillère vendeuse à domicile"
+}
+,
+{
+"code_ogr_rome": 114,
+"code_rome": "D1505",
+"libelle_rome": "Hôte / Hôtesse de caisse"
+}
+,
+{
+"code_ogr_rome": 116,
+"code_rome": "D1507",
+"libelle_rome": "Employé / Employée de rayon libre-service"
+}
+,
+{
+"code_ogr_rome": 509899,
+"code_rome": "D1511",
+"libelle_rome": "Opérateur / Opératrice de station service"
+}
+,
+{
+"code_ogr_rome": 509944,
+"code_rome": "E1117",
+"libelle_rome": "Wedding planner"
+}
+,
+{
+"code_ogr_rome": 128,
+"code_rome": "E1202",
+"libelle_rome": "Opérateur / Opératrice de laboratoire cinématographique"
+}
+,
+{
+"code_ogr_rome": 135,
+"code_rome": "E1304",
+"libelle_rome": "Agent / Agente de façonnage et routage"
+}
+,
+{
+"code_ogr_rome": 173,
+"code_rome": "F1613",
+"libelle_rome": "Etancheur / Etancheuse"
+}
+,
+{
+"code_ogr_rome": 404037,
+"code_rome": "F1619",
+"libelle_rome": "Couvreur / Couvreuse"
+}
+,
+{
+"code_ogr_rome": 177,
+"code_rome": "F1704",
+"libelle_rome": "Man½uvre bâtiment"
+}
+,
+{
+"code_ogr_rome": 179,
+"code_rome": "F1706",
+"libelle_rome": "Armaturier / Armaturière de l'industrie du béton"
+}
+,
+{
+"code_ogr_rome": 404038,
+"code_rome": "F1709",
+"libelle_rome": "Démolisseur / Démolisseuse"
+}
+,
+{
+"code_ogr_rome": 186,
+"code_rome": "G1205",
+"libelle_rome": "Opérateur / Opératrice d'attraction"
+}
+,
+{
+"code_ogr_rome": 187,
+"code_rome": "G1206",
+"libelle_rome": "Croupier / Croupière"
+}
+,
+{
+"code_ogr_rome": 488633,
+"code_rome": "G1225",
+"libelle_rome": "Ouvreur / Ouvreuse de salle de spectacles"
+}
+,
+{
+"code_ogr_rome": 195,
+"code_rome": "G1501",
+"libelle_rome": "Employé / Employée d'étage"
+}
+,
+{
+"code_ogr_rome": 196,
+"code_rome": "G1502",
+"libelle_rome": "Employé / Employée d'hôtel"
+}
+,
+{
+"code_ogr_rome": 200,
+"code_rome": "G1603",
+"libelle_rome": "Equipier polyvalent / Equipière polyvalente de restauration rapide"
+}
+,
+{
+"code_ogr_rome": 202,
+"code_rome": "G1605",
+"libelle_rome": "Plongeur officier / Plongeuse officière de cuisine"
+}
+,
+{
+"code_ogr_rome": 404040,
+"code_rome": "G1607",
+"libelle_rome": "Employé / Employée de restauration collective"
+}
+,
+{
+"code_ogr_rome": 404540,
+"code_rome": "G1608",
+"libelle_rome": "Ecailler / Ecaillère"
+}
+,
+{
+"code_ogr_rome": 489173,
+"code_rome": "G1611",
+"libelle_rome": "Steward / Hôtesse de train"
+}
+,
+{
+"code_ogr_rome": 510306,
+"code_rome": "G1613",
+"libelle_rome": "Restaurateur ambulant / Restauratrice ambulante"
+}
+,
+{
+"code_ogr_rome": 204,
+"code_rome": "G1702",
+"libelle_rome": "Bagagiste en établissement hôtelier"
+}
+,
+{
+"code_ogr_rome": 488891,
+"code_rome": "G1707",
+"libelle_rome": "Responsable de vestiaire"
+}
+,
+{
+"code_ogr_rome": 489018,
+"code_rome": "G1708",
+"libelle_rome": "Voiturier / Voiturière"
+}
+,
+{
+"code_ogr_rome": 206,
+"code_rome": "G1801",
+"libelle_rome": "Barman / Barmaid"
+}
+,
+{
+"code_ogr_rome": 489037,
+"code_rome": "G1805",
+"libelle_rome": "Gérant / Gérante de café, bar-brasserie"
+}
+,
+{
+"code_ogr_rome": 488582,
+"code_rome": "G1807",
+"libelle_rome": "Gérant / Gérante de bar-tabac"
+}
+,
+{
+"code_ogr_rome": 488635,
+"code_rome": "G1808",
+"libelle_rome": "Chef barman / Cheffe barmaid"
+}
+,
+{
+"code_ogr_rome": 488718,
+"code_rome": "G1809",
+"libelle_rome": "Barista"
+}
+,
+{
+"code_ogr_rome": 235,
+"code_rome": "H2101",
+"libelle_rome": "Ouvrier / Ouvrière d'abattoir"
+}
+,
+{
+"code_ogr_rome": 236,
+"code_rome": "H2102",
+"libelle_rome": "Conducteur / Conductrice de ligne en industrie alimentaire"
+}
+,
+{
+"code_ogr_rome": 403959,
+"code_rome": "H2103",
+"libelle_rome": "Opérateur / Opératrice de transformation des viandes"
+}
+,
+{
+"code_ogr_rome": 488711,
+"code_rome": "H2104",
+"libelle_rome": "Fromager industriel / Fromagère industrielle"
+}
+,
+{
+"code_ogr_rome": 509557,
+"code_rome": "H2105",
+"libelle_rome": "Agent / Agente de production en industrie alimentaire"
+}
+,
+{
+"code_ogr_rome": 270,
+"code_rome": "H2604",
+"libelle_rome": "Assembleur / Assembleuse en produits électriques et électroniques"
+}
+,
+{
+"code_ogr_rome": 271,
+"code_rome": "H2605",
+"libelle_rome": "Monteur-câbleur / Monteuse-câbleuse en électronique"
+}
+,
+{
+"code_ogr_rome": 275,
+"code_rome": "H2803",
+"libelle_rome": "Opérateur / Opératrice en Industrie Céramique"
+}
+,
+{
+"code_ogr_rome": 282,
+"code_rome": "H2905",
+"libelle_rome": "Cisailleur / Cisailleuse en métallurgie"
+}
+,
+{
+"code_ogr_rome": 283,
+"code_rome": "H2906",
+"libelle_rome": "Opérateur / Opératrice en fabrication mécanique"
+}
+,
+{
+"code_ogr_rome": 286,
+"code_rome": "H2909",
+"libelle_rome": "Assembleur monteur / Assembleuse monteuse"
+}
+,
+{
+"code_ogr_rome": 298,
+"code_rome": "H3302",
+"libelle_rome": "Agent / Agente de conditionnement"
+}
+,
+{
+"code_ogr_rome": 299,
+"code_rome": "H3303",
+"libelle_rome": "Cuisinier / Cuisinière en industrie chimique"
+}
+,
+{
+"code_ogr_rome": 301,
+"code_rome": "H3402",
+"libelle_rome": "Agent / Agente de traitement de surface"
+}
+,
+{
+"code_ogr_rome": 404973,
+"code_rome": "H3405",
+"libelle_rome": "Polisseur / Polisseuse en bijouterie ou joaillerie ou orfèvrerie"
+}
+,
+{
+"code_ogr_rome": 307,
+"code_rome": "I1201",
+"libelle_rome": "Agent / Agente technique d'affichage"
+}
+,
+{
+"code_ogr_rome": 488571,
+"code_rome": "I1204",
+"libelle_rome": "Agent / Agente d'entretien des piscines"
+}
+,
+{
+"code_ogr_rome": 510070,
+"code_rome": "I1207",
+"libelle_rome": "Agent / Agente de maintenance de mobilier urbain et publicitaire"
+}
+,
+{
+"code_ogr_rome": 488770,
+"code_rome": "I1506",
+"libelle_rome": "Chef / Cheffe d'équipe cordiste"
+}
+,
+{
+"code_ogr_rome": 488607,
+"code_rome": "I1608",
+"libelle_rome": "Démonteur / Démonteuse de véhicules hors d'usage"
+}
+,
+{
+"code_ogr_rome": 488736,
+"code_rome": "I1614",
+"libelle_rome": "Préparateur / Préparatrice en peinture automobile"
+}
+,
+{
+"code_ogr_rome": 338,
+"code_rome": "J1301",
+"libelle_rome": "Agent / Agente de service hospitalier (ASH)"
+}
+,
+{
+"code_ogr_rome": 404042,
+"code_rome": "J1308",
+"libelle_rome": "Brancardier / Brancardière"
+}
+,
+{
+"code_ogr_rome": 372,
+"code_rome": "K1205",
+"libelle_rome": "Agent / Agente d'accueil social"
+}
+,
+{
+"code_ogr_rome": 376,
+"code_rome": "K1302",
+"libelle_rome": "Assistant / Assistante de vie dépendance"
+}
+,
+{
+"code_ogr_rome": 377,
+"code_rome": "K1303",
+"libelle_rome": "Garde d'enfant"
+}
+,
+{
+"code_ogr_rome": 378,
+"code_rome": "K1304",
+"libelle_rome": "Employé familial / Employée familiale"
+}
+,
+{
+"code_ogr_rome": 404044,
+"code_rome": "K1306",
+"libelle_rome": "Accompagnant Educatif et Social (AES) / Accompagnante Educative et Sociale (AES)"
+}
+,
+{
+"code_ogr_rome": 488323,
+"code_rome": "K1311",
+"libelle_rome": "Assistant / Assistante de vie aux familles"
+}
+,
+{
+"code_ogr_rome": 488338,
+"code_rome": "K1312",
+"libelle_rome": "Accueillant familial / Accueillante familiale thérapeutique auprès d'adultes"
+}
+,
+{
+"code_ogr_rome": 489223,
+"code_rome": "K1313",
+"libelle_rome": "Employé / Employée au pair"
+}
+,
+{
+"code_ogr_rome": 391,
+"code_rome": "K1701",
+"libelle_rome": "Combattant / Combattante en milieu terrestre"
+}
+,
+{
+"code_ogr_rome": 488892,
+"code_rome": "K1714",
+"libelle_rome": "Missilier / Missilière artillerie"
+}
+,
+{
+"code_ogr_rome": 488934,
+"code_rome": "K1723",
+"libelle_rome": "Conducteur / Conductrice Véhicule Léger de l'armée"
+}
+,
+{
+"code_ogr_rome": 510608,
+"code_rome": "K1725",
+"libelle_rome": "Responsable des opérations militaires en milieu maritime"
+}
+,
+{
+"code_ogr_rome": 510600,
+"code_rome": "K1727",
+"libelle_rome": "Chargé / Chargée du guidage d'aéronef militaire"
+}
+,
+{
+"code_ogr_rome": 510470,
+"code_rome": "K1729",
+"libelle_rome": "Opérateur / Opératrice en pyrotechnie militaire"
+}
+,
+{
+"code_ogr_rome": 510473,
+"code_rome": "K1730",
+"libelle_rome": "Spécialiste de la protection des forces, installations ou matériels sensibles de l'Etat"
+}
+,
+{
+"code_ogr_rome": 510475,
+"code_rome": "K1731",
+"libelle_rome": "Responsable des opérations militaires en milieu aéroterrestre"
+}
+,
+{
+"code_ogr_rome": 510599,
+"code_rome": "K1732",
+"libelle_rome": "Spécialiste des systèmes de communication opérationnels"
+}
+,
+{
+"code_ogr_rome": 510584,
+"code_rome": "K1733",
+"libelle_rome": "Combattant / Combattante des forces spéciales militaires"
+}
+,
+{
+"code_ogr_rome": 510587,
+"code_rome": "K1734",
+"libelle_rome": "Spécialiste du soutien armement nucléaire"
+}
+,
+{
+"code_ogr_rome": 510588,
+"code_rome": "K1735",
+"libelle_rome": "Architecte système de force, d'arme ou équipement militaire"
+}
+,
+{
+"code_ogr_rome": 510597,
+"code_rome": "K1736",
+"libelle_rome": "Spécialiste de l'aide au déploiement des forces combattantes"
+}
+,
+{
+"code_ogr_rome": 510591,
+"code_rome": "K1737",
+"libelle_rome": "Combattant / Combattante en milieu maritime"
+}
+,
+{
+"code_ogr_rome": 510596,
+"code_rome": "K1738",
+"libelle_rome": "Spécialiste du soutien ou de la formation propulsion nucléaire"
+}
+,
+{
+"code_ogr_rome": 416,
+"code_rome": "K2201",
+"libelle_rome": "Blanchisseur industriel / Blanchisseuse industrielle"
+}
+,
+{
+"code_ogr_rome": 417,
+"code_rome": "K2202",
+"libelle_rome": "Laveur / Laveuse de vitres"
+}
+,
+{
+"code_ogr_rome": 419,
+"code_rome": "K2204",
+"libelle_rome": "Agent / Agente de nettoyage industriel"
+}
+,
+{
+"code_ogr_rome": 488581,
+"code_rome": "K2205",
+"libelle_rome": "Agent / Agente de propreté de locaux"
+}
+,
+{
+"code_ogr_rome": 422,
+"code_rome": "K2303",
+"libelle_rome": "Ripeur / Ripeuse"
+}
+,
+{
+"code_ogr_rome": 423,
+"code_rome": "K2304",
+"libelle_rome": "Agent / Agente de tri des déchets"
+}
+,
+{
+"code_ogr_rome": 424,
+"code_rome": "K2305",
+"libelle_rome": "Agent / Agente de désinsectisation"
+}
+,
+{
+"code_ogr_rome": 488790,
+"code_rome": "K2307",
+"libelle_rome": "Agent / Agente de propreté urbaine"
+}
+,
+{
+"code_ogr_rome": 489068,
+"code_rome": "K2308",
+"libelle_rome": "Opérateur / Opératrice de tri en récupération et revalorisation"
+}
+,
+{
+"code_ogr_rome": 489069,
+"code_rome": "K2309",
+"libelle_rome": "Technicien / Technicienne réutilisation recyclage"
+}
+,
+{
+"code_ogr_rome": 489221,
+"code_rome": "K2310",
+"libelle_rome": "Ambassadeur / Ambassadrice du tri"
+}
+,
+{
+"code_ogr_rome": 509889,
+"code_rome": "K2318",
+"libelle_rome": "Agent / Agente de déchetterie"
+}
+,
+{
+"code_ogr_rome": 428,
+"code_rome": "K2501",
+"libelle_rome": "Gardien / Gardienne d'immeuble"
+}
+,
+{
+"code_ogr_rome": 436,
+"code_rome": "L1102",
+"libelle_rome": "Mannequin"
+}
+,
+{
+"code_ogr_rome": 489202,
+"code_rome": "L1208",
+"libelle_rome": "Mascotte-personnage"
+}
+,
+{
+"code_ogr_rome": 509645,
+"code_rome": "L1209",
+"libelle_rome": "Performeur / Performeuse de cabaret"
+}
+,
+{
+"code_ogr_rome": 513849,
+"code_rome": "L1309",
+"libelle_rome": "Coordinateur / Coordinatrice d'intimité"
+}
+,
+{
+"code_ogr_rome": 467,
+"code_rome": "M1401",
+"libelle_rome": "Enquêteur / Enquêtrice sondage"
+}
+,
+{
+"code_ogr_rome": 510308,
+"code_rome": "M1418",
+"libelle_rome": "Recruteur / Recruteuse de donateurs"
+}
+,
+{
+"code_ogr_rome": 509569,
+"code_rome": "M1421",
+"libelle_rome": "Panéliste"
+}
+,
+{
+"code_ogr_rome": 509903,
+"code_rome": "M1425",
+"libelle_rome": "Agent recenseur / Agente recenseuse"
+}
+,
+{
+"code_ogr_rome": 474,
+"code_rome": "M1601",
+"libelle_rome": "Chargé / Chargée d'accueil"
+}
+,
+{
+"code_ogr_rome": 476,
+"code_rome": "M1603",
+"libelle_rome": "Facteur / Factrice"
+}
+,
+{
+"code_ogr_rome": 488927,
+"code_rome": "M1614",
+"libelle_rome": "Standardiste"
+}
+,
+{
+"code_ogr_rome": 489012,
+"code_rome": "M1615",
+"libelle_rome": "Distributeur / Distributrice de prospectus et imprimés"
+}
+,
+{
+"code_ogr_rome": 509416,
+"code_rome": "M1618",
+"libelle_rome": "Agent / Agente de liaison courrier"
+}
+,
+{
+"code_ogr_rome": 510059,
+"code_rome": "M1620",
+"libelle_rome": "Superviseur / Superviseuse de distributeurs d'imprimés"
+}
+,
+{
+"code_ogr_rome": 500,
+"code_rome": "N1101",
+"libelle_rome": "Cariste"
+}
+,
+{
+"code_ogr_rome": 501,
+"code_rome": "N1102",
+"libelle_rome": "Déménageur / Déménageuse"
+}
+,
+{
+"code_ogr_rome": 502,
+"code_rome": "N1103",
+"libelle_rome": "Préparateur / Préparatrice de commandes"
+}
+,
+{
+"code_ogr_rome": 503,
+"code_rome": "N1104",
+"libelle_rome": "Pontier / Pontière"
+}
+,
+{
+"code_ogr_rome": 504,
+"code_rome": "N1105",
+"libelle_rome": "Manutentionnaire"
+}
+,
+{
+"code_ogr_rome": 488333,
+"code_rome": "N1106",
+"libelle_rome": "Agent / Agente de quai manutentionnaire"
+}
+,
+{
+"code_ogr_rome": 488599,
+"code_rome": "N1107",
+"libelle_rome": "Chef / Cheffe d'équipe en déménagement"
+}
+,
+{
+"code_ogr_rome": 488769,
+"code_rome": "N1109",
+"libelle_rome": "Eclusier-barragiste / Eclusière-barragiste"
+}
+,
+{
+"code_ogr_rome": 488771,
+"code_rome": "N1110",
+"libelle_rome": "Magasinier / Magasinière"
+}
+,
+{
+"code_ogr_rome": 488893,
+"code_rome": "N1111",
+"libelle_rome": "Conducteur / Conductrice de pont roulant"
+}
+,
+{
+"code_ogr_rome": 489051,
+"code_rome": "N1113",
+"libelle_rome": "Préparateur / Préparatrice au drive"
+}
+,
+{
+"code_ogr_rome": 489164,
+"code_rome": "N1115",
+"libelle_rome": "Opérateur / Opératrice logistique en entrepôt"
+}
+,
+{
+"code_ogr_rome": 489168,
+"code_rome": "N1116",
+"libelle_rome": "Agent / Agente de quai de messagerie"
+}
+,
+{
+"code_ogr_rome": 514,
+"code_rome": "N2203",
+"libelle_rome": "Agent / Agente de piste"
+}
+,
+{
+"code_ogr_rome": 489062,
+"code_rome": "N3204",
+"libelle_rome": "Chef / Cheffe d'équipe de manutention portuaire"
+}
+,
+{
+"code_ogr_rome": 523,
+"code_rome": "N4101",
+"libelle_rome": "Conducteur / Conductrice de poids lourd"
+}
+,
+{
+"code_ogr_rome": 525,
+"code_rome": "N4103",
+"libelle_rome": "Conducteur / Conductrice de bus"
+}
+,
+{
+"code_ogr_rome": 526,
+"code_rome": "N4104",
+"libelle_rome": "Coursier / Coursière"
+}
+,
+{
+"code_ogr_rome": 488577,
+"code_rome": "N4106",
+"libelle_rome": "Commis coursier / Commise coursière en douane"
+}
+,
+{
+"code_ogr_rome": 488583,
+"code_rome": "N4107",
+"libelle_rome": "Conducteur livreur / Conductrice livreuse de béton prêt à l'emploi"
+}
+,
+{
+"code_ogr_rome": 488591,
+"code_rome": "N4108",
+"libelle_rome": "Conducteur accompagnateur / Conductrice accompagnatrice de personnes à mobilité réduite"
+}
+,
+{
+"code_ogr_rome": 488595,
+"code_rome": "N4109",
+"libelle_rome": "Conducteur / Conductrice d'autocar ligne régulière"
+}
+,
+{
+"code_ogr_rome": 488604,
+"code_rome": "N4110",
+"libelle_rome": "Releveur / Releveuse de compteurs"
+}
+,
+{
+"code_ogr_rome": 488611,
+"code_rome": "N4111",
+"libelle_rome": "Conducteur / Conductrice super poids lourd de l'armée"
+}
+,
+{
+"code_ogr_rome": 489201,
+"code_rome": "N4112",
+"libelle_rome": "Chauffeur / Chauffeuse VTC"
+}
+,
+{
+"code_ogr_rome": 488626,
+"code_rome": "N4113",
+"libelle_rome": "Conducteur routier international / Conductrice routière internationale"
+}
+,
+{
+"code_ogr_rome": 488732,
+"code_rome": "N4114",
+"libelle_rome": "Conducteur livreur avitailleur / Conductrice livreuse avitailleuse en carburant"
+}
+,
+{
+"code_ogr_rome": 488739,
+"code_rome": "N4115",
+"libelle_rome": "Conducteur / Conductrice de véhicules Super Lourds"
+}
+,
+{
+"code_ogr_rome": 488777,
+"code_rome": "N4116",
+"libelle_rome": "Conducteur / Conductrice de transport routier de marchandises dangereuses"
+}
+,
+{
+"code_ogr_rome": 489210,
+"code_rome": "N4117",
+"libelle_rome": "Conducteur / Conductrice d'attelage"
+}
+,
+{
+"code_ogr_rome": 488857,
+"code_rome": "N4118",
+"libelle_rome": "Conducteur / Conductrice enlèvement de déchets"
+}
+,
+{
+"code_ogr_rome": 488874,
+"code_rome": "N4119",
+"libelle_rome": "Conducteur / Conductrice de tramway"
+}
+,
+{
+"code_ogr_rome": 488881,
+"code_rome": "N4120",
+"libelle_rome": "Chauffeur-livreur préparateur / Chauffeuse-livreuse préparatrice de commandes"
+}
+,
+{
+"code_ogr_rome": 488882,
+"code_rome": "N4121",
+"libelle_rome": "Aide-livreur / Aide-livreuse"
+}
+,
+{
+"code_ogr_rome": 488884,
+"code_rome": "N4122",
+"libelle_rome": "Convoyeur / Convoyeuse de véhicules ou matériels lourds"
+}
+,
+{
+"code_ogr_rome": 488931,
+"code_rome": "N4123",
+"libelle_rome": "Conducteur livreur installateur / Conductrice livreuse installatrice"
+}
+,
+{
+"code_ogr_rome": 489226,
+"code_rome": "N4124",
+"libelle_rome": "Conducteur / Conductrice de taxi moto"
+}
+,
+{
+"code_ogr_rome": 488935,
+"code_rome": "N4125",
+"libelle_rome": "Conducteur / Conductrice de transport routier d'animaux vivants"
+}
+,
+{
+"code_ogr_rome": 489224,
+"code_rome": "N4126",
+"libelle_rome": "Conducteur / Conductrice de transport routier en convoi exceptionnel"
+}
+,
+{
+"code_ogr_rome": 489032,
+"code_rome": "N4127",
+"libelle_rome": "Conducteur / Conductrice de car tourisme"
+}
+,
+{
+"code_ogr_rome": 489043,
+"code_rome": "N4128",
+"libelle_rome": "Conducteur / Conductrice de navette de moins de 9 personnes"
+}
+,
+{
+"code_ogr_rome": 489225,
+"code_rome": "N4129",
+"libelle_rome": "Conducteur / Conductrice de corbillard"
+}
+]
+}
+]
+}

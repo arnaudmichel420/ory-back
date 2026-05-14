@@ -1,0 +1,1075 @@
+[
+{
+"code_ogr": 23374,
+"libelle": "Travail le samedi",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 23376,
+"libelle": "Travail les week-ends et jours fériés",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 23377,
+"libelle": "En altitude",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 23378,
+"libelle": "Zone départementale",
+"type_contexte": "Lieux et déplacements"
+}
+,
+{
+"code_ogr": 23379,
+"libelle": "En chambre noire",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 23380,
+"libelle": "En laboratoire",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 23381,
+"libelle": "Zone régionale",
+"type_contexte": "Lieux et déplacements"
+}
+,
+{
+"code_ogr": 23382,
+"libelle": "En ligne ou ilot de production",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 23383,
+"libelle": "En milieu nucléaire",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 23384,
+"libelle": "En milieu hyperbare",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 23385,
+"libelle": "En milieu exigu ou confiné",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 38055,
+"libelle": "Port d'équipement de protection individuelle (EPI) : gants, chaussures, casque, protections auditives",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 38126,
+"libelle": "Etablissement de santé",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 126450,
+"libelle": "Travail posté (2x8, 3x8, 5x8, etc.)",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 300777,
+"libelle": "Au domicile de l'intervenant",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300778,
+"libelle": "Au domicile d'un particulier",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300779,
+"libelle": "Déplacements professionnels",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300780,
+"libelle": "En chambre mortuaire ou funéraire",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300781,
+"libelle": "En environnement allergène",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300782,
+"libelle": "En grande hauteur",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300783,
+"libelle": "En extérieur",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300784,
+"libelle": "En zone à atmosphère contrôlée",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300785,
+"libelle": "En salle blanche",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300786,
+"libelle": "En zone portuaire",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300787,
+"libelle": "En zone frigorifique",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300788,
+"libelle": "En zone aéroportuaire",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300789,
+"libelle": "Exposition à de hautes températures",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300790,
+"libelle": "En environnement climatique difficile",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300791,
+"libelle": "Manipulation de produits à risques",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300792,
+"libelle": "Port de gilet pare-balles",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300793,
+"libelle": "Travail le dimanche",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 300794,
+"libelle": "Manipulation d'un engin, équipement ou outil dangereux",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300795,
+"libelle": "Port et manipulation de charges lourdes ou encombrantes",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300797,
+"libelle": "Horaires annuels",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 300798,
+"libelle": "Position pénible",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300799,
+"libelle": "Possibilité de télétravail",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300800,
+"libelle": "Station debout prolongée",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300801,
+"libelle": "Travail répétitif ou cadence imposée",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300802,
+"libelle": "Port d'équipement d'hygiène",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300803,
+"libelle": "Travail de nuit",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 300804,
+"libelle": "Travail en astreinte",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 300805,
+"libelle": "Travail en horaires décalés",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 300806,
+"libelle": "Travail en journée",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 300808,
+"libelle": "Travail par roulement",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 300809,
+"libelle": "Cabinet libéral",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 300810,
+"libelle": "Crèche, halte-garderie",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 300811,
+"libelle": "Etablissement de restauration collective",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 300814,
+"libelle": "Zone européenne",
+"type_contexte": "Lieux et déplacements"
+}
+,
+{
+"code_ogr": 300816,
+"libelle": "Zone internationale",
+"type_contexte": "Lieux et déplacements"
+}
+,
+{
+"code_ogr": 300817,
+"libelle": "Zone nationale",
+"type_contexte": "Lieux et déplacements"
+}
+,
+{
+"code_ogr": 300818,
+"libelle": "Adolescents",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300819,
+"libelle": "Clientèle d'affaires",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300820,
+"libelle": "Adultes",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300821,
+"libelle": "Clientèle d'entreprises",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300822,
+"libelle": "Créateurs d'entreprise",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300823,
+"libelle": "Demandeurs d'emploi",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300824,
+"libelle": "En environnement bruyant",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300825,
+"libelle": "Enfants",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300826,
+"libelle": "Enfants de 3 à 6 ans",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300827,
+"libelle": "Enfants de 6 à 10 ans",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300828,
+"libelle": "Enfants de moins de 3 ans",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300829,
+"libelle": "Etudiants",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300830,
+"libelle": "Familles",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300834,
+"libelle": "En flux tendu",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 300835,
+"libelle": "Mineurs (- 18 ans)",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300836,
+"libelle": "Nourrissons",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300837,
+"libelle": "Particuliers",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300838,
+"libelle": "Patients",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300839,
+"libelle": "Personnes âgées",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300840,
+"libelle": "Personnes en situation de handicap",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300841,
+"libelle": "Personnes médicalisées",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300842,
+"libelle": "Personnes sous main de justice",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300843,
+"libelle": "Personnes vulnérables",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300844,
+"libelle": "Public mal entendant",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300845,
+"libelle": "Public mal voyant",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300846,
+"libelle": "Salariés",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300847,
+"libelle": "Public scolaire",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300848,
+"libelle": "Sportifs",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 300849,
+"libelle": "Association",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 300877,
+"libelle": "Etablissement pénitentiaire",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 300878,
+"libelle": "Structure de loisirs, culturelle ou touristique",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 400002,
+"libelle": "Jeunes en insertion",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 400005,
+"libelle": "Travail en horaires fractionnés",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 400007,
+"libelle": "En bloc opératoire",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 400010,
+"libelle": "Etablissement social ou médico-social (EHPAD, résidence senior, ...)",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 400034,
+"libelle": "En milieu maritime",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 400040,
+"libelle": "Travail saisonnier",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 400047,
+"libelle": "Travail dans des environnements hostiles et dangereux",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 402010,
+"libelle": "Sans lumière naturelle",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 402011,
+"libelle": "Port de tenue professionnelle ou d'uniforme",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403019,
+"libelle": "Activités de motricité fine (dextérité...)",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403020,
+"libelle": "En contact avec du public",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403021,
+"libelle": "Exposition à de basses températures",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403022,
+"libelle": "Exposition possible à gaz, aérosol, fumées ...",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403023,
+"libelle": "Utilisation d'escaliers",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403024,
+"libelle": "Polyactivité",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403025,
+"libelle": "Station assise prolongée",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403091,
+"libelle": "En club sportif",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403092,
+"libelle": "En atelier",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403093,
+"libelle": "En bureau d'études",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403094,
+"libelle": "En milieu occupé",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403095,
+"libelle": "Travail selon un rythme irrégulier et des pics d'activité",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 403096,
+"libelle": "Alternance",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403097,
+"libelle": "Contrat intermittent",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403098,
+"libelle": "Contrat travail saisonnier",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403099,
+"libelle": "Militaire",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403100,
+"libelle": "Fonctionnaire",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403101,
+"libelle": "Intérim",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403102,
+"libelle": "Profession libérale",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403103,
+"libelle": "Salarié secteur privé (CDI, CDD)",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403104,
+"libelle": "Salarié secteur public",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403106,
+"libelle": "Travailleur indépendant",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 403107,
+"libelle": "Travail en mode projet",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403826,
+"libelle": "Travail durant les vacances scolaires",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 403960,
+"libelle": "Exploitation agricole",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 403961,
+"libelle": "Structure sportive",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 403962,
+"libelle": "Sur chantier",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 403963,
+"libelle": "Travail avec des animaux",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 405244,
+"libelle": "Etablissement scolaire",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 405250,
+"libelle": "Enfants de moins de 3 ans en situation de handicap",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 405263,
+"libelle": "Bénévoles",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 405284,
+"libelle": "Publics en situation d'illettrisme",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 405285,
+"libelle": "Collectivités territoriales",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 405286,
+"libelle": "Organisme de formation",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 405287,
+"libelle": "Economie Sociale et Solidaire",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 405307,
+"libelle": "Commerce de proximité",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 405324,
+"libelle": "Professionnels de santé",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 405328,
+"libelle": "En salle d'accouchement",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 405329,
+"libelle": "Officine",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 405348,
+"libelle": "Entreprises et milieux professionnels",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 405349,
+"libelle": "Organisme public",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489413,
+"libelle": "Institution culturelle",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489469,
+"libelle": "Etablissement de restauration rapide",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489571,
+"libelle": "Bar, Brasserie",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489572,
+"libelle": "Etablissement de restauration traditionnelle",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489573,
+"libelle": "Hébergement et hôtellerie de plein air",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489574,
+"libelle": "Hôtellerie",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489575,
+"libelle": "Hôtellerie / Restauration",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489576,
+"libelle": "Utilisation d'équipements de protection collective (EPC)",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 489918,
+"libelle": "En milieu industriel",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 489935,
+"libelle": "Particuliers employeurs",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 489936,
+"libelle": "Résidents, usagers",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 490147,
+"libelle": "Industries de santé",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 490158,
+"libelle": "Santé publique",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 490159,
+"libelle": "Industries chimiques",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 490428,
+"libelle": "Structure médico-sociale",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 490468,
+"libelle": "Travail en autonomie et en situation isolée",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 490503,
+"libelle": "Clientèle de particuliers",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 490504,
+"libelle": "Clientèle de professionnels",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 490531,
+"libelle": "En milieu aquatique",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 510973,
+"libelle": "Entreprises de médias",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 511069,
+"libelle": "Laboratoire de recherche et développement",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 511229,
+"libelle": "Risques de chutes",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 511359,
+"libelle": "En environnement humide",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 511474,
+"libelle": "Mobilisable en urgence",
+"type_contexte": "Horaires et durée du travail"
+}
+,
+{
+"code_ogr": 511477,
+"libelle": "Travail avec des organisations ou partenaires internationaux",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 511480,
+"libelle": "Travail dans des milieux difficiles et exigeants pour l'humain",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 511495,
+"libelle": "Port d'arme et de munitions",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 511668,
+"libelle": "Partenaires Publics et Privés",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 511685,
+"libelle": "Artiste-auteur",
+"type_contexte": "Statut d'emploi"
+}
+,
+{
+"code_ogr": 511846,
+"libelle": "Organisme militaire",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 512162,
+"libelle": "Maison d'Assistantes Maternelles (MAM)",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 512163,
+"libelle": "Enfants de plus de 3 ans en situation de handicap",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 512165,
+"libelle": "Prestataire de services",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 512372,
+"libelle": "Concessions",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 512375,
+"libelle": "En studio",
+"type_contexte": "Conditions de travail et risques professionnels"
+}
+,
+{
+"code_ogr": 512377,
+"libelle": "Entreprises privées de transport sanitaire",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 512378,
+"libelle": "Entreprises spécialisées en carrosserie-peinture",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 512381,
+"libelle": "Personnes à mobilité réduite",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 512382,
+"libelle": "Entreprise industrielle",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 512383,
+"libelle": "Société de production audiovisuelle",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 513494,
+"libelle": "Opérateurs de voyages et de séjours",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 513553,
+"libelle": "Clientèle d'organismes publics",
+"type_contexte": "Publics spécifiques"
+}
+,
+{
+"code_ogr": 513571,
+"libelle": "Techni-centres de maintenance cycles",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 513694,
+"libelle": "Laboratoire de biologie médicale",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 513695,
+"libelle": "Instances de santé",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 513696,
+"libelle": "Etablissement de distribution en gros",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 513768,
+"libelle": "Centres d'appels",
+"type_contexte": "Types de structures"
+}
+,
+{
+"code_ogr": 513769,
+"libelle": "Tous types de public",
+"type_contexte": "Publics spécifiques"
+}
+]
