@@ -189,6 +189,12 @@ class Etudiant
         return $this;
     }
 
+    #[Groups(['user:read'])]
+    public function getOnbording(): bool
+    {
+        return !$this->etudiantReponseRecos->isEmpty();
+    }
+
     /**
      * @return Collection<int, EtudiantDefi>
      */
