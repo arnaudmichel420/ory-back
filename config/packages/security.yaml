@@ -17,6 +17,9 @@ security:
             # Ensure dev tools and static assets are always allowed
             pattern: ^/(_profiler|_wdt|assets|build)/
             security: false
+        dummy:
+            pattern: ^/dummy
+            security: false
         api:
             pattern: ^/api
             stateless: true

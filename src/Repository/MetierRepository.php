@@ -7,6 +7,8 @@ namespace App\Repository;
 use App\Dto\Metier\MetierListQueryDto;
 use App\Entity\Etudiant;
 use App\Entity\Metier;
+use App\Entity\MetierAttractivite;
+use App\Entity\Territoire;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\ORM\Tools\Pagination\Paginator;
@@ -35,7 +37,7 @@ class MetierRepository extends ServiceEntityRepository
 
         return array_values(array_filter(
             array_map(
-                static fn (mixed $row): ?array => \is_array($row)
+                static fn(mixed $row): ?array => \is_array($row)
                     && isset($row['codeOgr'], $row['codeRome'])
                     && \is_string($row['codeOgr'])
                     && '' !== $row['codeOgr']
@@ -124,11 +126,11 @@ class MetierRepository extends ServiceEntityRepository
 
         $paginator = new Paginator(
             $itemsQueryBuilder
-            ->orderBy($sortField, $query->getSortDirection())
-            ->addOrderBy('m.codeOgr', 'ASC')
-            ->setFirstResult($query->getOffset())
-            ->setMaxResults($query->perPage)
-            ->getQuery(),
+                ->orderBy($sortField, $query->getSortDirection())
+                ->addOrderBy('m.codeOgr', 'ASC')
+                ->setFirstResult($query->getOffset())
+                ->setMaxResults($query->perPage)
+                ->getQuery(),
             true,
         );
 
@@ -152,7 +154,7 @@ class MetierRepository extends ServiceEntityRepository
         if (null !== $query->search && '' !== trim($query->search)) {
             $queryBuilder
                 ->andWhere('LOWER(m.libelle) LIKE LOWER(:search)')
-                ->setParameter('search', '%'.trim($query->search).'%');
+                ->setParameter('search', '%' . trim($query->search) . '%');
         }
 
         $secteurIds = $query->getSecteurIdsAsInts();
@@ -181,5 +183,40 @@ class MetierRepository extends ServiceEntityRepository
                 ->andWhere('m.emploiCadre = :emploiCadre')
                 ->setParameter('emploiCadre', $query->emploiCadre);
         }
+    }
+
+    public function findTopAttractiveScoresForTerritoire(Territoire $territoire): array
+    {
+        $result = $this->getEntityManager()
+            ->createQueryBuilder()
+            ->from(MetierAttractivite::class, 'ma')
+            ->select(
+                'IDENTITY(ma.codeOgrMetier) as codeOgrMetier',
+                "SUM(
+                    CASE ma.codeAttractivite
+                        WHEN 'PERSPECTIVE' THEN ma.valeur * 0.30
+                        WHEN 'INT_EMB' THEN ma.valeur * 0.25
+                        WHEN 'DUR_EMPL' THEN ma.valeur * 0.15
+                        WHEN 'ATTR_SALARIALE' THEN ma.valeur * 0.15
+                        WHEN 'MAIN_OEUVRE' THEN ma.valeur * 0.10
+                        WHEN 'MISMATCH_GEO' THEN ma.valeur * -0.15
+                        WHEN 'COND_TRAVAIL' THEN ma.valeur * -0.05
+                        ELSE 0
+                    END
+                ) as scoreAttractivite"
+            )
+            ->where('ma.territoire = :territoire')
+            ->setParameter('territoire', $territoire)
+            ->groupBy('ma.codeOgrMetier')
+            ->orderBy('scoreAttractivite', 'DESC')
+            ->getQuery()
+            ->getArrayResult();
+
+        foreach ($result as &$row) {
+            $row['scoreAttractivite'] = round((float) $row['scoreAttractivite'] / 5.0, 2);
+        }
+        unset($row);
+
+        return $result;
     }
 }
