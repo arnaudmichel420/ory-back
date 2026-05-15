@@ -11,6 +11,7 @@ use App\Dto\Metier\MetierSavedListQueryDto;
 use App\Entity\Etudiant;
 use App\Entity\Utilisateur;
 use App\Repository\EtudiantMetierInteractionRepository;
+use App\Repository\EtudiantMetierScoreRepository;
 use App\Security\Voter\EtudiantVoter;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -44,6 +45,38 @@ final class EtudiantController extends AbstractController
         $query ??= new MetierSavedListQueryDto();
 
         $result = $interactionRepository->paginateSavedMetiers($etudiant, $query);
+        $totalPages = 0 === $result['total'] ? 0 : (int) ceil($result['total'] / $query->limit);
+
+        return $this->json([
+            'items' => $result['items'],
+            'meta' => [
+                'page' => $query->page,
+                'limit' => $query->limit,
+                'total' => $result['total'],
+                'totalPages' => $totalPages,
+            ],
+        ], context: [
+            'groups' => ['metier:list'],
+        ]);
+    }
+
+    #[Route('/metiers/recommended', name: 'metier_recommended_index', methods: ['GET'])]
+    #[IsGranted(EtudiantVoter::VIEW, subject: 'utilisateur')]
+    public function recommendedMetiers(
+        #[CurrentUser] Utilisateur $utilisateur,
+        #[MapQueryString(validationFailedStatusCode: Response::HTTP_BAD_REQUEST)] ?MetierSavedListQueryDto $query,
+        EtudiantMetierScoreRepository $scoreRepository,
+    ): JsonResponse {
+        $etudiant = $utilisateur->getEtudiant();
+        if (!$etudiant instanceof Etudiant) {
+            return $this->json([
+                'message' => 'Profil etudiant introuvable.',
+            ], Response::HTTP_NOT_FOUND);
+        }
+
+        $query ??= new MetierSavedListQueryDto();
+
+        $result = $scoreRepository->paginateRecommendedMetiers($etudiant, $query);
         $totalPages = 0 === $result['total'] ? 0 : (int) ceil($result['total'] / $query->limit);
 
         return $this->json([
