@@ -5,12 +5,14 @@ declare(strict_types=1);
 namespace App\Service\Recommendation;
 
 use App\Entity\Etudiant;
+use App\Entity\EtudiantMetierScore;
 use App\Repository\EtudiantMetierScoreRepository;
 use App\Repository\MetierRepository;
+use Doctrine\ORM\EntityManagerInterface;
 
 final class RecommendationService
 {
-    public function __construct(private AttractiviteCalculatorService $attractiviteCalculatorService, private InterractionCalculatorService $interractionCalculatorService, private OnboardingCalculatorService $onboardingCalculatorService, private EtudiantMetierScoreRepository $etudiantMetierScoreRepository, private MetierRepository $metierRepository)
+    public function __construct(private AttractiviteCalculatorService $attractiviteCalculatorService, private InterractionCalculatorService $interractionCalculatorService, private OnboardingCalculatorService $onboardingCalculatorService, private EtudiantMetierScoreRepository $etudiantMetierScoreRepository, private MetierRepository $metierRepository, private EntityManagerInterface $entityManager)
     {
     }
 
@@ -65,6 +67,40 @@ final class RecommendationService
         }
 
         arsort($recommendedMetiers);
-        dd($recommendedMetiers);
+
+        $topFiftyRecommendedMetiers = \array_slice($recommendedMetiers, 0, 50, true);
+
+        $this->upsertRecommendation($etudiant, $topFiftyRecommendedMetiers);
+    }
+
+    /**
+     * @param array<string, float> $metiers
+     */
+    public function upsertRecommendation(Etudiant $etudiant, array $metiers): void
+    {
+        $recommendations = $etudiant->getEtudiantMetierScores();
+
+        if (!$recommendations->isEmpty()) {
+            foreach ($recommendations as $recommendation) {
+                $this->entityManager->remove($recommendation);
+            }
+        }
+
+        foreach ($metiers as $codeOgrMetier => $score) {
+            $metier = $this->metierRepository->find($codeOgrMetier);
+
+            if (empty($metier)) {
+                continue;
+            }
+
+            $etudiantMetierScores = new EtudiantMetierScore();
+            $etudiantMetierScores->setEtudiant($etudiant);
+            $etudiantMetierScores->setScoreTotal($score);
+            $etudiantMetierScores->setCodeOgrMetier($metier);
+
+            $this->entityManager->persist($etudiantMetierScores);
+        }
+
+        $this->entityManager->flush();
     }
 }

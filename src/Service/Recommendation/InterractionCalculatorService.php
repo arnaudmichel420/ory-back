@@ -16,10 +16,10 @@ final class InterractionCalculatorService
 
     /**
      * @param list<array{codeOgrMetier: string, scoreAttractivite: float, scoreOnboarding: float}> $onboardingScores
-     * @param array<string, list<int>>                                                            $secteursByMetier
-     * @param array<string, list<int>>                                                            $centresInteretByMetier
-     * @param array<string, list<string>>                                                         $contextesTravailByMetier
-     * @param array<string, list<string>>                                                         $competenceByMetier
+     * @param array<string, list<int>>                                                             $secteursByMetier
+     * @param array<string, list<int>>                                                             $centresInteretByMetier
+     * @param array<string, list<string>>                                                          $contextesTravailByMetier
+     * @param array<string, list<string>>                                                          $competenceByMetier
      *
      * @return list<array{codeOgrMetier: string, scoreAttractivite: float, scoreOnboarding: float, scoreInterraction: float}>
      */
@@ -72,14 +72,14 @@ final class InterractionCalculatorService
 
     /**
      * @param list<array{codeOgrMetier: string, interractionScore: float}> $likedMetiersWithScore
-     * @param array<string, list<int>>                                      $secteursByMetier
-     * @param array<string, list<int>>                                      $centresInteretByMetier
-     * @param array<string, list<string>>                                   $contextesTravailByMetier
-     * @param array<string, list<string>>                                   $competenceByMetier
-     * @param array<string, list<int>>                                      $wantedSecteurs
-     * @param array<string, list<int>>                                      $wantedCentresInteret
-     * @param array<string, list<string>>                                   $wantedContextesTravail
-     * @param array<string, list<string>>                                   $wantedCompetence
+     * @param array<string, list<int>>                                     $secteursByMetier
+     * @param array<string, list<int>>                                     $centresInteretByMetier
+     * @param array<string, list<string>>                                  $contextesTravailByMetier
+     * @param array<string, list<string>>                                  $competenceByMetier
+     * @param array<string, list<int>>                                     $wantedSecteurs
+     * @param array<string, list<int>>                                     $wantedCentresInteret
+     * @param array<string, list<string>>                                  $wantedContextesTravail
+     * @param array<string, list<string>>                                  $wantedCompetence
      */
     public function calculateForMetier(
         string $codeOgrMetier,
@@ -123,14 +123,14 @@ final class InterractionCalculatorService
 
     /**
      * @param list<array{codeOgrMetier: string, interractionScore: float}> $likedMetiersWithScore
-     * @param array<string, list<int>>                                      $secteursByMetier
-     * @param array<string, list<int>>                                      $centresInteretByMetier
-     * @param array<string, list<string>>                                   $contextesTravailByMetier
-     * @param array<string, list<string>>                                   $competenceByMetier
-     * @param array<string, list<int>>                                      $wantedSecteurs
-     * @param array<string, list<int>>                                      $wantedCentresInteret
-     * @param array<string, list<string>>                                   $wantedContextesTravail
-     * @param array<string, list<string>>                                   $wantedCompetence
+     * @param array<string, list<int>>                                     $secteursByMetier
+     * @param array<string, list<int>>                                     $centresInteretByMetier
+     * @param array<string, list<string>>                                  $contextesTravailByMetier
+     * @param array<string, list<string>>                                  $competenceByMetier
+     * @param array<string, list<int>>                                     $wantedSecteurs
+     * @param array<string, list<int>>                                     $wantedCentresInteret
+     * @param array<string, list<string>>                                  $wantedContextesTravail
+     * @param array<string, list<string>>                                  $wantedCompetence
      */
     private function scoreMetierSimilaireAuxInterractions(
         string $codeOgrMetier,

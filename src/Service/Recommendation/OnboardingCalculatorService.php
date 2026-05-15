@@ -17,9 +17,9 @@ final class OnboardingCalculatorService
 
     /**
      * @param list<array{codeOgrMetier: string, scoreAttractivite: float}> $attractiveMetiers
-     * @param array<string, list<int>>                                         $secteursByMetier
-     * @param array<string, list<int>>                                         $centresInteretByMetier
-     * @param array<string, list<string>>                                      $contextesTravailByMetier
+     * @param array<string, list<int>>                                     $secteursByMetier
+     * @param array<string, list<int>>                                     $centresInteretByMetier
+     * @param array<string, list<string>>                                  $contextesTravailByMetier
      *
      * @return list<array{codeOgrMetier: string, scoreAttractivite: float, scoreOnboarding: float}>
      */

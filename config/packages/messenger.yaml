@@ -9,6 +9,7 @@ framework:
 
         routing:
             App\Message\ImportMetierAttractiviteMessage: async
+            App\Message\GenerateRecommendationMessage: async
 
 when@test:
     framework:

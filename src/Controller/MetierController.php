@@ -10,6 +10,7 @@ use App\Entity\Etudiant;
 use App\Entity\Metier;
 use App\Entity\Utilisateur;
 use App\Enum\EtudiantMetierInteractionTypeEnum;
+use App\Message\GenerateRecommendationMessage;
 use App\Repository\EtudiantMetierInteractionRepository;
 use App\Repository\MetierRepository;
 use App\Service\EtudiantMetierInteractionService;
@@ -20,6 +21,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryString;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
+use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Attribute\CurrentUser;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
@@ -78,6 +80,7 @@ final class MetierController extends AbstractController
         EtudiantMetierInteractionRepository $interactionRepository,
         EtudiantMetierInteractionService $interactionService,
         EntityManagerInterface $entityManager,
+        MessageBusInterface $messageBus,
     ): JsonResponse {
         if (null === $metier) {
             throw $this->createNotFoundException('Metier introuvable.');
@@ -107,6 +110,7 @@ final class MetierController extends AbstractController
         }
 
         $entityManager->flush();
+        $this->dispatchRecommendationMessage($etudiant, $messageBus);
 
         return $this->json([
             'saved' => $saved,
@@ -121,6 +125,7 @@ final class MetierController extends AbstractController
         #[MapRequestPayload(validationFailedStatusCode: Response::HTTP_BAD_REQUEST)] MetierInteractionToggleDto $dto,
         EtudiantMetierInteractionService $interactionService,
         EntityManagerInterface $entityManager,
+        MessageBusInterface $messageBus,
     ): JsonResponse {
         if (null === $metier) {
             throw $this->createNotFoundException('Metier introuvable.');
@@ -138,10 +143,22 @@ final class MetierController extends AbstractController
         $interactionService->addInteraction($etudiant, $metier, $type);
 
         $entityManager->flush();
+        $this->dispatchRecommendationMessage($etudiant, $messageBus);
 
         return $this->json([
             'active' => true,
             'type' => $type->value,
         ]);
+    }
+
+    private function dispatchRecommendationMessage(Etudiant $etudiant, MessageBusInterface $messageBus): void
+    {
+        $etudiantId = $etudiant->getId();
+
+        if (null === $etudiantId) {
+            return;
+        }
+
+        $messageBus->dispatch(new GenerateRecommendationMessage($etudiantId));
     }
 }
