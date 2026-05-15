@@ -6,7 +6,6 @@ namespace App\Repository;
 
 use App\Entity\Etudiant;
 use App\Entity\EtudiantMetierScore;
-use DateTimeImmutable;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -20,7 +19,7 @@ class EtudiantMetierScoreRepository extends ServiceEntityRepository
         parent::__construct($registry, EtudiantMetierScore::class);
     }
 
-    public function getLastRecommendationDateForEtudiant(Etudiant $etudiant): ?DateTimeImmutable
+    public function getLastRecommendationDateForEtudiant(Etudiant $etudiant): ?\DateTimeImmutable
     {
         $result = $this->createQueryBuilder('ems')
             ->select('ems.creeLe AS creeLe')

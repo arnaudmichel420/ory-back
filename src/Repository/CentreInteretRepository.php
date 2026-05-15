@@ -20,24 +20,34 @@ class CentreInteretRepository extends ServiceEntityRepository
         parent::__construct($registry, CentreInteret::class);
     }
 
+    /**
+     * @return list<int>
+     */
     public function getCentreInteretFromMetier(Metier $metier): array
     {
-        return $this->createQueryBuilder('ci')
+        $centresInteret = $this->createQueryBuilder('ci')
             ->select('DISTINCT ci.id')
             ->join('ci.metierCentreInterets', 'mci', 'WITH', 'mci.codeOgrMetier = :metier')
             ->setParameter('metier', $metier)
             ->getQuery()
             ->getSingleColumnResult();
+
+        return array_map('intval', $centresInteret);
     }
 
+    /**
+     * @return list<int>
+     */
     public function getCentreInteretFromOnboarding(Etudiant $etudiant): array
     {
-        return $this->createQueryBuilder('ci')
+        $centresInteret = $this->createQueryBuilder('ci')
             ->select('DISTINCT ci.id')
             ->join('ci.choixRecos', 'cr')
             ->join('cr.etudiantReponseRecos', 'err', 'WITH', 'err.etudiant = :etudiant')
             ->setParameter('etudiant', $etudiant)
             ->getQuery()
             ->getSingleColumnResult();
+
+        return array_map('intval', $centresInteret);
     }
 }

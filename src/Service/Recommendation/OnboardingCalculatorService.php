@@ -1,84 +1,110 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Service\Recommendation;
 
-
 use App\Entity\Etudiant;
-use App\Entity\Metier;
 use App\Repository\CentreInteretRepository;
 use App\Repository\ContexteTravailRepository;
-use App\Repository\MetierRepository;
 use App\Repository\SecteurRepository;
 
 final class OnboardingCalculatorService
 {
-    public function __construct(private MetierRepository $metierRepository, private SecteurRepository $secteurRepository, private CentreInteretRepository $centreInteretRepository, private ContexteTravailRepository $contexteTravailRepository) {}
-
-    public function getOnboardingScoreForStudent(Etudiant $etudiant, array $metiers): array
+    public function __construct(private SecteurRepository $secteurRepository, private CentreInteretRepository $centreInteretRepository, private ContexteTravailRepository $contexteTravailRepository)
     {
-        foreach ($metiers as &$metier) {
-            $metier['scoreOnboarding'] = $this->calculateForMetier($etudiant, $metier['codeOgrMetier']);
-        }
-        dd($metiers);
-        return $metiers;
     }
 
-    public function calculateForMetier(Etudiant $etudiant, string $codeOgrMetier): float
-    {
-        $metier = $this->metierRepository->find($codeOgrMetier);
+    /**
+     * @param list<array{codeOgrMetier: string, scoreAttractivite: float}> $attractiveMetiers
+     * @param array<string, list<int>>                                         $secteursByMetier
+     * @param array<string, list<int>>                                         $centresInteretByMetier
+     * @param array<string, list<string>>                                      $contextesTravailByMetier
+     *
+     * @return list<array{codeOgrMetier: string, scoreAttractivite: float, scoreOnboarding: float}>
+     */
+    public function getOnboardingScoreForStudent(
+        Etudiant $etudiant,
+        array $attractiveMetiers,
+        array $secteursByMetier,
+        array $centresInteretByMetier,
+        array $contextesTravailByMetier,
+    ): array {
+        $wantedSecteurs = $this->secteurRepository->getSecteursFromOnboarding($etudiant);
+        $wantedCentresInteret = $this->centreInteretRepository->getCentreInteretFromOnboarding($etudiant);
+        $wantedContextesTravail = $this->contexteTravailRepository->getContextesTravailFromOnboarding($etudiant);
 
-        if (empty($metier)) {
+        $result = [];
+        foreach ($attractiveMetiers as $attractiveMetier) {
+            $result[] = $attractiveMetier + [
+                'scoreOnboarding' => $this->calculateForMetier(
+                    $attractiveMetier['codeOgrMetier'],
+                    $secteursByMetier,
+                    $centresInteretByMetier,
+                    $contextesTravailByMetier,
+                    $wantedSecteurs,
+                    $wantedCentresInteret,
+                    $wantedContextesTravail,
+                ),
+            ];
+        }
+
+        return $result;
+    }
+
+    /**
+     * @param array<string, list<int>>    $secteursByMetier
+     * @param array<string, list<int>>    $centresInteretByMetier
+     * @param array<string, list<string>> $contextesTravailByMetier
+     * @param list<int>                   $wantedSecteurs
+     * @param list<int>                   $wantedCentresInteret
+     * @param list<string>                $wantedContextesTravail
+     */
+    public function calculateForMetier(
+        string $codeOgr,
+        array $secteursByMetier,
+        array $centresInteretByMetier,
+        array $contextesTravailByMetier,
+        array $wantedSecteurs,
+        array $wantedCentresInteret,
+        array $wantedContextesTravail,
+    ): float {
+        $secteurScore = $this->computeRatioScore(
+            $wantedSecteurs,
+            $secteursByMetier[$codeOgr] ?? [],
+        );
+
+        $centreInteretScore = $this->computeRatioScore(
+            $wantedCentresInteret,
+            $centresInteretByMetier[$codeOgr] ?? [],
+        );
+
+        $contexteScore = $this->computeRatioScore(
+            $wantedContextesTravail,
+            $contextesTravailByMetier[$codeOgr] ?? [],
+        );
+
+        return round(($secteurScore * 0.40)
+            + ($centreInteretScore * 0.35)
+            + ($contexteScore * 0.25), 2);
+    }
+
+    /**
+     * @param list<int|string> $wantedValues
+     * @param list<int|string> $metierValues
+     */
+    public function computeRatioScore(array $wantedValues, array $metierValues): float
+    {
+        if ([] === $wantedValues) {
+            return 0.5;
+        }
+
+        if ([] === $metierValues) {
             return 0.0;
         }
 
-        $secteurScore = $this->scoreSecteurs($etudiant, $metier);
-        $centreInteretScore = $this->scoreCentresInteret($etudiant, $metier);
-        $contexteScore = $this->scoreContextesTravail($etudiant, $metier);
+        $matches = array_intersect($wantedValues, $metierValues);
 
-        return ($secteurScore * 0.40)
-            + ($centreInteretScore * 0.35)
-            + ($contexteScore * 0.25);
-    }
-
-    private function scoreSecteurs(Etudiant $etudiant, Metier $metier): float
-    {
-        $wantedSecteurs = $this->secteurRepository->getSecteursFromOnboarding($etudiant);
-        $metierSecteurs = $this->secteurRepository->getSecteursFromMetier($metier);
-
-        if ($wantedSecteurs === []) {
-            return 0.5; // neutre si l'étudiant n'a pas répondu
-        }
-
-        $matches = array_intersect($wantedSecteurs, $metierSecteurs);
-
-        return count($matches) / count($wantedSecteurs);
-    }
-
-    private function scoreCentresInteret(Etudiant $etudiant, Metier $metier): float
-    {
-        $wantedCentresInterets = $this->centreInteretRepository->getCentreInteretFromOnboarding($etudiant);
-        $metierCentresInterets = $this->centreInteretRepository->getCentreInteretFromMetier($metier);
-
-        if ($wantedCentresInterets === []) {
-            return 0.5; // neutre si l'étudiant n'a pas répondu
-        }
-
-        $matches = array_intersect($wantedCentresInterets, $metierCentresInterets);
-
-        return count($matches) / count($wantedCentresInterets);
-    }
-
-    private function scoreContextesTravail(Etudiant $etudiant, Metier $metier): float
-    {
-        $wantedContextesTravails = $this->contexteTravailRepository->getContextesTravailFromOnboarding($etudiant);
-        $metierContextesTravails = $this->contexteTravailRepository->getContextesTravailFromMetier($metier);
-
-        if ($wantedContextesTravails === []) {
-            return 0.5; // neutre si l'étudiant n'a pas répondu
-        }
-
-        $matches = array_intersect($wantedContextesTravails, $metierContextesTravails);
-
-        return count($matches) / count($wantedContextesTravails);
+        return \count($matches) / \count($wantedValues);
     }
 }

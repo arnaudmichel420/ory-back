@@ -20,24 +20,34 @@ class SecteurRepository extends ServiceEntityRepository
         parent::__construct($registry, Secteur::class);
     }
 
+    /**
+     * @return list<int>
+     */
     public function getSecteursFromMetier(Metier $metier): array
     {
-        return $this->createQueryBuilder('s')
+        $secteurs = $this->createQueryBuilder('s')
             ->select('DISTINCT s.id')
             ->join('s.metierSecteurs', 'ms', 'WITH', 'ms.codeOgrMetier = :metier')
             ->setParameter('metier', $metier)
             ->getQuery()
             ->getSingleColumnResult();
+
+        return array_map('intval', $secteurs);
     }
 
+    /**
+     * @return list<int>
+     */
     public function getSecteursFromOnboarding(Etudiant $etudiant): array
     {
-        return $this->createQueryBuilder('s')
+        $secteurs = $this->createQueryBuilder('s')
             ->select('DISTINCT s.id')
             ->join('s.choixRecos', 'cr')
             ->join('cr.etudiantReponseRecos', 'err', 'WITH', 'err.etudiant = :etudiant')
             ->setParameter('etudiant', $etudiant)
             ->getQuery()
             ->getSingleColumnResult();
+
+        return array_map('intval', $secteurs);
     }
 }

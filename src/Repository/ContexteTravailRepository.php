@@ -20,24 +20,34 @@ class ContexteTravailRepository extends ServiceEntityRepository
         parent::__construct($registry, ContexteTravail::class);
     }
 
+    /**
+     * @return list<string>
+     */
     public function getContextesTravailFromMetier(Metier $metier): array
     {
-        return $this->createQueryBuilder('ct')
+        $contextesTravail = $this->createQueryBuilder('ct')
             ->select('DISTINCT ct.codeOgr')
             ->join('ct.metierContexteTravails', 'mci', 'WITH', 'mci.codeOgrMetier = :metier')
             ->setParameter('metier', $metier)
             ->getQuery()
             ->getSingleColumnResult();
+
+        return array_map('strval', $contextesTravail);
     }
 
+    /**
+     * @return list<string>
+     */
     public function getContextesTravailFromOnboarding(Etudiant $etudiant): array
     {
-        return $this->createQueryBuilder('ct')
+        $contextesTravail = $this->createQueryBuilder('ct')
             ->select('DISTINCT ct.codeOgr')
             ->join('ct.choixRecos', 'cr')
             ->join('cr.etudiantReponseRecos', 'err', 'WITH', 'err.etudiant = :etudiant')
             ->setParameter('etudiant', $etudiant)
             ->getQuery()
             ->getSingleColumnResult();
+
+        return array_map('strval', $contextesTravail);
     }
 }
