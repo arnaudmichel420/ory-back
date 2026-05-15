@@ -73,4 +73,40 @@ class EtudiantMetierInteractionRepository extends ServiceEntityRepository
             'total' => \count($paginator),
         ];
     }
+
+    /**
+     * @return list<array{codeOgrMetier: string, interractionScore: float}>
+     */
+    public function getInterractionScoreByMetierForStudent(Etudiant $etudiant): array
+    {
+        $rows = $this->createQueryBuilder('emi')
+            ->select(
+                'IDENTITY(emi.codeOgrMetier) as codeOgrMetier',
+                "COALESCE(
+                SUM(
+                    CASE emi.type
+                        WHEN 'challenge' THEN 4
+                        WHEN 'sauvegarde' THEN 3
+                        WHEN 'vue' THEN 1
+                        ELSE 0
+                    END
+                )
+            , 0) as interractionScore",
+            )
+            ->andWhere('emi.etudiant = :etudiant')
+            ->setParameter('etudiant', $etudiant)
+            ->groupBy('emi.codeOgrMetier')
+            ->getQuery()
+            ->getArrayResult();
+
+        $result = [];
+        foreach ($rows as $row) {
+            $result[] = [
+                'codeOgrMetier' => (string) $row['codeOgrMetier'],
+                'interractionScore' => round((float) min(1, $row['interractionScore'] / 8.0), 2),
+            ];
+        }
+
+        return $result;
+    }
 }

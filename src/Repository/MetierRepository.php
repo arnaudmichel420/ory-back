@@ -7,6 +7,8 @@ namespace App\Repository;
 use App\Dto\Metier\MetierListQueryDto;
 use App\Entity\Etudiant;
 use App\Entity\Metier;
+use App\Entity\MetierAttractivite;
+use App\Entity\Territoire;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\ORM\Tools\Pagination\Paginator;
@@ -124,11 +126,11 @@ class MetierRepository extends ServiceEntityRepository
 
         $paginator = new Paginator(
             $itemsQueryBuilder
-            ->orderBy($sortField, $query->getSortDirection())
-            ->addOrderBy('m.codeOgr', 'ASC')
-            ->setFirstResult($query->getOffset())
-            ->setMaxResults($query->perPage)
-            ->getQuery(),
+                ->orderBy($sortField, $query->getSortDirection())
+                ->addOrderBy('m.codeOgr', 'ASC')
+                ->setFirstResult($query->getOffset())
+                ->setMaxResults($query->perPage)
+                ->getQuery(),
             true,
         );
 
@@ -181,5 +183,177 @@ class MetierRepository extends ServiceEntityRepository
                 ->andWhere('m.emploiCadre = :emploiCadre')
                 ->setParameter('emploiCadre', $query->emploiCadre);
         }
+    }
+
+    /**
+     * @return list<array{codeOgrMetier: string, scoreAttractivite: float}>
+     */
+    public function findTopAttractiveScoresForTerritoire(Territoire $territoire): array
+    {
+        $rows = $this->getEntityManager()
+            ->createQueryBuilder()
+            ->from(MetierAttractivite::class, 'ma')
+            ->select(
+                'IDENTITY(ma.codeOgrMetier) as codeOgrMetier',
+                "SUM(
+                    CASE ma.codeAttractivite
+                        WHEN 'PERSPECTIVE' THEN ma.valeur * 0.30
+                        WHEN 'INT_EMB' THEN ma.valeur * 0.25
+                        WHEN 'DUR_EMPL' THEN ma.valeur * 0.15
+                        WHEN 'ATTR_SALARIALE' THEN ma.valeur * 0.15
+                        WHEN 'MAIN_OEUVRE' THEN ma.valeur * 0.10
+                        WHEN 'MISMATCH_GEO' THEN ma.valeur * -0.15
+                        WHEN 'COND_TRAVAIL' THEN ma.valeur * -0.05
+                        ELSE 0
+                    END
+                ) as scoreAttractivite"
+            )
+            ->where('ma.territoire = :territoire')
+            ->setParameter('territoire', $territoire)
+            ->groupBy('ma.codeOgrMetier')
+            ->orderBy('scoreAttractivite', 'DESC')
+            ->getQuery()
+            ->getArrayResult();
+
+        $result = [];
+        foreach ($rows as $row) {
+            $result[] = [
+                'codeOgrMetier' => (string) $row['codeOgrMetier'],
+                'scoreAttractivite' => round((float) $row['scoreAttractivite'] / 5.0, 2),
+            ];
+        }
+
+        return $result;
+    }
+
+    /**
+     * @param list<string> $metiers
+     *
+     * @return array<string, list<int>>
+     */
+    public function getSecteursForMetiers(array $metiers): array
+    {
+        if ([] === $metiers) {
+            return [];
+        }
+
+        $rows = $this->createQueryBuilder('m')
+            ->select('DISTINCT IDENTITY(ms.secteur) as secteur', 'm.codeOgr')
+            ->join('m.metierSecteurs', 'ms')
+            ->where('m.codeOgr IN (:metiers)')
+            ->setParameter('metiers', $metiers)
+            ->getQuery()
+            ->getArrayResult();
+
+        $secteursByMetier = [];
+
+        foreach ($rows as $row) {
+            $secteursByMetier[(string) $row['codeOgr']][] = (int) $row['secteur'];
+        }
+
+        return $secteursByMetier;
+    }
+
+    /**
+     * @param list<string> $metiers
+     *
+     * @return array<string, list<int>>
+     */
+    public function getCentresInteretForMetiers(array $metiers): array
+    {
+        if ([] === $metiers) {
+            return [];
+        }
+
+        $rows = $this->createQueryBuilder('m')
+            ->select('DISTINCT IDENTITY(mci.centreInteret) as centreInteret', 'm.codeOgr')
+            ->join('m.metierCentreInterets', 'mci')
+            ->where('m.codeOgr IN (:metiers)')
+            ->setParameter('metiers', $metiers)
+            ->getQuery()
+            ->getArrayResult();
+
+        $centresInteretByMetier = [];
+
+        foreach ($rows as $row) {
+            $centresInteretByMetier[(string) $row['codeOgr']][] = (int) $row['centreInteret'];
+        }
+
+        return $centresInteretByMetier;
+    }
+
+    /**
+     * @param list<string> $metiers
+     *
+     * @return array<string, list<string>>
+     */
+    public function getContextesTravailForMetiers(array $metiers): array
+    {
+        if ([] === $metiers) {
+            return [];
+        }
+
+        $rows = $this->createQueryBuilder('m')
+            ->select('DISTINCT IDENTITY(mct.codeOgrContexte) as contexteTravail', 'm.codeOgr')
+            ->join('m.metierContexteTravails', 'mct')
+            ->where('m.codeOgr IN (:metiers)')
+            ->setParameter('metiers', $metiers)
+            ->getQuery()
+            ->getArrayResult();
+
+        $contextesTravailByMetier = [];
+
+        foreach ($rows as $row) {
+            $contextesTravailByMetier[(string) $row['codeOgr']][] = (string) $row['contexteTravail'];
+        }
+
+        return $contextesTravailByMetier;
+    }
+
+    /**
+     * @param list<string> $metiers
+     *
+     * @return array<string, list<string>>
+     */
+    public function getCompetenceForMetiers(array $metiers): array
+    {
+        if ([] === $metiers) {
+            return [];
+        }
+
+        $rows = $this->createQueryBuilder('m')
+            ->select('DISTINCT IDENTITY(mc.codeOgrComp) as competence', 'm.codeOgr')
+            ->join('m.metierCompetences', 'mc')
+            ->where('m.codeOgr IN (:metiers)')
+            ->setParameter('metiers', $metiers)
+            ->getQuery()
+            ->getArrayResult();
+
+        $competencesByMetier = [];
+
+        foreach ($rows as $row) {
+            $competencesByMetier[(string) $row['codeOgr']][] = (string) $row['competence'];
+        }
+
+        return $competencesByMetier;
+    }
+
+    /**
+     * @return list<array{codeOgrMetier: string, scoreAttractivite: float}>
+     */
+    public function findAllNoAttractivity(): array
+    {
+        $rows = $this->createQueryBuilder('m')
+            ->select('m.codeOgr as codeOgrMetier', '0 as scoreAttractivite')
+            ->getQuery()
+            ->getArrayResult();
+
+        return array_map(
+            static fn (array $row): array => [
+                'codeOgrMetier' => (string) $row['codeOgrMetier'],
+                'scoreAttractivite' => (float) $row['scoreAttractivite'],
+            ],
+            $rows,
+        );
     }
 }
