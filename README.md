@@ -45,37 +45,3 @@ composer cs-fix     # corrige automatiquement
 composer phpstan    # analyse statique
 ```
 
-# Recommendation
-
-```
-scoreTotal =
-  scoreOnboarding * 0.45
-+ scoreInteractions * 0.25
-+ scoreAttractiviteLocale * 0.20
-+ scoreDiversite * 0.10
-```
-
-1 - RecommendationCalculator.php 
-Orchestre tout. C’est lui qui demande les candidats, calcule les scores, trie, limite à 50, puis persiste.
-
-2 - OnboardingScorer.php
-Compare les réponses onboarding de l’étudiant avec les métiers : secteur, centre d’intérêt, contexte de travail
-scoreOnboarding =
-  scoreSecteurs * 0.40
-+ scoreCentresInteret * 0.35
-+ scoreContextesTravail * 0.25
-
-3 - LocalAttractivenessScorer.php
-Utilise le codePostal de l’étudiant pour trouver son département, puis récupère les données MetierAttractivite.
-
-4 - InteractionScorer.php
-Utilise les likes, favoris, métiers sauvegardés, métiers ignorés, etc.
-scoreInteractions =
-  scoreDirect * 0.60
-+ scoreSimilariteAuxLikes * 0.40
-
-5 - RecommendationCandidateProvider.php
-Retourne une liste de métiers candidats à scorer. Au début, tu peux prendre tous les métiers, mais à terme il faudra limiter.
-
-6 - RecommendationPersister.php
-Supprime/remplace les anciens scores de l’étudiant, puis insère les 50 nouveaux.
